@@ -14,6 +14,9 @@
 		BF5AA9EE25A6DBF200409FD4 /* MAD2_Assignment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF5AA9EC25A6DBF200409FD4 /* MAD2_Assignment.xcdatamodeld */; };
 		BF5AA9F025A6DBF300409FD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF5AA9EF25A6DBF300409FD4 /* Assets.xcassets */; };
 		BF5AA9F325A6DBF300409FD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF5AA9F125A6DBF300409FD4 /* LaunchScreen.storyboard */; };
+		BF5AA9FC25AFCFF000409FD4 /* ToDoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5AA9FB25AFCFF000409FD4 /* ToDoListViewController.swift */; };
+		BFD2EF9525AFD6EC0080714C /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD2EF9425AFD6EC0080714C /* EntryViewController.swift */; };
+		BFD2EF9825AFD70C0080714C /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD2EF9725AFD70C0080714C /* TaskViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,10 @@
 		BF5AA9EF25A6DBF300409FD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF5AA9F225A6DBF300409FD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF5AA9F425A6DBF300409FD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF5AA9FB25AFCFF000409FD4 /* ToDoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListViewController.swift; sourceTree = "<group>"; };
+		BFD2EF9425AFD6EC0080714C /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
+		BFD2EF9725AFD70C0080714C /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
+		BFD2EF9A25AFE5960080714C /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +69,13 @@
 				BF5AA9E525A6DBF200409FD4 /* SceneDelegate.swift */,
 				BF5AA9E725A6DBF200409FD4 /* ViewController.swift */,
 				BF5AA9E925A6DBF200409FD4 /* Main.storyboard */,
+				BFD2EF9425AFD6EC0080714C /* EntryViewController.swift */,
+				BFD2EF9725AFD70C0080714C /* TaskViewController.swift */,
+				BF5AA9FB25AFCFF000409FD4 /* ToDoListViewController.swift */,
 				BF5AA9EF25A6DBF300409FD4 /* Assets.xcassets */,
 				BF5AA9F125A6DBF300409FD4 /* LaunchScreen.storyboard */,
 				BF5AA9F425A6DBF300409FD4 /* Info.plist */,
+				BFD2EF9A25AFE5960080714C /* GoogleService-Info.plist */,
 				BF5AA9EC25A6DBF200409FD4 /* MAD2_Assignment.xcdatamodeld */,
 			);
 			path = MAD2_Assignment;
@@ -141,9 +152,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF5AA9EE25A6DBF200409FD4 /* MAD2_Assignment.xcdatamodeld in Sources */,
+				BFD2EF9825AFD70C0080714C /* TaskViewController.swift in Sources */,
 				BF5AA9E825A6DBF200409FD4 /* ViewController.swift in Sources */,
 				BF5AA9E425A6DBF200409FD4 /* AppDelegate.swift in Sources */,
+				BF5AA9FC25AFCFF000409FD4 /* ToDoListViewController.swift in Sources */,
 				BF5AA9E625A6DBF200409FD4 /* SceneDelegate.swift in Sources */,
+				BFD2EF9525AFD6EC0080714C /* EntryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
