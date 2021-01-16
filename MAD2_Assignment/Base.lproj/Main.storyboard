@@ -196,7 +196,13 @@
                             <constraint firstItem="CNE-R9-b34" firstAttribute="leading" secondItem="1Vw-uY-XEh" secondAttribute="leading" constant="20" id="wQ4-lQ-FPv"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="iIU-ri-Yl7"/>
+                    <navigationItem key="navigationItem" id="iIU-ri-Yl7">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="ytH-KJ-41p">
+                            <connections>
+                                <action selector="saveTask:" destination="B9p-jj-iod" id="lUc-la-x6X"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="field" destination="CNE-R9-b34" id="BfC-oP-LB5"/>
                     </connections>

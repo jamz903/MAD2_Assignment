@@ -18,15 +18,10 @@ class EntryViewController: UIViewController, UITextFieldDelegate {
 
         // Do any additional setup after loading the view.
         field.delegate = self
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .done, target: self, action: #selector(saveTask))
+        //navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .done, target: self, action: #selector(saveTask))
     }
     
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        saveTask()
-        return true
-    }
-    
-    @IBAction func saveTask(){
+    @IBAction func saveTask(_ sender: Any) {
         guard let text = field.text, !text.isEmpty else{
             return
         }
@@ -38,11 +33,31 @@ class EntryViewController: UIViewController, UITextFieldDelegate {
         UserDefaults().set(newCount, forKey: "count")
         UserDefaults().set(text, forKey: "task_\(newCount)")
         
-        //add firebase portion here
         update?()
         
-        navigationController?.popViewController(animated: true)
+        self.navigationController?.popViewController(animated: true)
     }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        saveTask(self)
+        return true
+    }
+    
+//    @objc func saveTask(){
+//        guard let text = field.text, !text.isEmpty else{
+//            return
+//        }
+//        guard let count = (UserDefaults().value(forKey: "count") as? Int) else{
+//            return
+//        }
+//
+//        let newCount = count + 1
+//        UserDefaults().set(newCount, forKey: "count")
+//        UserDefaults().set(text, forKey: "task_\(newCount)")
+//
+//        update?()
+//
+//        self.navigationController?.popViewController(animated: true)
+//    }
 
     /*
     // MARK: - Navigation
