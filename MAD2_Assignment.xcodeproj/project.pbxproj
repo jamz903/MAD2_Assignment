@@ -14,9 +14,11 @@
 		BF5AA9EE25A6DBF200409FD4 /* MAD2_Assignment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF5AA9EC25A6DBF200409FD4 /* MAD2_Assignment.xcdatamodeld */; };
 		BF5AA9F025A6DBF300409FD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF5AA9EF25A6DBF300409FD4 /* Assets.xcassets */; };
 		BF5AA9F325A6DBF300409FD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF5AA9F125A6DBF300409FD4 /* LaunchScreen.storyboard */; };
-		BF5AA9FC25AFCFF000409FD4 /* ToDoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5AA9FB25AFCFF000409FD4 /* ToDoListViewController.swift */; };
-		BFD2EF9525AFD6EC0080714C /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD2EF9425AFD6EC0080714C /* EntryViewController.swift */; };
-		BFD2EF9825AFD70C0080714C /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD2EF9725AFD70C0080714C /* TaskViewController.swift */; };
+		BFD7B8C925B5CA240073B1D8 /* ToDoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7B8C825B5CA240073B1D8 /* ToDoListViewController.swift */; };
+		BFD7B8CC25B5DA780073B1D8 /* TaskCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7B8CB25B5DA780073B1D8 /* TaskCellViewModel.swift */; };
+		BFD7B8CF25B5DC0E0073B1D8 /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7B8CE25B5DC0E0073B1D8 /* TaskListViewModel.swift */; };
+		BFF942AA25B313730052C619 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF942A925B313730052C619 /* Task.swift */; };
+		BFF942BB25B31B3B0052C619 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF942BA25B31B3B0052C619 /* TaskListView.swift */; };
 		E6FD15E425AFE9E1006A8B33 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E6FD15E325AFE9E1006A8B33 /* GoogleService-Info.plist */; };
 		E6FD15F625B2D9B8006A8B33 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FD15F525B2D9B8006A8B33 /* LoginViewController.swift */; };
 		EDCB55158CE31B2B0C643F7D /* Pods_MAD2_Assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3073A313C977BE25F7CC6963 /* Pods_MAD2_Assignment.framework */; };
@@ -35,9 +37,11 @@
 		BF5AA9EF25A6DBF300409FD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF5AA9F225A6DBF300409FD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF5AA9F425A6DBF300409FD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BF5AA9FB25AFCFF000409FD4 /* ToDoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListViewController.swift; sourceTree = "<group>"; };
-		BFD2EF9425AFD6EC0080714C /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
-		BFD2EF9725AFD70C0080714C /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
+		BFD7B8C825B5CA240073B1D8 /* ToDoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListViewController.swift; sourceTree = "<group>"; };
+		BFD7B8CB25B5DA780073B1D8 /* TaskCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCellViewModel.swift; sourceTree = "<group>"; };
+		BFD7B8CE25B5DC0E0073B1D8 /* TaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
+		BFF942A925B313730052C619 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		BFF942BA25B31B3B0052C619 /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TaskListView.swift; path = MAD2_Assignment/TaskListView.swift; sourceTree = SOURCE_ROOT; };
 		E6FD15E325AFE9E1006A8B33 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E6FD15F525B2D9B8006A8B33 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,13 +80,15 @@
 			isa = PBXGroup;
 			children = (
 				BF5AA9E325A6DBF200409FD4 /* AppDelegate.swift */,
+				BF5AA9E925A6DBF200409FD4 /* Main.storyboard */,
+				BFD7B8C825B5CA240073B1D8 /* ToDoListViewController.swift */,
 				BF5AA9E525A6DBF200409FD4 /* SceneDelegate.swift */,
 				BF5AA9E725A6DBF200409FD4 /* ViewController.swift */,
 				E6FD15F525B2D9B8006A8B33 /* LoginViewController.swift */,
-				BF5AA9E925A6DBF200409FD4 /* Main.storyboard */,
-				BFD2EF9425AFD6EC0080714C /* EntryViewController.swift */,
-				BFD2EF9725AFD70C0080714C /* TaskViewController.swift */,
-				BF5AA9FB25AFCFF000409FD4 /* ToDoListViewController.swift */,
+				BFD7B8CB25B5DA780073B1D8 /* TaskCellViewModel.swift */,
+				BFD7B8CE25B5DC0E0073B1D8 /* TaskListViewModel.swift */,
+				BFF942BA25B31B3B0052C619 /* TaskListView.swift */,
+				BFF942A925B313730052C619 /* Task.swift */,
 				BF5AA9EF25A6DBF300409FD4 /* Assets.xcassets */,
 				BF5AA9F125A6DBF300409FD4 /* LaunchScreen.storyboard */,
 				BF5AA9F425A6DBF300409FD4 /* Info.plist */,
@@ -224,14 +230,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFD7B8C925B5CA240073B1D8 /* ToDoListViewController.swift in Sources */,
+				BFF942BB25B31B3B0052C619 /* TaskListView.swift in Sources */,
+				BFF942AA25B313730052C619 /* Task.swift in Sources */,
 				BF5AA9EE25A6DBF200409FD4 /* MAD2_Assignment.xcdatamodeld in Sources */,
-				BFD2EF9825AFD70C0080714C /* TaskViewController.swift in Sources */,
 				BF5AA9E825A6DBF200409FD4 /* ViewController.swift in Sources */,
 				BF5AA9E425A6DBF200409FD4 /* AppDelegate.swift in Sources */,
+				BFD7B8CC25B5DA780073B1D8 /* TaskCellViewModel.swift in Sources */,
+				BFD7B8CF25B5DC0E0073B1D8 /* TaskListViewModel.swift in Sources */,
 				E6FD15F625B2D9B8006A8B33 /* LoginViewController.swift in Sources */,
-				BF5AA9FC25AFCFF000409FD4 /* ToDoListViewController.swift in Sources */,
 				BF5AA9E625A6DBF200409FD4 /* SceneDelegate.swift in Sources */,
-				BFD2EF9525AFD6EC0080714C /* EntryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +393,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				NEW_SETTING = "";
+				PODS_ROOT = "${PROJECT_DIR}/Pods/";
 				PRODUCT_BUNDLE_IDENTIFIER = "sg.mad2.MAD2-Assignment";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -404,6 +414,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				NEW_SETTING = "";
+				PODS_ROOT = "${PROJECT_DIR}/Pods/";
 				PRODUCT_BUNDLE_IDENTIFIER = "sg.mad2.MAD2-Assignment";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
