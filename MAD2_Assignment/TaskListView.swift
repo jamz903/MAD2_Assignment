@@ -30,7 +30,7 @@ struct TaskListView: View {
                     })
                     //adding new task
                     if presentAddNewItem {
-                        TaskCell(taskCellVM: TaskCellViewModel(task:  Task(Title: "", Completed: false))) { task in
+                        TaskCell(taskCellVM: TaskCellViewModel(task:  Task(title: "", completed: false))) { task in
                             self.taskListVM.addTask(task: task)
                             //whenever a new element is added, we will hide the new cell that appears after
                             self.presentAddNewItem.toggle()
