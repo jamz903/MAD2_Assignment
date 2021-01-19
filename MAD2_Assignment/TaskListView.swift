@@ -13,14 +13,15 @@ struct TaskListView: View {
     
     @State var presentAddNewItem = false
     var body: some View {
-        VStack {
-            Text("Tasks").fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/).font(.largeTitle)
+        VStack(alignment: .leading, spacing: 0) {
+            Text("Tasks").fontWeight(.bold).font(.largeTitle)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.leading, CGFloat(15))
+                .padding(.top)
             VStack(alignment: .trailing) {
                 List {
                     ForEach(taskListVM.taskCellViewModels) { taskCellVM in
-                    TaskCell(taskCellVM: taskCellVM)
+                        TaskCell(taskCellVM: taskCellVM)
                         
                     }
                     //adding new task
