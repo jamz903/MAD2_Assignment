@@ -20,9 +20,7 @@ class TaskCellViewModel: ObservableObject, Identifiable {
         self.task = task
         
         $task
-            .map {task in
-                task.completed ? "checkmark.circle.fill" : "circle"
-            }
+            .map {$0.completed ? "checkmark.circle.fill": "circle"}
             .assign(to: \.completionStateIconName, on: self)
             .store(in: &cancellables)
         

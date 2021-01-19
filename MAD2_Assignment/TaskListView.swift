@@ -18,12 +18,16 @@ struct TaskListView: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.leading, CGFloat(15))
                 .padding(.top)
+                .padding(.bottom, CGFloat(5))
             VStack(alignment: .trailing) {
                 List {
                     ForEach(taskListVM.taskCellViewModels) { taskCellVM in
                         TaskCell(taskCellVM: taskCellVM)
                         
                     }
+                    .onDelete(perform: { indexSet in
+                        self.taskListVM.removeTasks(atOffsets: indexSet)
+                    })
                     //adding new task
                     if presentAddNewItem {
                         TaskCell(taskCellVM: TaskCellViewModel(task:  Task(Title: "", Completed: false))) { task in
@@ -56,17 +60,17 @@ struct TaskListView_Previews: PreviewProvider {
 
 struct TaskCell: View {
     @ObservedObject var taskCellVM: TaskCellViewModel
-    
     var onCommit: (Task) -> (Void) = {_ in}
-    
     var body: some View {
         HStack{
-            Image(systemName: taskCellVM.task.completed ? "checkmark.circle.fill": "circle")
+            Image(systemName: taskCellVM.task.completed ? "checkmark.circle.fill" : "circle")
                 .resizable()
                 .frame(width: 20, height: 20)
-                .onTapGesture(count: 1, perform: {
-                    taskCellVM.task.completed.toggle()
-            })
+                .onTapGesture {
+                    self.taskCellVM.task.completed.toggle()
+                    print(taskCellVM.task.completed)
+                    print("tapped")
+                }
             TextField("Enter the task title", text: $taskCellVM.task.title, onCommit: {
                 self.onCommit(self.taskCellVM.task)
             })

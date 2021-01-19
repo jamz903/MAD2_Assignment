@@ -23,4 +23,8 @@ class TaskListViewModel: ObservableObject {
         let taskVM = TaskCellViewModel(task: task)
         self.taskCellViewModels.append(taskVM)
     }
+    
+    func removeTasks(atOffsets indexSet: IndexSet){
+        taskCellViewModels.remove(atOffsets: indexSet)
+    }
 }
