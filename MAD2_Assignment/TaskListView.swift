@@ -23,8 +23,13 @@ struct TaskListView: View {
                     TaskCell(taskCellVM: taskCellVM)
                         
                     }
+                    //adding new task
                     if presentAddNewItem {
-                        TaskCell(taskCellVM: TaskCellViewModel(task:  Task(Title: "", Completed: false)))
+                        TaskCell(taskCellVM: TaskCellViewModel(task:  Task(Title: "", Completed: false))) { task in
+                            self.taskListVM.addTask(task: task)
+                            //whenever a new element is added, we will hide the new cell that appears after
+                            self.presentAddNewItem.toggle()
+                        }
                     }
                 }
                 
@@ -51,12 +56,19 @@ struct TaskListView_Previews: PreviewProvider {
 struct TaskCell: View {
     @ObservedObject var taskCellVM: TaskCellViewModel
     
+    var onCommit: (Task) -> (Void) = {_ in}
+    
     var body: some View {
         HStack{
             Image(systemName: taskCellVM.task.completed ? "checkmark.circle.fill": "circle")
                 .resizable()
                 .frame(width: 20, height: 20)
-            TextField("Enter the task title", text: $taskCellVM.task.title)
+                .onTapGesture(count: 1, perform: {
+                    taskCellVM.task.completed.toggle()
+            })
+            TextField("Enter the task title", text: $taskCellVM.task.title, onCommit: {
+                self.onCommit(self.taskCellVM.task)
+            })
                 .padding(.leading, CGFloat(8))
         }
     }
