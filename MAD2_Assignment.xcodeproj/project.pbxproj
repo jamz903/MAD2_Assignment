@@ -21,6 +21,7 @@
 		BFF942BB25B31B3B0052C619 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF942BA25B31B3B0052C619 /* TaskListView.swift */; };
 		E6FD15E425AFE9E1006A8B33 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E6FD15E325AFE9E1006A8B33 /* GoogleService-Info.plist */; };
 		E6FD15F625B2D9B8006A8B33 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FD15F525B2D9B8006A8B33 /* LoginViewController.swift */; };
+		E6FD161925B86F0E006A8B33 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FD161825B86F0E006A8B33 /* Student.swift */; };
 		EDCB55158CE31B2B0C643F7D /* Pods_MAD2_Assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3073A313C977BE25F7CC6963 /* Pods_MAD2_Assignment.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		BFF942BA25B31B3B0052C619 /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TaskListView.swift; path = MAD2_Assignment/TaskListView.swift; sourceTree = SOURCE_ROOT; };
 		E6FD15E325AFE9E1006A8B33 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E6FD15F525B2D9B8006A8B33 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E6FD161825B86F0E006A8B33 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				E6FD15F525B2D9B8006A8B33 /* LoginViewController.swift */,
 				BFD7B8CB25B5DA780073B1D8 /* TaskCellViewModel.swift */,
 				BFD7B8CE25B5DC0E0073B1D8 /* TaskListViewModel.swift */,
+				E6FD161825B86F0E006A8B33 /* Student.swift */,
 				BFF942BA25B31B3B0052C619 /* TaskListView.swift */,
 				BFF942A925B313730052C619 /* Task.swift */,
 				BF5AA9EF25A6DBF300409FD4 /* Assets.xcassets */,
@@ -233,6 +236,7 @@
 				BFD7B8C925B5CA240073B1D8 /* ToDoListViewController.swift in Sources */,
 				BFF942BB25B31B3B0052C619 /* TaskListView.swift in Sources */,
 				BFF942AA25B313730052C619 /* Task.swift in Sources */,
+				E6FD161925B86F0E006A8B33 /* Student.swift in Sources */,
 				BF5AA9EE25A6DBF200409FD4 /* MAD2_Assignment.xcdatamodeld in Sources */,
 				BF5AA9E825A6DBF200409FD4 /* ViewController.swift in Sources */,
 				BF5AA9E425A6DBF200409FD4 /* AppDelegate.swift in Sources */,
