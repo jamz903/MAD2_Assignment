@@ -54,7 +54,8 @@ struct TaskListView: View {
 
 struct TaskListView_Previews: PreviewProvider {
     static var previews: some View {
-        TaskListView()
+        //TaskListView()
+        TaskListView().environmentObject(TaskListViewModel())
     }
 }
 
