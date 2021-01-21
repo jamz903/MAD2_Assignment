@@ -30,8 +30,10 @@ struct TaskListView: View {
                     })
                     //adding new task
                     if presentAddNewItem {
-                        TaskCell(taskCellVM: TaskCellViewModel(task:  Task(title: "", completed: false))) { task in
-                            self.taskListVM.addTask(task: task)
+                        TaskCell(taskCellVM: TaskCellViewModel.newTask()) { task in
+                            if case .success(let task) = task {
+                                self.taskListVM.addTask(task: task)
+                            }
                             //whenever a new element is added, we will hide the new cell that appears after
                             self.presentAddNewItem.toggle()
                         }
@@ -61,7 +63,7 @@ struct TaskListView_Previews: PreviewProvider {
 
 struct TaskCell: View {
     @ObservedObject var taskCellVM: TaskCellViewModel
-    var onCommit: (Task) -> (Void) = {_ in}
+    var onCommit: (Result<Task, InputError>) -> (Void) = {_ in}
     var body: some View {
         HStack{
             Image(systemName: taskCellVM.task.completed ? "checkmark.circle.fill" : "circle")
@@ -73,12 +75,21 @@ struct TaskCell: View {
                     print("tapped")
                 }
             TextField("Enter the task title", text: $taskCellVM.task.title, onCommit: {
-                self.onCommit(self.taskCellVM.task)
-            })
+                if !self.taskCellVM.task.title.isEmpty {
+                    self.onCommit(.success(self.taskCellVM.task))
+                }
+                else {
+                    self.onCommit(.failure(.empty))
+                }
+            }).id(taskCellVM.id)
                 .padding(.leading, CGFloat(8))
             .font(.system(size: CGFloat(20)))
             .padding(.top, CGFloat(8))
             .padding(.bottom, CGFloat(8))
         }
     }
+}
+
+enum InputError: Error {
+    case empty
 }

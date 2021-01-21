@@ -19,6 +19,7 @@
 		BF5AA9EE25A6DBF200409FD4 /* MAD2_Assignment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF5AA9EC25A6DBF200409FD4 /* MAD2_Assignment.xcdatamodeld */; };
 		BF5AA9F025A6DBF300409FD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF5AA9EF25A6DBF300409FD4 /* Assets.xcassets */; };
 		BF5AA9F325A6DBF300409FD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF5AA9F125A6DBF300409FD4 /* LaunchScreen.storyboard */; };
+		BF9C7C7125B9BA8A0015574F /* TaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9C7C7025B9BA8A0015574F /* TaskRepository.swift */; };
 		BFD7B8C925B5CA240073B1D8 /* ToDoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7B8C825B5CA240073B1D8 /* ToDoListViewController.swift */; };
 		BFD7B8CC25B5DA780073B1D8 /* TaskCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7B8CB25B5DA780073B1D8 /* TaskCellViewModel.swift */; };
 		BFD7B8CF25B5DC0E0073B1D8 /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7B8CE25B5DC0E0073B1D8 /* TaskListViewModel.swift */; };
@@ -49,6 +50,7 @@
 		BF5AA9EF25A6DBF300409FD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF5AA9F225A6DBF300409FD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF5AA9F425A6DBF300409FD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF9C7C7025B9BA8A0015574F /* TaskRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRepository.swift; sourceTree = "<group>"; };
 		BFD7B8C825B5CA240073B1D8 /* ToDoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListViewController.swift; sourceTree = "<group>"; };
 		BFD7B8CB25B5DA780073B1D8 /* TaskCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCellViewModel.swift; sourceTree = "<group>"; };
 		BFD7B8CE25B5DC0E0073B1D8 /* TaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				BF5AA9E525A6DBF200409FD4 /* SceneDelegate.swift */,
 				BF5AA9E725A6DBF200409FD4 /* ViewController.swift */,
 				E6FD15F525B2D9B8006A8B33 /* LoginViewController.swift */,
+				BF9C7C7025B9BA8A0015574F /* TaskRepository.swift */,
 				E6FD163C25B91ADC006A8B33 /* SignUpViewController.swift */,
 				BFD7B8CB25B5DA780073B1D8 /* TaskCellViewModel.swift */,
 				BFD7B8CE25B5DC0E0073B1D8 /* TaskListViewModel.swift */,
@@ -257,6 +260,7 @@
 				BFF942AA25B313730052C619 /* Task.swift in Sources */,
 				7EE1ADFE25B910FE00348C4E /* LocationDelegate.swift in Sources */,
 				E6FD163D25B91ADC006A8B33 /* SignUpViewController.swift in Sources */,
+				BF9C7C7125B9BA8A0015574F /* TaskRepository.swift in Sources */,
 				E6FD161925B86F0E006A8B33 /* Student.swift in Sources */,
 				BF5AA9EE25A6DBF200409FD4 /* MAD2_Assignment.xcdatamodeld in Sources */,
 				BF5AA9E825A6DBF200409FD4 /* ViewController.swift in Sources */,
@@ -424,7 +428,7 @@
 				);
 				NEW_SETTING = "";
 				PODS_ROOT = "${PROJECT_DIR}/Pods/";
-				PRODUCT_BUNDLE_IDENTIFIER = "sg.justin.MAD2-Assignment";
+				PRODUCT_BUNDLE_IDENTIFIER = "sg.mad2.MAD2-Assignment";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -446,7 +450,7 @@
 				);
 				NEW_SETTING = "";
 				PODS_ROOT = "${PROJECT_DIR}/Pods/";
-				PRODUCT_BUNDLE_IDENTIFIER = "sg.justin.MAD2-Assignment";
+				PRODUCT_BUNDLE_IDENTIFIER = "sg.mad2.MAD2-Assignment";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -16,6 +16,10 @@ class TaskCellViewModel: ObservableObject, Identifiable {
     
     private var cancellables = Set<AnyCancellable>()
     
+    static func newTask() -> TaskCellViewModel {
+        TaskCellViewModel(task:  Task(title: "", completed: false))
+    }
+    
     init(task: Task){
         self.task = task
         

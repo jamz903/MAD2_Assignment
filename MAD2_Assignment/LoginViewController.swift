@@ -14,9 +14,16 @@ class LoginViewController: UIViewController{
     @IBOutlet weak var Password: UITextField!
     @IBOutlet weak var Error: UILabel!
     let ref = Database.database().reference()
+    let preferences = UserDefaults.standard
     
    
     var StudentList: [Student] = [Student]()
+    
+    struct studentDetails {
+        static var studentName = ""
+        static var studentPassword = ""
+    }
+    
     override func viewDidLoad() {
         
         
@@ -42,6 +49,9 @@ class LoginViewController: UIViewController{
             for guy in self.StudentList{
                 print(guy.name)
                 print(guy.pw)
+                //self.preferences.set(guy.name, forKey: "userName")
+                
+                
             }
             
             
@@ -68,6 +78,8 @@ class LoginViewController: UIViewController{
                 else{
                     if(Password.text == guy.pw){
                         print(Password.text)
+                        LoginViewController.studentDetails.studentName = guy.name
+                        LoginViewController.studentDetails.studentPassword = guy.log
                         self.ref.child("Profiles/" + i.name + "/Log").setValue("true")
                         let storyboard = UIStoryboard(name: "Main", bundle: nil)
                         let vc = storyboard.instantiateViewController(identifier: "LoginDone") as UIViewController
