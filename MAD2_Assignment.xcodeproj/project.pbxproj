@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7EE1ADF525B9106600348C4E /* BusTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1ADF425B9106600348C4E /* BusTableViewController.swift */; };
+		7EE1ADF825B9109D00348C4E /* BusService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1ADF725B9109D00348C4E /* BusService.swift */; };
+		7EE1ADFB25B910C900348C4E /* BusStops.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1ADFA25B910C900348C4E /* BusStops.swift */; };
+		7EE1ADFE25B910FE00348C4E /* LocationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1ADFD25B910FE00348C4E /* LocationDelegate.swift */; };
+		7EE1AE0125B9118800348C4E /* BusCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1AE0025B9118800348C4E /* BusCustomTableViewCell.swift */; };
 		BF5AA9E425A6DBF200409FD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5AA9E325A6DBF200409FD4 /* AppDelegate.swift */; };
 		BF5AA9E625A6DBF200409FD4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5AA9E525A6DBF200409FD4 /* SceneDelegate.swift */; };
 		BF5AA9E825A6DBF200409FD4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5AA9E725A6DBF200409FD4 /* ViewController.swift */; };
@@ -28,6 +33,11 @@
 /* Begin PBXFileReference section */
 		05D4B0D5E533C1F48DF2DE2A /* Pods-MAD2_Assignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MAD2_Assignment.release.xcconfig"; path = "Target Support Files/Pods-MAD2_Assignment/Pods-MAD2_Assignment.release.xcconfig"; sourceTree = "<group>"; };
 		3073A313C977BE25F7CC6963 /* Pods_MAD2_Assignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MAD2_Assignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EE1ADF425B9106600348C4E /* BusTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusTableViewController.swift; sourceTree = "<group>"; };
+		7EE1ADF725B9109D00348C4E /* BusService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusService.swift; sourceTree = "<group>"; };
+		7EE1ADFA25B910C900348C4E /* BusStops.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusStops.swift; sourceTree = "<group>"; };
+		7EE1ADFD25B910FE00348C4E /* LocationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDelegate.swift; sourceTree = "<group>"; };
+		7EE1AE0025B9118800348C4E /* BusCustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusCustomTableViewCell.swift; sourceTree = "<group>"; };
 		853D1C70FFF3B0EFD60548E1 /* Pods-MAD2_Assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MAD2_Assignment.debug.xcconfig"; path = "Target Support Files/Pods-MAD2_Assignment/Pods-MAD2_Assignment.debug.xcconfig"; sourceTree = "<group>"; };
 		BF5AA9E025A6DBF200409FD4 /* MAD2_Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MAD2_Assignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF5AA9E325A6DBF200409FD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +93,11 @@
 			children = (
 				BF5AA9E325A6DBF200409FD4 /* AppDelegate.swift */,
 				BF5AA9E925A6DBF200409FD4 /* Main.storyboard */,
+				7EE1AE0025B9118800348C4E /* BusCustomTableViewCell.swift */,
+				7EE1ADF425B9106600348C4E /* BusTableViewController.swift */,
+				7EE1ADFD25B910FE00348C4E /* LocationDelegate.swift */,
+				7EE1ADF725B9109D00348C4E /* BusService.swift */,
+				7EE1ADFA25B910C900348C4E /* BusStops.swift */,
 				BFD7B8C825B5CA240073B1D8 /* ToDoListViewController.swift */,
 				BF5AA9E525A6DBF200409FD4 /* SceneDelegate.swift */,
 				BF5AA9E725A6DBF200409FD4 /* ViewController.swift */,
@@ -235,15 +250,20 @@
 			files = (
 				BFD7B8C925B5CA240073B1D8 /* ToDoListViewController.swift in Sources */,
 				BFF942BB25B31B3B0052C619 /* TaskListView.swift in Sources */,
+				7EE1ADF825B9109D00348C4E /* BusService.swift in Sources */,
 				BFF942AA25B313730052C619 /* Task.swift in Sources */,
+				7EE1ADFE25B910FE00348C4E /* LocationDelegate.swift in Sources */,
 				E6FD161925B86F0E006A8B33 /* Student.swift in Sources */,
 				BF5AA9EE25A6DBF200409FD4 /* MAD2_Assignment.xcdatamodeld in Sources */,
 				BF5AA9E825A6DBF200409FD4 /* ViewController.swift in Sources */,
 				BF5AA9E425A6DBF200409FD4 /* AppDelegate.swift in Sources */,
 				BFD7B8CC25B5DA780073B1D8 /* TaskCellViewModel.swift in Sources */,
+				7EE1ADF525B9106600348C4E /* BusTableViewController.swift in Sources */,
 				BFD7B8CF25B5DC0E0073B1D8 /* TaskListViewModel.swift in Sources */,
 				E6FD15F625B2D9B8006A8B33 /* LoginViewController.swift in Sources */,
+				7EE1ADFB25B910C900348C4E /* BusStops.swift in Sources */,
 				BF5AA9E625A6DBF200409FD4 /* SceneDelegate.swift in Sources */,
+				7EE1AE0125B9118800348C4E /* BusCustomTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,7 +420,7 @@
 				);
 				NEW_SETTING = "";
 				PODS_ROOT = "${PROJECT_DIR}/Pods/";
-				PRODUCT_BUNDLE_IDENTIFIER = "sg.mad2.MAD2-Assignment";
+				PRODUCT_BUNDLE_IDENTIFIER = "sg.justin.MAD2-Assignment";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -422,7 +442,7 @@
 				);
 				NEW_SETTING = "";
 				PODS_ROOT = "${PROJECT_DIR}/Pods/";
-				PRODUCT_BUNDLE_IDENTIFIER = "sg.mad2.MAD2-Assignment";
+				PRODUCT_BUNDLE_IDENTIFIER = "sg.justin.MAD2-Assignment";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

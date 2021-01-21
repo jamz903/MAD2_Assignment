@@ -18,7 +18,7 @@ struct TaskListView: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.leading, CGFloat(15))
                 .padding(.top)
-                .padding(.bottom, CGFloat(5))
+                .padding(.bottom, CGFloat(15))
             VStack(alignment: .trailing) {
                 List {
                     ForEach(taskListVM.taskCellViewModels) { taskCellVM in
@@ -76,6 +76,9 @@ struct TaskCell: View {
                 self.onCommit(self.taskCellVM.task)
             })
                 .padding(.leading, CGFloat(8))
+            .font(.system(size: CGFloat(20)))
+            .padding(.top, CGFloat(8))
+            .padding(.bottom, CGFloat(8))
         }
     }
 }
