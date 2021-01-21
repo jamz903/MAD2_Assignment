@@ -39,13 +39,11 @@ class LoginViewController: UIViewController{
                 self.StudentList.append(student)
             }
             
-            print(self.StudentList[0].name)
+            for guy in self.StudentList{
+                print(guy.name)
+                print(guy.pw)
+            }
             
-            //let brain = value["Brian"] as! NSDictionary
-            //print(type(of: brain))
-            
-            //print(value["Brian"])
-            //print((brain["PW"] as! String))
             
         })
         super.viewDidLoad()
@@ -60,33 +58,48 @@ class LoginViewController: UIViewController{
     
     @IBAction func Login(_ sender: Any) {
         //read from database
-        
-        
-        
-        
         for i in StudentList{
             if i.name == Username.text{
                 let guy: Student = i
-                if(Password.text == guy.pw){
-                    print("Beft")
-                    
-                    print(Password.text)
-                    
-                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                    let vc = storyboard.instantiateViewController(identifier: "LoginDone") as UIViewController
-                    vc.modalPresentationStyle = .fullScreen
-                    present(vc, animated: true, completion: nil)
                 
-            }
-                else{
-                    Error.text = "Error"
+                if i.log == "true"{
+                    Error.text = "User is already logged in another device"
                 }
-        }
+                else{
+                    if(Password.text == guy.pw){
+                        print(Password.text)
+                        self.ref.child("Profiles/" + i.name + "/Log").setValue("true")
+                        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                        let vc = storyboard.instantiateViewController(identifier: "LoginDone") as UIViewController
+                        vc.modalPresentationStyle = .fullScreen
+                        present(vc, animated: true, completion: nil)
+                    
+                }
+                    else{
+                        Error.text = "Error"
+                    }
+                }
+                 
+            }
+            else{
+                Error.text = "User does not exist please create account below"
+            }
         
         
         }
         
         
     }
+    
+    
+    @IBAction func SignUp(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(identifier: "SignUpViewController") as UIViewController
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true, completion: nil)
+        
+    }
+    
+    
     
 }

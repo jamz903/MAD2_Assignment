@@ -27,6 +27,7 @@
 		E6FD15E425AFE9E1006A8B33 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E6FD15E325AFE9E1006A8B33 /* GoogleService-Info.plist */; };
 		E6FD15F625B2D9B8006A8B33 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FD15F525B2D9B8006A8B33 /* LoginViewController.swift */; };
 		E6FD161925B86F0E006A8B33 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FD161825B86F0E006A8B33 /* Student.swift */; };
+		E6FD163D25B91ADC006A8B33 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FD163C25B91ADC006A8B33 /* SignUpViewController.swift */; };
 		EDCB55158CE31B2B0C643F7D /* Pods_MAD2_Assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3073A313C977BE25F7CC6963 /* Pods_MAD2_Assignment.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		E6FD15E325AFE9E1006A8B33 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E6FD15F525B2D9B8006A8B33 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E6FD161825B86F0E006A8B33 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		E6FD163C25B91ADC006A8B33 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				BF5AA9E525A6DBF200409FD4 /* SceneDelegate.swift */,
 				BF5AA9E725A6DBF200409FD4 /* ViewController.swift */,
 				E6FD15F525B2D9B8006A8B33 /* LoginViewController.swift */,
+				E6FD163C25B91ADC006A8B33 /* SignUpViewController.swift */,
 				BFD7B8CB25B5DA780073B1D8 /* TaskCellViewModel.swift */,
 				BFD7B8CE25B5DC0E0073B1D8 /* TaskListViewModel.swift */,
 				E6FD161825B86F0E006A8B33 /* Student.swift */,
@@ -253,6 +256,7 @@
 				7EE1ADF825B9109D00348C4E /* BusService.swift in Sources */,
 				BFF942AA25B313730052C619 /* Task.swift in Sources */,
 				7EE1ADFE25B910FE00348C4E /* LocationDelegate.swift in Sources */,
+				E6FD163D25B91ADC006A8B33 /* SignUpViewController.swift in Sources */,
 				E6FD161925B86F0E006A8B33 /* Student.swift in Sources */,
 				BF5AA9EE25A6DBF200409FD4 /* MAD2_Assignment.xcdatamodeld in Sources */,
 				BF5AA9E825A6DBF200409FD4 /* ViewController.swift in Sources */,
