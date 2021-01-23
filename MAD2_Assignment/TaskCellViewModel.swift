@@ -9,6 +9,7 @@ import Foundation
 import Combine
 
 class TaskCellViewModel: ObservableObject, Identifiable {
+    @Published var taskRepository = TaskRepository()
     @Published var task: Task
     
     var id = ""
@@ -33,6 +34,16 @@ class TaskCellViewModel: ObservableObject, Identifiable {
                 task.id
             }
             .assign(to: \.id, on: self)
+            .store(in: &cancellables)
+        
+        $task
+            //only send following updates after the first one
+            .dropFirst()
+            //task syncs to firebase in 8secs to only send updates when user stops typing
+            .debounce(for: 0.8, scheduler: RunLoop.main)
+            .sink{ task in
+                self.taskRepository.updateTask(task)
+            }
             .store(in: &cancellables)
     }
 }
