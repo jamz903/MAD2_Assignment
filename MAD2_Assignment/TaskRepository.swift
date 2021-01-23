@@ -53,25 +53,20 @@ class TaskRepository: ObservableObject {
     
     func updateTask(_ task: Task){
         print(task.id)
-        if task.id != "" {
+        if task.id != nil {
             let taskID = task.id
-            self.ref.child("Tasks").child(taskID).child("completed").setValue(task.completed)
-            self.ref.child("Tasks").child(taskID).child("title").setValue(task.title)
+            self.ref.child("Tasks").child(taskID!).child("completed").setValue(task.completed)
+            self.ref.child("Tasks").child(taskID!).child("title").setValue(task.title)
         }
         
         else {
             print("no id")
         }
         
-        
     }
     
-    func removeTask(_ indexSet: IndexSet){
-        let itemsToDelete = indexSet.lazy.map { self.tasks[$0] }
-            itemsToDelete.forEach { task in
-            let taskID = task.id
-            self.ref.child("Tasks").child(taskID).removeValue()
-                
-        }
+    func removeTask(_ task: Task){
+        let taskID = task.id
+        self.ref.child("Tasks").child(taskID!).removeValue()
     }
 }

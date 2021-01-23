@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 struct Task: Codable, Identifiable {
-    var id: String = UUID().uuidString
+    var id: String?
     var title: String
     var completed: Bool
 }

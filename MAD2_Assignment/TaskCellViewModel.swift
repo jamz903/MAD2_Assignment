@@ -30,9 +30,7 @@ class TaskCellViewModel: ObservableObject, Identifiable {
             .store(in: &cancellables)
         
         $task
-            .map{ task in
-                task.id
-            }
+            .compactMap { $0.id }
             .assign(to: \.id, on: self)
             .store(in: &cancellables)
         
@@ -41,8 +39,8 @@ class TaskCellViewModel: ObservableObject, Identifiable {
             .dropFirst()
             //task syncs to firebase in 8secs to only send updates when user stops typing
             .debounce(for: 0.8, scheduler: RunLoop.main)
-            .sink{ task in
-                self.taskRepository.updateTask(task)
+            .sink { [weak self] task in
+              self?.taskRepository.updateTask(task)
             }
             .store(in: &cancellables)
     }
