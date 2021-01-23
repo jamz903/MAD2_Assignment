@@ -21,15 +21,15 @@ class TaskRepository: ObservableObject {
         self.ref.child("Tasks").observeSingleEvent(of: .value, with: { (snapshot) in
             let value = snapshot.value as! NSDictionary
             let Tasks : NSArray = (value.allKeys as! [String]) as NSArray
-            for i in 0..<(Tasks.count-1) {
+            for i in 0..<(Tasks.count) {
                 let taskNum = value[Tasks[i]] as! NSDictionary
-                let task = Task(id: Tasks[i] as! String, title: taskNum["title"] as! String, completed: (taskNum["completed"] != nil))
+                let task = Task(id: Tasks[i] as! String, title: taskNum["title"] as! String, completed: (taskNum["completed"] as! Bool))
                 self.tasks.append(task)
                 for task in self.tasks {
                     print(task)
                 }
             }
-            
+            print(value)
         })
         
         

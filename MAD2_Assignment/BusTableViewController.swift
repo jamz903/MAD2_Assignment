@@ -2,7 +2,7 @@
 //  BusTableViewController.swift
 //  Assignment_Draft
 //
-//  Created by Justin Ng on 14/1/21.
+//  Created by Tristan Cheah on 14/1/21.
 //
 
 import Foundation
@@ -47,6 +47,12 @@ class BusTableViewController: UITableViewController, UISearchBarDelegate {
         locationManager.delegate = locationDelegate
         searchBar.delegate = self
 //        self.latestLocation = GetCurrentLocation()
+        
+//        func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+//            self.latestLocation = locations.last!
+//            print(locations.last)
+//        }
+        
         locationDelegate.locationCallback = { location in
             self.latestLocation = location
         }
@@ -65,6 +71,7 @@ class BusTableViewController: UITableViewController, UISearchBarDelegate {
         }
     
     }
+    
     
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -92,56 +99,71 @@ class BusTableViewController: UITableViewController, UISearchBarDelegate {
         else {
             // Use different cell identifier if needed
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell2") as? BusCustomTableViewCell else {return UITableViewCell()}
-            let service: Service = tableViewData[indexPath.section].sectionData[dataIndex]
-            cell.serviceNoLabel.text = service.ServiceNo
-            
-            if service.NextBus.EstimatedArrival != "" {
-                cell.nextBusArrLabel.text = GetEstimatedTime(estimatedTimeOfArrival: service.NextBus.EstimatedArrival)
-                cell.nextBusArrLabel.textColor = GetColourFromBusVacancy(vacancy: service.NextBus.Load)
-                cell.nextBusDeckLabel.text = GetDeckType(deckTypeCode: service.NextBus.Type)
-                cell.nextBusDeckLabel.textColor = GetColourFromBusVacancy(vacancy: service.NextBus.Load)
-                if service.NextBus.Feature == "WAB" {
-                    cell.nextBusWheelchairImage.image = UIImage(named: GetImageNameFromBusVacancy(serviceVacancy: service.NextBus.Load))
-                }
-            }
-            else {
-                cell.nextBusArrLabel.text = "-"
+            if tableViewData[indexPath.section].sectionData[dataIndex].ServiceNo == "nil" {
+                cell.serviceNoLabel.text = "No more services at this bus stop"
+                cell.nextBusArrLabel.text = ""
                 cell.nextBusDeckLabel.text = ""
-                cell.nextBusArrLabel.textColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
-                cell.nextBusWheelchairImage.image = nil
-            }
-            
-            if service.NextBus2.EstimatedArrival != "" {
-                cell.nextBus2ArrLabel.text = GetEstimatedTime(estimatedTimeOfArrival: service.NextBus2.EstimatedArrival)
-                cell.nextBus2ArrLabel.textColor = GetColourFromBusVacancy(vacancy: service.NextBus2.Load)
-                cell.nextBus2DeckLabel.text = GetDeckType(deckTypeCode: service.NextBus2.Type)
-                cell.nextBus2DeckLabel.textColor = GetColourFromBusVacancy(vacancy: service.NextBus2.Load)
-                if service.NextBus2.Feature == "WAB" {
-                    cell.nextBus2WheelchairImage.image = UIImage(named: GetImageNameFromBusVacancy(serviceVacancy: service.NextBus2.Load))
-                }
-            }
-            else {
-                cell.nextBus2ArrLabel.text = "-"
+                cell.nextBusWheelchairImage.image = UIImage(named: "")
+                cell.nextBus2ArrLabel.text = ""
                 cell.nextBus2DeckLabel.text = ""
-                cell.nextBus2ArrLabel.textColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
-                cell.nextBus2WheelchairImage.image = nil
-            }
-            
-            if service.NextBus3.EstimatedArrival != "" {
-                cell.nextBus3ArrLabel.text = GetEstimatedTime(estimatedTimeOfArrival: service.NextBus3.EstimatedArrival)
-                cell.nextBus3ArrLabel.textColor = GetColourFromBusVacancy(vacancy: service.NextBus3.Load)
-                cell.nextBus3DeckLabel.text = GetDeckType(deckTypeCode: service.NextBus3.Type)
-                cell.nextBus3DeckLabel.textColor = GetColourFromBusVacancy(vacancy: service.NextBus3.Load)
-                if service.NextBus3.Feature == "WAB" {
-                    cell.nextBus3WheelchairImage.image = UIImage(named: GetImageNameFromBusVacancy(serviceVacancy: service.NextBus3.Load))
-                }
+                cell.nextBus2WheelchairImage.image = UIImage(named: "")
+                cell.nextBus3ArrLabel.text = ""
+                cell.nextBus3DeckLabel.text = ""
+                cell.nextBus3WheelchairImage.image = UIImage(named: "")
             }
             else {
-                cell.nextBus3ArrLabel.text = "-"
-                cell.nextBus3DeckLabel.text = ""
-                cell.nextBus3ArrLabel.textColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
-                cell.nextBus3WheelchairImage.image = nil
+                let service: Service = tableViewData[indexPath.section].sectionData[dataIndex]
+                cell.serviceNoLabel.text = service.ServiceNo
+                
+                if service.NextBus.EstimatedArrival != "" {
+                    cell.nextBusArrLabel.text = GetEstimatedTime(estimatedTimeOfArrival: service.NextBus.EstimatedArrival)
+                    cell.nextBusArrLabel.textColor = GetColourFromBusVacancy(vacancy: service.NextBus.Load)
+                    cell.nextBusDeckLabel.text = GetDeckType(deckTypeCode: service.NextBus.Type)
+                    cell.nextBusDeckLabel.textColor = GetColourFromBusVacancy(vacancy: service.NextBus.Load)
+                    if service.NextBus.Feature == "WAB" {
+                        cell.nextBusWheelchairImage.image = UIImage(named: GetImageNameFromBusVacancy(serviceVacancy: service.NextBus.Load))
+                    }
+                }
+                else {
+                    cell.nextBusArrLabel.text = "-"
+                    cell.nextBusDeckLabel.text = ""
+                    cell.nextBusArrLabel.textColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
+                    cell.nextBusWheelchairImage.image = nil
+                }
+                
+                if service.NextBus2.EstimatedArrival != "" {
+                    cell.nextBus2ArrLabel.text = GetEstimatedTime(estimatedTimeOfArrival: service.NextBus2.EstimatedArrival)
+                    cell.nextBus2ArrLabel.textColor = GetColourFromBusVacancy(vacancy: service.NextBus2.Load)
+                    cell.nextBus2DeckLabel.text = GetDeckType(deckTypeCode: service.NextBus2.Type)
+                    cell.nextBus2DeckLabel.textColor = GetColourFromBusVacancy(vacancy: service.NextBus2.Load)
+                    if service.NextBus2.Feature == "WAB" {
+                        cell.nextBus2WheelchairImage.image = UIImage(named: GetImageNameFromBusVacancy(serviceVacancy: service.NextBus2.Load))
+                    }
+                }
+                else {
+                    cell.nextBus2ArrLabel.text = "-"
+                    cell.nextBus2DeckLabel.text = ""
+                    cell.nextBus2ArrLabel.textColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
+                    cell.nextBus2WheelchairImage.image = nil
+                }
+                
+                if service.NextBus3.EstimatedArrival != "" {
+                    cell.nextBus3ArrLabel.text = GetEstimatedTime(estimatedTimeOfArrival: service.NextBus3.EstimatedArrival)
+                    cell.nextBus3ArrLabel.textColor = GetColourFromBusVacancy(vacancy: service.NextBus3.Load)
+                    cell.nextBus3DeckLabel.text = GetDeckType(deckTypeCode: service.NextBus3.Type)
+                    cell.nextBus3DeckLabel.textColor = GetColourFromBusVacancy(vacancy: service.NextBus3.Load)
+                    if service.NextBus3.Feature == "WAB" {
+                        cell.nextBus3WheelchairImage.image = UIImage(named: GetImageNameFromBusVacancy(serviceVacancy: service.NextBus3.Load))
+                    }
+                }
+                else {
+                    cell.nextBus3ArrLabel.text = "-"
+                    cell.nextBus3DeckLabel.text = ""
+                    cell.nextBus3ArrLabel.textColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
+                    cell.nextBus3WheelchairImage.image = nil
+                }
             }
+            
 //            cell.textLabel?.text = tableViewData[indexPath.section].sectionData[dataIndex].NextBus.EstimatedArrival
             
             return cell
@@ -170,7 +192,7 @@ class BusTableViewController: UITableViewController, UISearchBarDelegate {
         var busStops: [BusStop] = [BusStop]()
         
         for i in allBusStops {
-            if i.Description.contains(busStopNameOrCode) || i.BusStopCode == busStopNameOrCode {
+            if i.Description.lowercased().contains(busStopNameOrCode.lowercased().replacingOccurrences(of: "’", with: "'")) || i.BusStopCode == busStopNameOrCode {
                 busStops.append(i)
                 
             }
@@ -284,31 +306,57 @@ class BusTableViewController: UITableViewController, UISearchBarDelegate {
         return imageName
     }
     
-    // Search bar, runs code whenever text inside search bar change
+    // Search bar, runs code whenever search button is clicked
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         print("Searched")
-        tableViewData = []
+        
+//        let alert = UIAlertController(title: nil, message: "Please wait...", preferredStyle: .alert)
+//
+//        let loadingIndicator = UIActivityIndicatorView(frame: CGRect(x: 10, y: 5, width: 50, height: 50))
+//        loadingIndicator.hidesWhenStopped = true
+//        loadingIndicator.style = UIActivityIndicatorView.Style.medium
+//        loadingIndicator.startAnimating();
+//
+//        alert.view.addSubview(loadingIndicator)
+//        self.present(alert, animated: true, completion: nil)
+        
+//        print(tableViewData.count)
         searchBar.resignFirstResponder()
         
         if searchBar.text != "" {
-            var busStopCodes: [BusStop] = GetBusStopsByBusStopNameOrCode(allBusStops: allBusStops, busStopNameOrCode: searchBar.text!)
-            
+            let busStopCodes: [BusStop] = self.GetBusStopsByBusStopNameOrCode(allBusStops: self.allBusStops, busStopNameOrCode: searchBar.text!)
+            print("There are \(busStopCodes.count) matching records")
+//            DispatchQueue.global(qos: .userInteractive).async {
+            var newTableViewData: [cellData] = [cellData]()
             for j in busStopCodes {
-    //            print("=====\(j.Description)=====")
-                let busServices: [Service] = GetBusServicesByBusStopCode(busStopCode: j.BusStopCode)
+                print("=====\(j.Description)=====")
+                let busServices: [Service] = self.GetBusServicesByBusStopCode(busStopCode: j.BusStopCode)
                 
                 // Sort based on bus service number (e.g. 52, 151, 154 etc.)
-                let sortedArray = busServices.sorted(by: {x, y in return x.ServiceNo.compare(y.ServiceNo, options: .numeric, range: nil, locale: nil) == .orderedAscending})
-                tableViewData.append(cellData(opened: false, title: j.Description, subtitle: j.RoadName, sectionData: sortedArray))
-                
-                
+                var sortedArray = busServices.sorted(by: {x, y in return x.ServiceNo.compare(y.ServiceNo, options: .numeric, range: nil, locale: nil) == .orderedAscending})
+//                    print("sortedArray has \(sortedArray.count) items")
+                if sortedArray.count == 0 {
+                    let nextBus = NextBus(OriginCode: "", DestinationCode: "", EstimatedArrival: "", Latitude: "", Longitude: "", VisitNumber: "", Load: "", Feature: "", Type: "")
+                    
+                    let nextBus2 = NextBus2(OriginCode: "", DestinationCode: "", EstimatedArrival: "", Latitude: "", Longitude: "", VisitNumber: "", Load: "", Feature: "", Type: "")
+                    
+                    let nextBus3 = NextBus3(OriginCode: "", DestinationCode: "", EstimatedArrival: "", Latitude: "", Longitude: "", VisitNumber: "", Load: "", Feature: "", Type: "")
+                    
+                    sortedArray.append(Service(ServiceNo: "nil", Operator: "", NextBus: nextBus, NextBus2: nextBus2, NextBus3: nextBus3))
+                }
+                newTableViewData.append(cellData(opened: false, title: j.Description, subtitle: j.RoadName, sectionData: sortedArray))
             }
-        }
-        else {
+            print("newTableViewData count is \(newTableViewData.count)")
+            self.tableViewData = newTableViewData
+            self.tableView.reloadData()
+//            self.dismiss(animated: false, completion: nil)
+//            }
             
+//            DispatchQueue.main.async {
+//                self.tableView.reloadData()
+//                self.dismiss(animated: false, completion: nil)
+//            }
         }
-        
-        self.tableView.reloadData()
     }
     
     func GetBusStopByBusStopName(allBusStops: [BusStop], busStopName: String) -> BusStop? {
@@ -427,6 +475,15 @@ class BusTableViewController: UITableViewController, UISearchBarDelegate {
                 
                 // Sort based on bus service number (e.g. 52, 151, 154 etc.)
                 sortedArray = busServices.sorted(by: {x, y in return x.ServiceNo.compare(y.ServiceNo, options: .numeric, range: nil, locale: nil) == .orderedAscending})
+                if sortedArray.count == 0 {
+                    let nextBus = NextBus(OriginCode: "", DestinationCode: "", EstimatedArrival: "", Latitude: "", Longitude: "", VisitNumber: "", Load: "", Feature: "", Type: "")
+                    
+                    let nextBus2 = NextBus2(OriginCode: "", DestinationCode: "", EstimatedArrival: "", Latitude: "", Longitude: "", VisitNumber: "", Load: "", Feature: "", Type: "")
+                    
+                    let nextBus3 = NextBus3(OriginCode: "", DestinationCode: "", EstimatedArrival: "", Latitude: "", Longitude: "", VisitNumber: "", Load: "", Feature: "", Type: "")
+                    
+                    sortedArray.append(Service(ServiceNo: "nil", Operator: "", NextBus: nextBus, NextBus2: nextBus2, NextBus3: nextBus3))
+                }
                 newTableViewData.append(cellData(opened: i.opened, title: i.title, subtitle: i.subtitle, sectionData: sortedArray))
             }
             self.tableViewData = newTableViewData
@@ -462,6 +519,15 @@ class BusTableViewController: UITableViewController, UISearchBarDelegate {
                 
                 // Sort based on bus service number (e.g. 52, 151, 154 etc.)
                 sortedArray = busServices.sorted(by: {x, y in return x.ServiceNo.compare(y.ServiceNo, options: .numeric, range: nil, locale: nil) == .orderedAscending})
+                if sortedArray.count == 0 {
+                    let nextBus = NextBus(OriginCode: "", DestinationCode: "", EstimatedArrival: "", Latitude: "", Longitude: "", VisitNumber: "", Load: "", Feature: "", Type: "")
+                    
+                    let nextBus2 = NextBus2(OriginCode: "", DestinationCode: "", EstimatedArrival: "", Latitude: "", Longitude: "", VisitNumber: "", Load: "", Feature: "", Type: "")
+                    
+                    let nextBus3 = NextBus3(OriginCode: "", DestinationCode: "", EstimatedArrival: "", Latitude: "", Longitude: "", VisitNumber: "", Load: "", Feature: "", Type: "")
+                    
+                    sortedArray.append(Service(ServiceNo: "nil", Operator: "", NextBus: nextBus, NextBus2: nextBus2, NextBus3: nextBus3))
+                }
                 newTableViewData.append(cellData(opened: false, title: i.Description, subtitle: i.RoadName, sectionData: sortedArray))
             }
             self.tableViewData = newTableViewData
