@@ -44,11 +44,14 @@ class TaskRepository: ObservableObject {
         
     }
     
-    func addTask(_ task: Task){
+    func addTask(_ task: Task) -> String {
         let taskNum = "Task\(self.listSize+1)"
         print(taskNum)
+        print(tasks[tasks.count - 1])
+        tasks[tasks.count - 1].id = taskNum
         self.ref.child("Tasks").child(taskNum).child("completed").setValue(task.completed)
         self.ref.child("Tasks").child(taskNum).child("title").setValue(task.title)
+        return taskNum
     }
     
     func updateTask(_ task: Task){
@@ -69,4 +72,5 @@ class TaskRepository: ObservableObject {
         let taskID = task.id
         self.ref.child("Tasks").child(taskID!).removeValue()
     }
+    
 }
