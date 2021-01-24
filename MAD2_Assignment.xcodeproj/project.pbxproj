@@ -26,6 +26,8 @@
 		BFD7B8CF25B5DC0E0073B1D8 /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7B8CE25B5DC0E0073B1D8 /* TaskListViewModel.swift */; };
 		BFF942AA25B313730052C619 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF942A925B313730052C619 /* Task.swift */; };
 		BFF942BB25B31B3B0052C619 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF942BA25B31B3B0052C619 /* TaskListView.swift */; };
+		E6433FD725BDA9510009FD73 /* Canteen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6433FD625BDA9510009FD73 /* Canteen.swift */; };
+		E6433FDA25BDA96F0009FD73 /* CanteenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6433FD925BDA96F0009FD73 /* CanteenViewController.swift */; };
 		E6FD15E425AFE9E1006A8B33 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E6FD15E325AFE9E1006A8B33 /* GoogleService-Info.plist */; };
 		E6FD15F625B2D9B8006A8B33 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FD15F525B2D9B8006A8B33 /* LoginViewController.swift */; };
 		E6FD161925B86F0E006A8B33 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FD161825B86F0E006A8B33 /* Student.swift */; };
@@ -58,6 +60,8 @@
 		BFD7B8CE25B5DC0E0073B1D8 /* TaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
 		BFF942A925B313730052C619 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		BFF942BA25B31B3B0052C619 /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TaskListView.swift; path = MAD2_Assignment/TaskListView.swift; sourceTree = SOURCE_ROOT; };
+		E6433FD625BDA9510009FD73 /* Canteen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Canteen.swift; sourceTree = "<group>"; };
+		E6433FD925BDA96F0009FD73 /* CanteenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanteenViewController.swift; sourceTree = "<group>"; };
 		E6FD15E325AFE9E1006A8B33 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E6FD15F525B2D9B8006A8B33 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E6FD161825B86F0E006A8B33 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
@@ -108,6 +112,8 @@
 				BF5AA9E525A6DBF200409FD4 /* SceneDelegate.swift */,
 				BF5AA9E725A6DBF200409FD4 /* ViewController.swift */,
 				E6FD15F525B2D9B8006A8B33 /* LoginViewController.swift */,
+				E6433FD625BDA9510009FD73 /* Canteen.swift */,
+				E6433FD925BDA96F0009FD73 /* CanteenViewController.swift */,
 				7EE1AE0925BC23C800348C4E /* CustomUITextField.swift */,
 				BF9C7C7025B9BA8A0015574F /* TaskRepository.swift */,
 				E6FD163C25B91ADC006A8B33 /* SignUpViewController.swift */,
@@ -264,6 +270,7 @@
 				7EE1ADFE25B910FE00348C4E /* LocationDelegate.swift in Sources */,
 				E6FD163D25B91ADC006A8B33 /* SignUpViewController.swift in Sources */,
 				7EE1AE0A25BC23C800348C4E /* CustomUITextField.swift in Sources */,
+				E6433FDA25BDA96F0009FD73 /* CanteenViewController.swift in Sources */,
 				BF9C7C7125B9BA8A0015574F /* TaskRepository.swift in Sources */,
 				E6FD161925B86F0E006A8B33 /* Student.swift in Sources */,
 				BF5AA9EE25A6DBF200409FD4 /* MAD2_Assignment.xcdatamodeld in Sources */,
@@ -271,6 +278,7 @@
 				BF5AA9E425A6DBF200409FD4 /* AppDelegate.swift in Sources */,
 				BFD7B8CC25B5DA780073B1D8 /* TaskCellViewModel.swift in Sources */,
 				7EE1ADF525B9106600348C4E /* BusTableViewController.swift in Sources */,
+				E6433FD725BDA9510009FD73 /* Canteen.swift in Sources */,
 				BFD7B8CF25B5DC0E0073B1D8 /* TaskListViewModel.swift in Sources */,
 				E6FD15F625B2D9B8006A8B33 /* LoginViewController.swift in Sources */,
 				7EE1ADFB25B910C900348C4E /* BusStops.swift in Sources */,

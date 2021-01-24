@@ -118,7 +118,7 @@ class LoginViewController: UIViewController{
                                 print(self.Password.text)
                                 LoginViewController.studentDetails.studentName = profile.name
                                 LoginViewController.studentDetails.studentPassword = profile.log
-                                self.ref.child("Profiles/" + i.name + "/Log").setValue("true")
+                                //self.ref.child("Profiles/" + i.name + "/Log").setValue("true")
                                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
                                 let vc = storyboard.instantiateViewController(identifier: "LoginDone") as UIViewController
                                 vc.modalPresentationStyle = .fullScreen
