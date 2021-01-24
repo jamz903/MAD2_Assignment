@@ -19,6 +19,7 @@ class TaskRepository: ObservableObject {
     }
     
     func loadData(){
+        tasks.removeAll()
         self.ref.child("Tasks").observeSingleEvent(of: .value, with: { (snapshot) in
             if let value = snapshot.value as? NSDictionary {
                 let Tasks : NSArray = (value.allKeys as! [String]) as NSArray
@@ -31,6 +32,7 @@ class TaskRepository: ObservableObject {
                     for task in self.tasks {
                         print(task)
                     }
+                    self.tasks.sort { $1.completed && !$0.completed }
                 }
                 print(value)
             }
@@ -47,10 +49,29 @@ class TaskRepository: ObservableObject {
     func addTask(_ task: Task) -> String {
         let taskNum = "Task\(self.listSize+1)"
         print(taskNum)
-        print(tasks[tasks.count - 1])
-        tasks[tasks.count - 1].id = taskNum
-        self.ref.child("Tasks").child(taskNum).child("completed").setValue(task.completed)
-        self.ref.child("Tasks").child(taskNum).child("title").setValue(task.title)
+        if self.listSize != 0 {
+            self.ref.child("Tasks").child(taskNum).child("completed").setValue(task.completed)
+            self.ref.child("Tasks").child(taskNum).child("title").setValue(task.title)
+            tasks.append(Task(id: taskNum, title: task.title, completed: task.completed))
+            listSize = listSize + 1
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+                print(self.tasks[self.tasks.count - 1])
+                self.tasks[self.tasks.count - 1].id = taskNum
+            }
+        }
+        else{
+            self.ref.child("Tasks").child(taskNum).child("completed").setValue(task.completed)
+            self.ref.child("Tasks").child(taskNum).child("title").setValue(task.title)
+            tasks.append(Task(id: "Task1", title: task.title, completed: task.completed))
+            listSize = listSize + 1
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) { // Change `2.0` to the desired number of seconds.
+               // Code you want to be delayed
+                print(self.tasks[self.tasks.count - 1])
+                self.tasks[self.tasks.count - 1].id = taskNum
+            }
+            print("list empty")
+        }
+        
         return taskNum
     }
     
