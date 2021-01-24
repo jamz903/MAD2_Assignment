@@ -568,13 +568,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="xC3-xb-HRB"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray3Color"/>
                     </view>
                     <navigationItem key="navigationItem" id="KBu-ME-dzH"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bjp-O5-OOF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3815" y="1963"/>
+            <point key="canvasLocation" x="3814" y="1954"/>
         </scene>
         <!--Item-->
         <scene sceneID="qOz-ys-m7t">
@@ -595,10 +595,10 @@
             </objects>
             <point key="canvasLocation" x="2534" y="1191"/>
         </scene>
-        <!--Item-->
+        <!--Canteens-->
         <scene sceneID="ar9-Cs-pUI">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="p36-X7-g3f" sceneMemberID="viewController">
+                <navigationController title="Canteens" automaticallyAdjustsScrollViewInsets="NO" id="p36-X7-g3f" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="xhX-ic-d16"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="xxg-Iv-0SB">
@@ -612,7 +612,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iF3-FH-NVT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2534" y="1963"/>
+            <point key="canvasLocation" x="2534" y="1954"/>
         </scene>
     </scenes>
     <resources>
@@ -622,6 +622,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
