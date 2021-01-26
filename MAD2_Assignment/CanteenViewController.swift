@@ -10,6 +10,10 @@ import UIKit
 
 class CanteenViewController:UIViewController{
     
+    @IBOutlet weak var fcProg: CanteenBar!
+    @IBOutlet weak var mkpProg: CanteenBar!
+    @IBOutlet weak var munchProg: CanteenBar!
+    @IBOutlet weak var munchLabel: UILabel!
     var CanteenList: [Canteen] = [Canteen]()
     
     var newCanteen = [String: Any]()
@@ -25,9 +29,11 @@ class CanteenViewController:UIViewController{
     
     let trackLayer = CAShapeLayer()
     
-    var munchLabel: UILabel? = nil
+    
     
     override func viewDidLoad() {
+        
+        //fcProg.backgroundColor(patternImage: )
         
         for i in urls{
             loadDataXML(from: i)
@@ -36,9 +42,9 @@ class CanteenViewController:UIViewController{
         print("done")
         super.viewDidLoad()
         
-        for i in CanteenList{
-            makecircle(x: i)
-        }
+        
+        //makecircle()
+        
         
     }
     
@@ -47,68 +53,93 @@ class CanteenViewController:UIViewController{
     var circlecount = 0
     
     
-    private func makecircle(x :Canteen){
-        print("circl")
-        var pos = CGPoint(x: 200, y: 200)
-
+    private func makecircle(){
+        
+        
         for i in 0..<(CanteenList.count){
+            //#1 is munch at the top
+            print("lmao canteen")
             if i == 0{
-                pos = CGPoint(x: 200, y: 200)
-                circlecount += 1
+                //is munch
+                munchProg.trackColour = UIColor.lightGray
+                munchProg.progressColour = UIColor.red
+                munchProg.setAnimation(duration: 1, value: 0.6)
             }
-            else if i == 1{
-                pos = CGPoint(x: 200, y: 415)
-                circlecount += 1
+            if i == 1{
+                //is mkp
+                mkpProg.trackColour = UIColor.lightGray
+                mkpProg.progressColour = UIColor.blue
+                mkpProg.setAnimation(duration: 1, value: 0.4)
             }
-            else if i == 2{
-                pos = CGPoint(x: 200, y: 630)
-                circlecount += 1
+            if i == 2{
+                //is fc
+                fcProg.trackColour = UIColor.lightGray
+                fcProg.progressColour = UIColor.blue
+                fcProg.setAnimation(duration: 1, value: 0.8)
             }
-
         }
-
-
-
-        //track layer
-        let trackLayer = CAShapeLayer()
-        let shapeLayer = CAShapeLayer()
-        let circularPath = UIBezierPath(arcCenter: pos, radius: 100, startAngle: -CGFloat.pi/2 , endAngle: 2 * CGFloat.pi, clockwise: true)
-        //let circularPath = UIBezierPath(ovalIn: CGRect(x: 100, y: 100, width: 100, height: 100))
-        trackLayer.path = circularPath.cgPath
-        trackLayer.strokeColor = UIColor.lightGray.cgColor
-        trackLayer.lineWidth = 10
-        trackLayer.fillColor = UIColor.clear.cgColor
-        trackLayer.lineCap = CAShapeLayerLineCap.round
-        view.layer.addSublayer(trackLayer)
-        //load layer with the colour thing ynoe
-        shapeLayer.path = circularPath.cgPath
-        shapeLayer.strokeColor = UIColor.red.cgColor
-        shapeLayer.lineWidth = 10
-        shapeLayer.fillColor = UIColor.clear.cgColor
-        shapeLayer.lineCap = CAShapeLayerLineCap.round
-        //shapeLayer.strokeStart = 0.75
-        shapeLayer.strokeEnd = 0
-        view.layer.addSublayer(shapeLayer)
-        //view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTap)))
-        let basicAnimation = CABasicAnimation(keyPath: "strokeEnd")
-        basicAnimation.toValue = 0.7//change this to change how much it moves
-        basicAnimation.duration = 1
-        basicAnimation.fillMode = CAMediaTimingFillMode.forwards
-        basicAnimation.isRemovedOnCompletion = false
-        shapeLayer.add(basicAnimation, forKey: "basic animation")
+        
+        
+    }
+    
+    var endValue = 0
+    private func makeLabels(){
+        
+        
+        for i in 0..<(CanteenList.count){
+            //#1 is munch at the top
+            print("lmao canteen")
+            if i == 0{
+                //is munch
+                endValue = 40//Double(CanteenList[0].value / 100)
+                let displayLink = CADisplayLink(target: self, selector: #selector(handleUpdate))
+                displayLink.add(to: .main, forMode: .default)
+            }
+            if i == 1{
+                //is mkp
+                //mkpProg.trackColour = UIColor.lightGray
+                //mkpProg.progressColour = UIColor.blue
+                //mkpProg.setAnimation(duration: 1, value: 0.4)
+            }
+            if i == 2{
+                //is fc
+                //fcProg.trackColour = UIColor.lightGray
+                //fcProg.progressColour = UIColor.blue
+                //fcProg.setAnimation(duration: 1, value: 0.8)
+            }
+        }
+        
+        
     }
     
     //add numbers
-//    @objc func handleUpdate(){
-//        print("123")
-//
-//        self.munchLabel!.text = "\(start)"
-//        start += 1
-//
-//        if start > 100{
-//            start = 100
-//        }
-//    }
+    @objc func animateAmount(){
+        let ep = self.view.viewWithTag(101) as! CanteenBar
+        ep.setAnimation(duration: 1.0, value: 0.7)
+        
+        
+        }
+    var startValue = 0
+    
+    
+    @objc func handleUpdate(){
+        self.munchLabel.text = ("\(startValue)")
+        startValue += 1
+        
+        self.munchLabel.text = "\(endValue)"
+        
+        if startValue > endValue{
+            startValue = endValue
+        }
+         
+        
+        
+        
+        
+    }
+    
+    
+    
     
     private func loadDataXML(from url: String){
         let url = url
@@ -155,7 +186,13 @@ class CanteenViewController:UIViewController{
             
             print(self.CanteenList[(self.CanteenList.count) - 1].color)
             
-            self.makecircle(x: canteen)
+            
+            if self.CanteenList.count == 3{
+                self.makecircle()
+                self.makeLabels()
+                
+            }
+            //self.makecircle(x: canteen)
             
 //            print("circl")
 //            var pos = CGPoint(x: 200, y: 200)

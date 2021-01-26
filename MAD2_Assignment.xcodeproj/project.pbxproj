@@ -24,13 +24,6 @@
 		BFD7B8C925B5CA240073B1D8 /* ToDoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7B8C825B5CA240073B1D8 /* ToDoListViewController.swift */; };
 		BFD7B8CC25B5DA780073B1D8 /* TaskCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7B8CB25B5DA780073B1D8 /* TaskCellViewModel.swift */; };
 		BFD7B8CF25B5DC0E0073B1D8 /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7B8CE25B5DC0E0073B1D8 /* TaskListViewModel.swift */; };
-		BFF38FDC25BDBB4A0003DCF1 /* s27._land.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BFF38FDB25BDBB4A0003DCF1 /* s27._land.jpg */; };
-		BFF38FDF25BDBBE40003DCF1 /* studyLounge_land.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BFF38FDE25BDBBE40003DCF1 /* studyLounge_land.jpg */; };
-		BFF38FE225BDBC5F0003DCF1 /* deck_land.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BFF38FE125BDBC5F0003DCF1 /* deck_land.jpg */; };
-		BFF38FE525BDBCED0003DCF1 /* foodclub_land.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BFF38FE425BDBCED0003DCF1 /* foodclub_land.jpg */; };
-		BFF38FE825BDBE0D0003DCF1 /* MakersAcademy_land.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BFF38FE725BDBE0D0003DCF1 /* MakersAcademy_land.jpg */; };
-		BFF38FEB25BDBE840003DCF1 /* sportsComplex_land.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BFF38FEA25BDBE840003DCF1 /* sportsComplex_land.jpg */; };
-		BFF38FEF25BDC01F0003DCF1 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = BFF38FEE25BDC01F0003DCF1 /* data.json */; };
 		BFF38FFA25BDC8D30003DCF1 /* HomeBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF38FF925BDC8D30003DCF1 /* HomeBundle.swift */; };
 		BFF38FFD25BDC9D00003DCF1 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF38FFC25BDC9D00003DCF1 /* HomeViewModel.swift */; };
 		BFF3900125BDCADE0003DCF1 /* HomeCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF3900025BDCADE0003DCF1 /* HomeCollectionView.swift */; };
@@ -41,6 +34,7 @@
 		BFF942BB25B31B3B0052C619 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF942BA25B31B3B0052C619 /* TaskListView.swift */; };
 		E6433FD725BDA9510009FD73 /* Canteen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6433FD625BDA9510009FD73 /* Canteen.swift */; };
 		E6433FDA25BDA96F0009FD73 /* CanteenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6433FD925BDA96F0009FD73 /* CanteenViewController.swift */; };
+		E6433FEF25BFB2330009FD73 /* CanteenBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6433FEE25BFB2330009FD73 /* CanteenBar.swift */; };
 		E6FD15E425AFE9E1006A8B33 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E6FD15E325AFE9E1006A8B33 /* GoogleService-Info.plist */; };
 		E6FD15F625B2D9B8006A8B33 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FD15F525B2D9B8006A8B33 /* LoginViewController.swift */; };
 		E6FD161925B86F0E006A8B33 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FD161825B86F0E006A8B33 /* Student.swift */; };
@@ -71,13 +65,6 @@
 		BFD7B8C825B5CA240073B1D8 /* ToDoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListViewController.swift; sourceTree = "<group>"; };
 		BFD7B8CB25B5DA780073B1D8 /* TaskCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCellViewModel.swift; sourceTree = "<group>"; };
 		BFD7B8CE25B5DC0E0073B1D8 /* TaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
-		BFF38FDB25BDBB4A0003DCF1 /* s27._land.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = s27._land.jpg; path = ../../../../Downloads/s27._land.jpg; sourceTree = "<group>"; };
-		BFF38FDE25BDBBE40003DCF1 /* studyLounge_land.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = studyLounge_land.jpg; path = ../../../../Downloads/studyLounge_land.jpg; sourceTree = "<group>"; };
-		BFF38FE125BDBC5F0003DCF1 /* deck_land.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = deck_land.jpg; path = ../../../../Downloads/deck_land.jpg; sourceTree = "<group>"; };
-		BFF38FE425BDBCED0003DCF1 /* foodclub_land.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = foodclub_land.jpg; path = ../../../../Downloads/foodclub_land.jpg; sourceTree = "<group>"; };
-		BFF38FE725BDBE0D0003DCF1 /* MakersAcademy_land.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = MakersAcademy_land.jpg; path = ../../../../Downloads/MakersAcademy_land.jpg; sourceTree = "<group>"; };
-		BFF38FEA25BDBE840003DCF1 /* sportsComplex_land.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = sportsComplex_land.jpg; path = ../../../../Downloads/sportsComplex_land.jpg; sourceTree = "<group>"; };
-		BFF38FEE25BDC01F0003DCF1 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = data.json; path = ../../../data.json; sourceTree = "<group>"; };
 		BFF38FF925BDC8D30003DCF1 /* HomeBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBundle.swift; sourceTree = "<group>"; };
 		BFF38FFC25BDC9D00003DCF1 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		BFF3900025BDCADE0003DCF1 /* HomeCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionView.swift; sourceTree = "<group>"; };
@@ -88,6 +75,7 @@
 		BFF942BA25B31B3B0052C619 /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TaskListView.swift; path = MAD2_Assignment/TaskListView.swift; sourceTree = SOURCE_ROOT; };
 		E6433FD625BDA9510009FD73 /* Canteen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Canteen.swift; sourceTree = "<group>"; };
 		E6433FD925BDA96F0009FD73 /* CanteenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanteenViewController.swift; sourceTree = "<group>"; };
+		E6433FEE25BFB2330009FD73 /* CanteenBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanteenBar.swift; sourceTree = "<group>"; };
 		E6FD15E325AFE9E1006A8B33 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E6FD15F525B2D9B8006A8B33 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E6FD161825B86F0E006A8B33 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
@@ -128,8 +116,6 @@
 			isa = PBXGroup;
 			children = (
 				BFF38FFF25BDCAC30003DCF1 /* UIKit */,
-				BFF38FED25BDBFA80003DCF1 /* Data */,
-				BFF38FDA25BDBB230003DCF1 /* Images */,
 				BF5AA9E325A6DBF200409FD4 /* AppDelegate.swift */,
 				BF5AA9E925A6DBF200409FD4 /* Main.storyboard */,
 				7EE1AE0025B9118800348C4E /* BusCustomTableViewCell.swift */,
@@ -144,6 +130,7 @@
 				E6FD15F525B2D9B8006A8B33 /* LoginViewController.swift */,
 				E6433FD625BDA9510009FD73 /* Canteen.swift */,
 				E6433FD925BDA96F0009FD73 /* CanteenViewController.swift */,
+				E6433FEE25BFB2330009FD73 /* CanteenBar.swift */,
 				7EE1AE0925BC23C800348C4E /* CustomUITextField.swift */,
 				BF9C7C7025B9BA8A0015574F /* TaskRepository.swift */,
 				E6FD163C25B91ADC006A8B33 /* SignUpViewController.swift */,
@@ -161,27 +148,6 @@
 				BFF38FFC25BDC9D00003DCF1 /* HomeViewModel.swift */,
 			);
 			path = MAD2_Assignment;
-			sourceTree = "<group>";
-		};
-		BFF38FDA25BDBB230003DCF1 /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				BFF38FDE25BDBBE40003DCF1 /* studyLounge_land.jpg */,
-				BFF38FDB25BDBB4A0003DCF1 /* s27._land.jpg */,
-				BFF38FE125BDBC5F0003DCF1 /* deck_land.jpg */,
-				BFF38FE425BDBCED0003DCF1 /* foodclub_land.jpg */,
-				BFF38FE725BDBE0D0003DCF1 /* MakersAcademy_land.jpg */,
-				BFF38FEA25BDBE840003DCF1 /* sportsComplex_land.jpg */,
-			);
-			path = Images;
-			sourceTree = "<group>";
-		};
-		BFF38FED25BDBFA80003DCF1 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				BFF38FEE25BDC01F0003DCF1 /* data.json */,
-			);
-			path = Data;
 			sourceTree = "<group>";
 		};
 		BFF38FFF25BDCAC30003DCF1 /* UIKit */ = {
@@ -270,16 +236,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFF38FEF25BDC01F0003DCF1 /* data.json in Resources */,
 				BF5AA9F325A6DBF300409FD4 /* LaunchScreen.storyboard in Resources */,
-				BFF38FDF25BDBBE40003DCF1 /* studyLounge_land.jpg in Resources */,
-				BFF38FE225BDBC5F0003DCF1 /* deck_land.jpg in Resources */,
-				BFF38FE525BDBCED0003DCF1 /* foodclub_land.jpg in Resources */,
-				BFF38FE825BDBE0D0003DCF1 /* MakersAcademy_land.jpg in Resources */,
-				BFF38FEB25BDBE840003DCF1 /* sportsComplex_land.jpg in Resources */,
 				E6FD15E425AFE9E1006A8B33 /* GoogleService-Info.plist in Resources */,
 				BF5AA9F025A6DBF300409FD4 /* Assets.xcassets in Resources */,
-				BFF38FDC25BDBB4A0003DCF1 /* s27._land.jpg in Resources */,
 				BF5AA9EB25A6DBF200409FD4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,6 +294,7 @@
 			files = (
 				BFD7B8C925B5CA240073B1D8 /* ToDoListViewController.swift in Sources */,
 				BFF942BB25B31B3B0052C619 /* TaskListView.swift in Sources */,
+				E6433FEF25BFB2330009FD73 /* CanteenBar.swift in Sources */,
 				7EE1ADF825B9109D00348C4E /* BusService.swift in Sources */,
 				BFF942AA25B313730052C619 /* Task.swift in Sources */,
 				7EE1ADFE25B910FE00348C4E /* LocationDelegate.swift in Sources */,
