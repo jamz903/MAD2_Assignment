@@ -47,12 +47,6 @@ class BusTableViewController: UITableViewController, UISearchBarDelegate {
         locationManager.delegate = locationDelegate
         searchBar.delegate = self
 //        self.latestLocation = GetCurrentLocation()
-        
-//        func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-//            self.latestLocation = locations.last!
-//            print(locations.last)
-//        }
-        
         locationDelegate.locationCallback = { location in
             self.latestLocation = location
         }
@@ -72,7 +66,9 @@ class BusTableViewController: UITableViewController, UISearchBarDelegate {
     
     }
     
-    
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+            let latestLocation:CLLocation = locations.last!
+    }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         return tableViewData.count

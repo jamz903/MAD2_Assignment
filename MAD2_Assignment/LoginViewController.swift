@@ -145,8 +145,8 @@ class LoginViewController: UIViewController{
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(identifier: "SignUpViewController") as UIViewController
         vc.modalPresentationStyle = .fullScreen
+        vc.modalTransitionStyle = .flipHorizontal
         present(vc, animated: true, completion: nil)
-        
     }
     
     

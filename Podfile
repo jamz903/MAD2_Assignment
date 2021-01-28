@@ -8,6 +8,7 @@ target 'MAD2_Assignment' do
   # Pods for MAD2_Assignment
   pod 'Firebase/Core'
   pod 'Firebase/Database'
+  pod 'QRCodeReader.swift', '~> 10.1'
 
 
 

@@ -14,6 +14,10 @@ class SignUpViewController: UIViewController{
     
     @IBOutlet weak var SignUpID: CustomUITextField!
     @IBOutlet weak var SignUpPW: CustomUITextField!
+    @IBOutlet weak var errorText: UILabel!
+    
+    @IBOutlet weak var signUpBtn: UIButton!
+    
     let ref = Database.database().reference()
     
     override func viewDidLoad() {
@@ -21,6 +25,7 @@ class SignUpViewController: UIViewController{
         
         SignUpID.layer.cornerRadius = 10
         SignUpPW.layer.cornerRadius = 10
+        signUpBtn.layer.cornerRadius = 10
         
         SignUpID.setPlaceHolderImage(imageName: "studentid")
         SignUpPW.setPlaceHolderImage(imageName: "padlock")
@@ -29,13 +34,17 @@ class SignUpViewController: UIViewController{
         
     }
     
+    @IBAction func backToLoginBtn(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     @IBAction func SignUp(_ sender: Any) {
         if SignUpID.text != "" && SignUpPW.text != "" {
             if let idEntered = SignUpID.text?.lowercased() {
                 
                 if let pwEntered = SignUpPW.text {
                     var profilesList: [Student] = [Student]()
-                    ref.child("Profiles").observeSingleEvent(of: .value, with: { (snapshot) in
+                    ref.child("Profiles").observeSingleEvent(of: .value, with: { [self] (snapshot) in
                         let value = snapshot.value as! NSDictionary
                         
                         //get all the names
@@ -53,6 +62,7 @@ class SignUpViewController: UIViewController{
                             if i.name == idEntered { // Student ID entered is already a registered account
                                 print("Student ID already registered")
                                 userExists = true
+                                errorText.text = "Student ID already registered"
                                 break
                             }
                         }
@@ -61,10 +71,7 @@ class SignUpViewController: UIViewController{
                                            "PW": pwEntered] as [String : Any]
                             self.ref.child("Profiles").child(idEntered).setValue(details)
                             
-                            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                            let vc = storyboard.instantiateViewController(identifier: "LoginViewController") as UIViewController
-                            vc.modalPresentationStyle = .fullScreen
-                            self.present(vc, animated: true, completion: nil)
+                            dismiss(animated: true, completion: nil)
                         }
                     }
                 )}

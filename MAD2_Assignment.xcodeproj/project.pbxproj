@@ -13,6 +13,8 @@
 		7EE1ADFE25B910FE00348C4E /* LocationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1ADFD25B910FE00348C4E /* LocationDelegate.swift */; };
 		7EE1AE0125B9118800348C4E /* BusCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1AE0025B9118800348C4E /* BusCustomTableViewCell.swift */; };
 		7EE1AE0A25BC23C800348C4E /* CustomUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1AE0925BC23C800348C4E /* CustomUITextField.swift */; };
+		7EE1AE3425C0FA3900348C4E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1AE3325C0FA3900348C4E /* MapViewController.swift */; };
+		7EE1AE3725C0FA7600348C4E /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1AE3625C0FA7600348C4E /* CustomAnnotation.swift */; };
 		BF5AA9E425A6DBF200409FD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5AA9E325A6DBF200409FD4 /* AppDelegate.swift */; };
 		BF5AA9E625A6DBF200409FD4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5AA9E525A6DBF200409FD4 /* SceneDelegate.swift */; };
 		BF5AA9E825A6DBF200409FD4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5AA9E725A6DBF200409FD4 /* ViewController.swift */; };
@@ -51,6 +53,8 @@
 		7EE1ADFD25B910FE00348C4E /* LocationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDelegate.swift; sourceTree = "<group>"; };
 		7EE1AE0025B9118800348C4E /* BusCustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusCustomTableViewCell.swift; sourceTree = "<group>"; };
 		7EE1AE0925BC23C800348C4E /* CustomUITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUITextField.swift; sourceTree = "<group>"; };
+		7EE1AE3325C0FA3900348C4E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		7EE1AE3625C0FA7600348C4E /* CustomAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
 		853D1C70FFF3B0EFD60548E1 /* Pods-MAD2_Assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MAD2_Assignment.debug.xcconfig"; path = "Target Support Files/Pods-MAD2_Assignment/Pods-MAD2_Assignment.debug.xcconfig"; sourceTree = "<group>"; };
 		BF5AA9E025A6DBF200409FD4 /* MAD2_Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MAD2_Assignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF5AA9E325A6DBF200409FD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +122,8 @@
 				BFF38FFF25BDCAC30003DCF1 /* UIKit */,
 				BF5AA9E325A6DBF200409FD4 /* AppDelegate.swift */,
 				BF5AA9E925A6DBF200409FD4 /* Main.storyboard */,
+				7EE1AE3325C0FA3900348C4E /* MapViewController.swift */,
+				7EE1AE3625C0FA7600348C4E /* CustomAnnotation.swift */,
 				7EE1AE0025B9118800348C4E /* BusCustomTableViewCell.swift */,
 				7EE1ADF425B9106600348C4E /* BusTableViewController.swift */,
 				7EE1ADFD25B910FE00348C4E /* LocationDelegate.swift */,
@@ -304,6 +310,7 @@
 				E6433FDA25BDA96F0009FD73 /* CanteenViewController.swift in Sources */,
 				BF9C7C7125B9BA8A0015574F /* TaskRepository.swift in Sources */,
 				E6FD161925B86F0E006A8B33 /* Student.swift in Sources */,
+				7EE1AE3425C0FA3900348C4E /* MapViewController.swift in Sources */,
 				BFF3900125BDCADE0003DCF1 /* HomeCollectionView.swift in Sources */,
 				BF5AA9EE25A6DBF200409FD4 /* MAD2_Assignment.xcdatamodeld in Sources */,
 				BF5AA9E825A6DBF200409FD4 /* ViewController.swift in Sources */,
@@ -319,6 +326,7 @@
 				BF5AA9E625A6DBF200409FD4 /* SceneDelegate.swift in Sources */,
 				BFF38FFA25BDC8D30003DCF1 /* HomeBundle.swift in Sources */,
 				7EE1AE0125B9118800348C4E /* BusCustomTableViewCell.swift in Sources */,
+				7EE1AE3725C0FA7600348C4E /* CustomAnnotation.swift in Sources */,
 				BFF3900725BDCD070003DCF1 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

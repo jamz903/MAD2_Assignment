@@ -67,10 +67,12 @@ PODS:
   - nanopb/decode (2.30907.0)
   - nanopb/encode (2.30907.0)
   - PromisesObjC (1.2.12)
+  - QRCodeReader.swift (10.1.0)
 
 DEPENDENCIES:
   - Firebase/Core
   - Firebase/Database
+  - QRCodeReader.swift (~> 10.1)
 
 SPEC REPOS:
   trunk:
@@ -86,6 +88,7 @@ SPEC REPOS:
     - leveldb-library
     - nanopb
     - PromisesObjC
+    - QRCodeReader.swift
 
 SPEC CHECKSUMS:
   Firebase: 09fb40287b6dfc8ee65f726fa0b788719d3f2a07
@@ -100,7 +103,8 @@ SPEC CHECKSUMS:
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   nanopb: 59221d7f958fb711001e6a449489542d92ae113e
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
+  QRCodeReader.swift: 373a389fe9a22d513c879a32a6f647c58f4ef572
 
-PODFILE CHECKSUM: c9cf0590b002cd9ef153ace158a637856dddc771
+PODFILE CHECKSUM: b7a2df63ac908be19feee9c805c40a18b33c1720
 
 COCOAPODS: 1.10.0
