@@ -23,15 +23,16 @@
 		BF5AA9F025A6DBF300409FD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF5AA9EF25A6DBF300409FD4 /* Assets.xcassets */; };
 		BF5AA9F325A6DBF300409FD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF5AA9F125A6DBF300409FD4 /* LaunchScreen.storyboard */; };
 		BF9C7C7125B9BA8A0015574F /* TaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9C7C7025B9BA8A0015574F /* TaskRepository.swift */; };
+		BF9CD3F225C3111B0024BE9C /* BookingLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9CD3F125C3111B0024BE9C /* BookingLocation.swift */; };
+		BF9CD3F925C44E300024BE9C /* bookingLocation.json in Resources */ = {isa = PBXBuildFile; fileRef = BF9CD3F825C44E300024BE9C /* bookingLocation.json */; };
+		BF9CD3FC25C44F270024BE9C /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9CD3FB25C44F270024BE9C /* ModelData.swift */; };
+		BF9CD42225C458A20024BE9C /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9CD42125C458A20024BE9C /* CategoryRow.swift */; };
+		BF9CD42525C45A000024BE9C /* CategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9CD42425C45A000024BE9C /* CategoryItem.swift */; };
 		BFD7B8C925B5CA240073B1D8 /* ToDoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7B8C825B5CA240073B1D8 /* ToDoListViewController.swift */; };
 		BFD7B8CC25B5DA780073B1D8 /* TaskCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7B8CB25B5DA780073B1D8 /* TaskCellViewModel.swift */; };
 		BFD7B8CF25B5DC0E0073B1D8 /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7B8CE25B5DC0E0073B1D8 /* TaskListViewModel.swift */; };
-		BFF38FFA25BDC8D30003DCF1 /* HomeBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF38FF925BDC8D30003DCF1 /* HomeBundle.swift */; };
-		BFF38FFD25BDC9D00003DCF1 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF38FFC25BDC9D00003DCF1 /* HomeViewModel.swift */; };
-		BFF3900125BDCADE0003DCF1 /* HomeCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF3900025BDCADE0003DCF1 /* HomeCollectionView.swift */; };
-		BFF3900425BDCBC20003DCF1 /* BookingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF3900325BDCBC20003DCF1 /* BookingCell.swift */; };
-		BFF3900725BDCD070003DCF1 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF3900625BDCD070003DCF1 /* HeaderView.swift */; };
-		BFF3900B25BDCEFB0003DCF1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF3900A25BDCEFB0003DCF1 /* HomeViewController.swift */; };
+		BFF3900B25BDCEFB0003DCF1 /* BookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF3900A25BDCEFB0003DCF1 /* BookingViewController.swift */; };
+		BFF3902725C30EEE0003DCF1 /* BookingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF3902625C30EEE0003DCF1 /* BookingView.swift */; };
 		BFF942AA25B313730052C619 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF942A925B313730052C619 /* Task.swift */; };
 		BFF942BB25B31B3B0052C619 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF942BA25B31B3B0052C619 /* TaskListView.swift */; };
 		E6433FD725BDA9510009FD73 /* Canteen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6433FD625BDA9510009FD73 /* Canteen.swift */; };
@@ -66,15 +67,16 @@
 		BF5AA9F225A6DBF300409FD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF5AA9F425A6DBF300409FD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF9C7C7025B9BA8A0015574F /* TaskRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRepository.swift; sourceTree = "<group>"; };
+		BF9CD3F125C3111B0024BE9C /* BookingLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingLocation.swift; sourceTree = "<group>"; };
+		BF9CD3F825C44E300024BE9C /* bookingLocation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = bookingLocation.json; path = ../../bookingLocation.json; sourceTree = "<group>"; };
+		BF9CD3FB25C44F270024BE9C /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		BF9CD42125C458A20024BE9C /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
+		BF9CD42425C45A000024BE9C /* CategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItem.swift; sourceTree = "<group>"; };
 		BFD7B8C825B5CA240073B1D8 /* ToDoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListViewController.swift; sourceTree = "<group>"; };
 		BFD7B8CB25B5DA780073B1D8 /* TaskCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCellViewModel.swift; sourceTree = "<group>"; };
 		BFD7B8CE25B5DC0E0073B1D8 /* TaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
-		BFF38FF925BDC8D30003DCF1 /* HomeBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBundle.swift; sourceTree = "<group>"; };
-		BFF38FFC25BDC9D00003DCF1 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		BFF3900025BDCADE0003DCF1 /* HomeCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionView.swift; sourceTree = "<group>"; };
-		BFF3900325BDCBC20003DCF1 /* BookingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingCell.swift; sourceTree = "<group>"; };
-		BFF3900625BDCD070003DCF1 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
-		BFF3900A25BDCEFB0003DCF1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		BFF3900A25BDCEFB0003DCF1 /* BookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingViewController.swift; sourceTree = "<group>"; };
+		BFF3902625C30EEE0003DCF1 /* BookingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingView.swift; sourceTree = "<group>"; };
 		BFF942A925B313730052C619 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		BFF942BA25B31B3B0052C619 /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TaskListView.swift; path = MAD2_Assignment/TaskListView.swift; sourceTree = SOURCE_ROOT; };
 		E6433FD625BDA9510009FD73 /* Canteen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Canteen.swift; sourceTree = "<group>"; };
@@ -119,7 +121,6 @@
 		BF5AA9E225A6DBF200409FD4 /* MAD2_Assignment */ = {
 			isa = PBXGroup;
 			children = (
-				BFF38FFF25BDCAC30003DCF1 /* UIKit */,
 				BF5AA9E325A6DBF200409FD4 /* AppDelegate.swift */,
 				BF5AA9E925A6DBF200409FD4 /* Main.storyboard */,
 				7EE1AE3325C0FA3900348C4E /* MapViewController.swift */,
@@ -130,7 +131,13 @@
 				7EE1ADF725B9109D00348C4E /* BusService.swift */,
 				7EE1ADFA25B910C900348C4E /* BusStops.swift */,
 				BFD7B8C825B5CA240073B1D8 /* ToDoListViewController.swift */,
-				BFF3900A25BDCEFB0003DCF1 /* HomeViewController.swift */,
+				BFF3900A25BDCEFB0003DCF1 /* BookingViewController.swift */,
+				BFF3902625C30EEE0003DCF1 /* BookingView.swift */,
+				BF9CD3F825C44E300024BE9C /* bookingLocation.json */,
+				BF9CD3F125C3111B0024BE9C /* BookingLocation.swift */,
+				BF9CD42125C458A20024BE9C /* CategoryRow.swift */,
+				BF9CD42425C45A000024BE9C /* CategoryItem.swift */,
+				BF9CD3FB25C44F270024BE9C /* ModelData.swift */,
 				BF5AA9E525A6DBF200409FD4 /* SceneDelegate.swift */,
 				BF5AA9E725A6DBF200409FD4 /* ViewController.swift */,
 				E6FD15F525B2D9B8006A8B33 /* LoginViewController.swift */,
@@ -150,20 +157,8 @@
 				BF5AA9F425A6DBF300409FD4 /* Info.plist */,
 				E6FD15E325AFE9E1006A8B33 /* GoogleService-Info.plist */,
 				BF5AA9EC25A6DBF200409FD4 /* MAD2_Assignment.xcdatamodeld */,
-				BFF38FF925BDC8D30003DCF1 /* HomeBundle.swift */,
-				BFF38FFC25BDC9D00003DCF1 /* HomeViewModel.swift */,
 			);
 			path = MAD2_Assignment;
-			sourceTree = "<group>";
-		};
-		BFF38FFF25BDCAC30003DCF1 /* UIKit */ = {
-			isa = PBXGroup;
-			children = (
-				BFF3900025BDCADE0003DCF1 /* HomeCollectionView.swift */,
-				BFF3900625BDCD070003DCF1 /* HeaderView.swift */,
-				BFF3900325BDCBC20003DCF1 /* BookingCell.swift */,
-			);
-			path = UIKit;
 			sourceTree = "<group>";
 		};
 		C9DBE5E1D9FC6192B9ED08A0 /* Pods */ = {
@@ -244,6 +239,7 @@
 			files = (
 				BF5AA9F325A6DBF300409FD4 /* LaunchScreen.storyboard in Resources */,
 				E6FD15E425AFE9E1006A8B33 /* GoogleService-Info.plist in Resources */,
+				BF9CD3F925C44E300024BE9C /* bookingLocation.json in Resources */,
 				BF5AA9F025A6DBF300409FD4 /* Assets.xcassets in Resources */,
 				BF5AA9EB25A6DBF200409FD4 /* Main.storyboard in Resources */,
 			);
@@ -301,33 +297,33 @@
 				BFD7B8C925B5CA240073B1D8 /* ToDoListViewController.swift in Sources */,
 				BFF942BB25B31B3B0052C619 /* TaskListView.swift in Sources */,
 				E6433FEF25BFB2330009FD73 /* CanteenBar.swift in Sources */,
+				BF9CD3F225C3111B0024BE9C /* BookingLocation.swift in Sources */,
 				7EE1ADF825B9109D00348C4E /* BusService.swift in Sources */,
 				BFF942AA25B313730052C619 /* Task.swift in Sources */,
 				7EE1ADFE25B910FE00348C4E /* LocationDelegate.swift in Sources */,
-				BFF38FFD25BDC9D00003DCF1 /* HomeViewModel.swift in Sources */,
 				E6FD163D25B91ADC006A8B33 /* SignUpViewController.swift in Sources */,
 				7EE1AE0A25BC23C800348C4E /* CustomUITextField.swift in Sources */,
 				E6433FDA25BDA96F0009FD73 /* CanteenViewController.swift in Sources */,
 				BF9C7C7125B9BA8A0015574F /* TaskRepository.swift in Sources */,
 				E6FD161925B86F0E006A8B33 /* Student.swift in Sources */,
 				7EE1AE3425C0FA3900348C4E /* MapViewController.swift in Sources */,
-				BFF3900125BDCADE0003DCF1 /* HomeCollectionView.swift in Sources */,
+				BF9CD3FC25C44F270024BE9C /* ModelData.swift in Sources */,
 				BF5AA9EE25A6DBF200409FD4 /* MAD2_Assignment.xcdatamodeld in Sources */,
 				BF5AA9E825A6DBF200409FD4 /* ViewController.swift in Sources */,
-				BFF3900B25BDCEFB0003DCF1 /* HomeViewController.swift in Sources */,
+				BF9CD42225C458A20024BE9C /* CategoryRow.swift in Sources */,
+				BFF3900B25BDCEFB0003DCF1 /* BookingViewController.swift in Sources */,
 				BF5AA9E425A6DBF200409FD4 /* AppDelegate.swift in Sources */,
 				BFD7B8CC25B5DA780073B1D8 /* TaskCellViewModel.swift in Sources */,
-				BFF3900425BDCBC20003DCF1 /* BookingCell.swift in Sources */,
 				7EE1ADF525B9106600348C4E /* BusTableViewController.swift in Sources */,
+				BFF3902725C30EEE0003DCF1 /* BookingView.swift in Sources */,
 				E6433FD725BDA9510009FD73 /* Canteen.swift in Sources */,
 				BFD7B8CF25B5DC0E0073B1D8 /* TaskListViewModel.swift in Sources */,
 				E6FD15F625B2D9B8006A8B33 /* LoginViewController.swift in Sources */,
 				7EE1ADFB25B910C900348C4E /* BusStops.swift in Sources */,
 				BF5AA9E625A6DBF200409FD4 /* SceneDelegate.swift in Sources */,
-				BFF38FFA25BDC8D30003DCF1 /* HomeBundle.swift in Sources */,
 				7EE1AE0125B9118800348C4E /* BusCustomTableViewCell.swift in Sources */,
+				BF9CD42525C45A000024BE9C /* CategoryItem.swift in Sources */,
 				7EE1AE3725C0FA7600348C4E /* CustomAnnotation.swift in Sources */,
-				BFF3900725BDCD070003DCF1 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,7 +472,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GZ6276M4B7;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MAD2_Assignment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -484,7 +480,7 @@
 				);
 				NEW_SETTING = "";
 				PODS_ROOT = "${PROJECT_DIR}/Pods/";
-				PRODUCT_BUNDLE_IDENTIFIER = "sg.justin.MAD2-Assignment";
+				PRODUCT_BUNDLE_IDENTIFIER = "sg.mad2.MAD2-Assignment";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -506,7 +502,7 @@
 				);
 				NEW_SETTING = "";
 				PODS_ROOT = "${PROJECT_DIR}/Pods/";
-				PRODUCT_BUNDLE_IDENTIFIER = "sg.justin.MAD2-Assignment";
+				PRODUCT_BUNDLE_IDENTIFIER = "sg.mad2.MAD2-Assignment";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
