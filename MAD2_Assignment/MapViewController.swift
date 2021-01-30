@@ -84,7 +84,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, QRCodeReaderViewCo
         mkpAnnotation.coordinate = CLLocationCoordinate2D(latitude: 1.332251, longitude: 103.774441)
         mkpAnnotation.title = "Makan Place, Block 58"
         mkpAnnotation.subtitle = "Ngee Ann Polytechnic"
-        mkpAnnotation.url = ""
+        mkpAnnotation.url = "https://www.safeentry-qr.gov.sg/tenant/PROD-T08GB0039A-NGEEANN-POLY-SE"
         mkpAnnotation.iconName = "bowl"
         self.map.addAnnotation(mkpAnnotation)
         
@@ -100,6 +100,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, QRCodeReaderViewCo
         poolsideAnnotation.coordinate = CLLocationCoordinate2D(latitude: 1.335179, longitude: 103.77629)
         poolsideAnnotation.title = "Poolside, Block 18"
         poolsideAnnotation.subtitle = "Ngee Ann Polytechnic"
+        poolsideAnnotation.url = "https://www.safeentry-qr.gov.sg/tenant/PROD-T08GB0039A-NGEEANN-POLY-SE"
         poolsideAnnotation.iconName = "bowl"
         self.map.addAnnotation(poolsideAnnotation)
         
@@ -115,6 +116,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, QRCodeReaderViewCo
         studio27Annotation.coordinate = CLLocationCoordinate2D(latitude: 1.3333305, longitude: 103.775412)
         studio27Annotation.title = "Studio 27, Block 27"
         studio27Annotation.subtitle = "Ngee Ann Polytechnic"
+        studio27Annotation.url = "https://www.safeentry-qr.gov.sg/tenant/PROD-T08GB0039A-NGEEANN-POLY-SE"
         studio27Annotation.iconName = "gameController"
         self.map.addAnnotation(studio27Annotation)
         
@@ -122,6 +124,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, QRCodeReaderViewCo
         libraryAnnotation.coordinate = CLLocationCoordinate2D(latitude: 1.333708, longitude: 103.776727)
         libraryAnnotation.title = "Lien Ying Chow Library, Block 1"
         libraryAnnotation.subtitle = "Ngee Ann Polytechnic"
+        libraryAnnotation.url = "https://www.safeentry-qr.gov.sg/tenant/PROD-T08GB0039A-NGEEANN-POLY-SE"
         libraryAnnotation.iconName = "book"
         self.map.addAnnotation(libraryAnnotation)
         
@@ -129,6 +132,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, QRCodeReaderViewCo
         ourSpaceAnnotation.coordinate = CLLocationCoordinate2D(latitude: 1.3313097, longitude: 103.7759623)
         ourSpaceAnnotation.title = "OurSpace@72, Block 72"
         ourSpaceAnnotation.subtitle = "Ngee Ann Polytechnic"
+        ourSpaceAnnotation.url = "https://www.safeentry-qr.gov.sg/tenant/PROD-T08GB0039A-NGEEANN-POLY-SE"
         ourSpaceAnnotation.iconName = "book"
         self.map.addAnnotation(ourSpaceAnnotation)
         
@@ -136,6 +140,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, QRCodeReaderViewCo
         blk22Annotation.coordinate = CLLocationCoordinate2D(latitude: 1.3343122, longitude: 103.7752522)
         blk22Annotation.title = "Block 22"
         blk22Annotation.subtitle = "Ngee Ann Polytechnic"
+        blk22Annotation.url = "https://www.safeentry-qr.gov.sg/tenant/PROD-T08GB0039A-NGEEANN-POLY-SE"
         blk22Annotation.iconName = "book"
         self.map.addAnnotation(blk22Annotation)
 

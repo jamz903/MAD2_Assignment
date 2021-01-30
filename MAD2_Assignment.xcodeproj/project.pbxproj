@@ -25,6 +25,19 @@
 		BF96F8D125C5342B00036BF2 /* LocationDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF96F8D025C5342B00036BF2 /* LocationDetail.swift */; };
 		BF96F8D425C534EA00036BF2 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF96F8D325C534EA00036BF2 /* CircleImage.swift */; };
 		BF96F8D725C5358400036BF2 /* FavouriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF96F8D625C5358400036BF2 /* FavouriteButton.swift */; };
+		BF96F8DF25C595B900036BF2 /* BookingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF96F8DE25C595B900036BF2 /* BookingButton.swift */; };
+		BF96F8EA25C5A1B300036BF2 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF96F8E925C5A1B300036BF2 /* LocationView.swift */; };
+		BF96F8EE25C5A2A700036BF2 /* Seat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF96F8ED25C5A2A700036BF2 /* Seat.swift */; };
+		BF96F8F125C5A41B00036BF2 /* ChairView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF96F8F025C5A41B00036BF2 /* ChairView.swift */; };
+		BF96F8F425C5A5BB00036BF2 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF96F8F325C5A5BB00036BF2 /* TableView.swift */; };
+		BF96F8F725C5AC6100036BF2 /* ChairLegendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF96F8F625C5AC6100036BF2 /* ChairLegendView.swift */; };
+		BF96F8FA25C5AF7E00036BF2 /* SeatsChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF96F8F925C5AF7E00036BF2 /* SeatsChoiceView.swift */; };
+		BF96F8FD25C5AFF600036BF2 /* BookingDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF96F8FC25C5AFF600036BF2 /* BookingDate.swift */; };
+		BF96F90525C5B29100036BF2 /* DateTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF96F90425C5B29100036BF2 /* DateTimeView.swift */; };
+		BF96F90825C5B49D00036BF2 /* DateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF96F90725C5B49D00036BF2 /* DateView.swift */; };
+		BF96F90C25C5B4BA00036BF2 /* DateExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF96F90B25C5B4BA00036BF2 /* DateExt.swift */; };
+		BF96F91025C5B6A800036BF2 /* DateShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF96F90F25C5B6A800036BF2 /* DateShape.swift */; };
+		BF96F91325C5B74400036BF2 /* TimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF96F91225C5B74400036BF2 /* TimeView.swift */; };
 		BF9C7C7125B9BA8A0015574F /* TaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9C7C7025B9BA8A0015574F /* TaskRepository.swift */; };
 		BF9CD3F225C3111B0024BE9C /* BookingLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9CD3F125C3111B0024BE9C /* BookingLocation.swift */; };
 		BF9CD3F925C44E300024BE9C /* bookingLocation.json in Resources */ = {isa = PBXBuildFile; fileRef = BF9CD3F825C44E300024BE9C /* bookingLocation.json */; };
@@ -72,6 +85,19 @@
 		BF96F8D025C5342B00036BF2 /* LocationDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetail.swift; sourceTree = "<group>"; };
 		BF96F8D325C534EA00036BF2 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		BF96F8D625C5358400036BF2 /* FavouriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteButton.swift; sourceTree = "<group>"; };
+		BF96F8DE25C595B900036BF2 /* BookingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingButton.swift; sourceTree = "<group>"; };
+		BF96F8E925C5A1B300036BF2 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
+		BF96F8ED25C5A2A700036BF2 /* Seat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seat.swift; sourceTree = "<group>"; };
+		BF96F8F025C5A41B00036BF2 /* ChairView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChairView.swift; sourceTree = "<group>"; };
+		BF96F8F325C5A5BB00036BF2 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		BF96F8F625C5AC6100036BF2 /* ChairLegendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChairLegendView.swift; sourceTree = "<group>"; };
+		BF96F8F925C5AF7E00036BF2 /* SeatsChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatsChoiceView.swift; sourceTree = "<group>"; };
+		BF96F8FC25C5AFF600036BF2 /* BookingDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingDate.swift; sourceTree = "<group>"; };
+		BF96F90425C5B29100036BF2 /* DateTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimeView.swift; sourceTree = "<group>"; };
+		BF96F90725C5B49D00036BF2 /* DateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateView.swift; sourceTree = "<group>"; };
+		BF96F90B25C5B4BA00036BF2 /* DateExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExt.swift; sourceTree = "<group>"; };
+		BF96F90F25C5B6A800036BF2 /* DateShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateShape.swift; sourceTree = "<group>"; };
+		BF96F91225C5B74400036BF2 /* TimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeView.swift; sourceTree = "<group>"; };
 		BF9C7C7025B9BA8A0015574F /* TaskRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRepository.swift; sourceTree = "<group>"; };
 		BF9CD3F125C3111B0024BE9C /* BookingLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingLocation.swift; sourceTree = "<group>"; };
 		BF9CD3F825C44E300024BE9C /* bookingLocation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = bookingLocation.json; path = ../../bookingLocation.json; sourceTree = "<group>"; };
@@ -143,6 +169,19 @@
 				BF9CD3F125C3111B0024BE9C /* BookingLocation.swift */,
 				BF9CD42125C458A20024BE9C /* CategoryRow.swift */,
 				BF96F8D025C5342B00036BF2 /* LocationDetail.swift */,
+				BF96F8E925C5A1B300036BF2 /* LocationView.swift */,
+				BF96F8F925C5AF7E00036BF2 /* SeatsChoiceView.swift */,
+				BF96F90425C5B29100036BF2 /* DateTimeView.swift */,
+				BF96F90725C5B49D00036BF2 /* DateView.swift */,
+				BF96F91225C5B74400036BF2 /* TimeView.swift */,
+				BF96F90F25C5B6A800036BF2 /* DateShape.swift */,
+				BF96F90A25C5B4A100036BF2 /* Extensions */,
+				BF96F8FC25C5AFF600036BF2 /* BookingDate.swift */,
+				BF96F8F625C5AC6100036BF2 /* ChairLegendView.swift */,
+				BF96F8F025C5A41B00036BF2 /* ChairView.swift */,
+				BF96F8F325C5A5BB00036BF2 /* TableView.swift */,
+				BF96F8ED25C5A2A700036BF2 /* Seat.swift */,
+				BF96F8DE25C595B900036BF2 /* BookingButton.swift */,
 				BF96F8D625C5358400036BF2 /* FavouriteButton.swift */,
 				BF96F8D325C534EA00036BF2 /* CircleImage.swift */,
 				BF9CD42425C45A000024BE9C /* CategoryItem.swift */,
@@ -168,6 +207,14 @@
 				BF5AA9EC25A6DBF200409FD4 /* MAD2_Assignment.xcdatamodeld */,
 			);
 			path = MAD2_Assignment;
+			sourceTree = "<group>";
+		};
+		BF96F90A25C5B4A100036BF2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BF96F90B25C5B4BA00036BF2 /* DateExt.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		C9DBE5E1D9FC6192B9ED08A0 /* Pods */ = {
@@ -306,36 +353,49 @@
 				BFD7B8C925B5CA240073B1D8 /* ToDoListViewController.swift in Sources */,
 				BF96F8D425C534EA00036BF2 /* CircleImage.swift in Sources */,
 				BFF942BB25B31B3B0052C619 /* TaskListView.swift in Sources */,
+				BF96F90C25C5B4BA00036BF2 /* DateExt.swift in Sources */,
 				E6433FEF25BFB2330009FD73 /* CanteenBar.swift in Sources */,
 				BF9CD3F225C3111B0024BE9C /* BookingLocation.swift in Sources */,
 				7EE1ADF825B9109D00348C4E /* BusService.swift in Sources */,
+				BF96F91025C5B6A800036BF2 /* DateShape.swift in Sources */,
 				BFF942AA25B313730052C619 /* Task.swift in Sources */,
+				BF96F90825C5B49D00036BF2 /* DateView.swift in Sources */,
 				7EE1ADFE25B910FE00348C4E /* LocationDelegate.swift in Sources */,
 				E6FD163D25B91ADC006A8B33 /* SignUpViewController.swift in Sources */,
 				7EE1AE0A25BC23C800348C4E /* CustomUITextField.swift in Sources */,
 				E6433FDA25BDA96F0009FD73 /* CanteenViewController.swift in Sources */,
+				BF96F8DF25C595B900036BF2 /* BookingButton.swift in Sources */,
 				BF9C7C7125B9BA8A0015574F /* TaskRepository.swift in Sources */,
 				E6FD161925B86F0E006A8B33 /* Student.swift in Sources */,
+				BF96F8EE25C5A2A700036BF2 /* Seat.swift in Sources */,
 				7EE1AE3425C0FA3900348C4E /* MapViewController.swift in Sources */,
+				BF96F91325C5B74400036BF2 /* TimeView.swift in Sources */,
 				BF9CD3FC25C44F270024BE9C /* ModelData.swift in Sources */,
 				BF5AA9EE25A6DBF200409FD4 /* MAD2_Assignment.xcdatamodeld in Sources */,
+				BF96F8F725C5AC6100036BF2 /* ChairLegendView.swift in Sources */,
 				BF5AA9E825A6DBF200409FD4 /* ViewController.swift in Sources */,
 				BF9CD42225C458A20024BE9C /* CategoryRow.swift in Sources */,
 				BF96F8D725C5358400036BF2 /* FavouriteButton.swift in Sources */,
+				BF96F8FA25C5AF7E00036BF2 /* SeatsChoiceView.swift in Sources */,
 				BFF3900B25BDCEFB0003DCF1 /* BookingViewController.swift in Sources */,
 				BF5AA9E425A6DBF200409FD4 /* AppDelegate.swift in Sources */,
 				BFD7B8CC25B5DA780073B1D8 /* TaskCellViewModel.swift in Sources */,
+				BF96F8FD25C5AFF600036BF2 /* BookingDate.swift in Sources */,
+				BF96F90525C5B29100036BF2 /* DateTimeView.swift in Sources */,
 				7EE1ADF525B9106600348C4E /* BusTableViewController.swift in Sources */,
 				BFF3902725C30EEE0003DCF1 /* BookingView.swift in Sources */,
 				E6433FD725BDA9510009FD73 /* Canteen.swift in Sources */,
 				BF96F8D125C5342B00036BF2 /* LocationDetail.swift in Sources */,
 				BFD7B8CF25B5DC0E0073B1D8 /* TaskListViewModel.swift in Sources */,
+				BF96F8F125C5A41B00036BF2 /* ChairView.swift in Sources */,
 				E6FD15F625B2D9B8006A8B33 /* LoginViewController.swift in Sources */,
 				7EE1ADFB25B910C900348C4E /* BusStops.swift in Sources */,
 				BF5AA9E625A6DBF200409FD4 /* SceneDelegate.swift in Sources */,
 				7EE1AE0125B9118800348C4E /* BusCustomTableViewCell.swift in Sources */,
+				BF96F8EA25C5A1B300036BF2 /* LocationView.swift in Sources */,
 				BF9CD42525C45A000024BE9C /* CategoryItem.swift in Sources */,
 				7EE1AE3725C0FA7600348C4E /* CustomAnnotation.swift in Sources */,
+				BF96F8F425C5A5BB00036BF2 /* TableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

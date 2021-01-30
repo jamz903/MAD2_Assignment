@@ -11,6 +11,7 @@ import SwiftUI
 struct LocationDetail: View {
     @ObservedObject var modelData = ModelData()
     var location: BookingLocation
+    @State private var showSeats: Bool = false
 
     var locationIndex: Int {
         modelData.locations.firstIndex(where: { $0.id == location.id })!
@@ -45,6 +46,15 @@ struct LocationDetail: View {
                 Text(location.description)
             }
             .padding()
+            
+            HStack {
+                BookingButton(){
+                    self.showSeats.toggle()
+                }.sheet(isPresented: self.$showSeats) {
+                    SeatsChoiceView(location: self.location, selectedSeats: [])
+                }
+                .padding()
+            }
         }
         .navigationTitle(location.name)
         .navigationBarTitleDisplayMode(.inline)
