@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BUT-vs-4kx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BUT-vs-4kx">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -661,47 +662,102 @@
         <scene sceneID="2bG-XM-GGo">
             <objects>
                 <viewController id="lmS-iq-Lk2" customClass="CanteenViewController" customModule="MAD2_Assignment" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="njg-3r-TFP">
+                    <view key="view" contentMode="scaleToFill" id="hW6-vB-sAp">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d2A-0T-uTb" userLabel="Fc Prog" customClass="CanteenBar" customModule="MAD2_Assignment" customModuleProvider="target">
-                                <rect key="frame" x="72" y="547" width="247" height="123"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O7S-TR-wdg" customClass="CanteenBar" customModule="MAD2_Assignment" customModuleProvider="target">
-                                <rect key="frame" x="75" y="343" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GS3-QB-1qq" customClass="CanteenBar" customModule="MAD2_Assignment" customModuleProvider="target">
-                                <rect key="frame" x="72" y="135" width="243" height="131"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nIk-yn-3yN">
-                                        <rect key="frame" x="85" y="42" width="72" height="47"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Canteens" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBI-N9-G1N">
+                                <rect key="frame" x="39" y="120" width="186" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="M0K-Br-eAM">
+                                <rect key="frame" x="30" y="176" width="330" height="585"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mEr-EE-wJj">
+                                    <size key="itemSize" width="320" height="570"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CanteenViewControllerCell" id="dH1-3D-NI7" customClass="CanteenViewControllerCell" customModule="MAD2_Assignment" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="7.666666666666667" width="320" height="570"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </view>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="aMo-xS-NGH">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="570"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="munch" translatesAutoresizingMaskIntoConstraints="NO" id="tok-Ax-1kp">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="562"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ef3-1c-hNA">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="570"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="XX" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j7v-lj-kXt">
+                                                            <rect key="frame" x="113" y="199" width="94" height="67"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="56"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Comfortlevel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSG-iB-T2O">
+                                                            <rect key="frame" x="62" y="274" width="196" height="25"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="21"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.2937379405951836" alpha="0.62264799735915488" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstItem="bSG-iB-T2O" firstAttribute="top" secondItem="j7v-lj-kXt" secondAttribute="bottom" constant="8" id="8hi-WV-W2r"/>
+                                                        <constraint firstItem="j7v-lj-kXt" firstAttribute="top" secondItem="Ef3-1c-hNA" secondAttribute="top" constant="199" id="JNx-SG-bqZ"/>
+                                                        <constraint firstAttribute="bottom" secondItem="bSG-iB-T2O" secondAttribute="bottom" constant="270" id="LJC-5I-cDC"/>
+                                                        <constraint firstItem="j7v-lj-kXt" firstAttribute="leading" secondItem="Ef3-1c-hNA" secondAttribute="leading" constant="113" id="R2i-5h-NdV"/>
+                                                        <constraint firstAttribute="trailing" secondItem="bSG-iB-T2O" secondAttribute="trailing" constant="62" id="S9x-FS-lvo"/>
+                                                        <constraint firstAttribute="trailing" secondItem="j7v-lj-kXt" secondAttribute="trailing" constant="113" id="mkq-fb-y8w"/>
+                                                        <constraint firstItem="bSG-iB-T2O" firstAttribute="leading" secondItem="Ef3-1c-hNA" secondAttribute="leading" constant="62" id="nOC-l6-Zw9"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="Ef3-1c-hNA" secondAttribute="bottom" id="172-4g-RHJ"/>
+                                                <constraint firstItem="Ef3-1c-hNA" firstAttribute="top" secondItem="aMo-xS-NGH" secondAttribute="top" id="71W-sg-2R3"/>
+                                                <constraint firstAttribute="trailing" secondItem="Ef3-1c-hNA" secondAttribute="trailing" id="iFu-Zr-zTC"/>
+                                                <constraint firstItem="Ef3-1c-hNA" firstAttribute="leading" secondItem="aMo-xS-NGH" secondAttribute="leading" id="nfV-bL-S29"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="320" height="570"/>
+                                        <connections>
+                                            <outlet property="BGImageView" destination="tok-Ax-1kp" id="6bA-Be-WY1"/>
+                                            <outlet property="backgroundColorView" destination="aMo-xS-NGH" id="cNx-Ze-qvz"/>
+                                            <outlet property="canteenNumLabel" destination="j7v-lj-kXt" id="yUe-Yb-kKG"/>
+                                            <outlet property="comfyLevelLabel" destination="bSG-iB-T2O" id="jhK-BN-bj9"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="xC3-xb-HRB"/>
-                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                        <viewLayoutGuide key="safeArea" id="arn-Oj-Grr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gBI-N9-G1N" firstAttribute="leading" secondItem="arn-Oj-Grr" secondAttribute="leading" constant="39" id="341-zh-78L"/>
+                            <constraint firstItem="M0K-Br-eAM" firstAttribute="bottom" secondItem="arn-Oj-Grr" secondAttribute="bottom" id="Et1-qw-4rN"/>
+                            <constraint firstItem="M0K-Br-eAM" firstAttribute="top" secondItem="gBI-N9-G1N" secondAttribute="bottom" constant="8" id="MT1-Yh-FuP"/>
+                            <constraint firstItem="M0K-Br-eAM" firstAttribute="trailing" secondItem="arn-Oj-Grr" secondAttribute="trailing" id="XAi-g2-nBT"/>
+                            <constraint firstItem="M0K-Br-eAM" firstAttribute="leading" secondItem="arn-Oj-Grr" secondAttribute="leading" id="aDk-EM-vLE"/>
+                            <constraint firstItem="gBI-N9-G1N" firstAttribute="top" secondItem="arn-Oj-Grr" secondAttribute="top" constant="32" id="jdx-bS-roy"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="KBu-ME-dzH"/>
                     <connections>
-                        <outlet property="fcProg" destination="d2A-0T-uTb" id="tMR-3g-gWC"/>
-                        <outlet property="mkpProg" destination="O7S-TR-wdg" id="gJU-H6-Eb9"/>
-                        <outlet property="munchLabel" destination="nIk-yn-3yN" id="LXS-Sn-PgO"/>
-                        <outlet property="munchProg" destination="GS3-QB-1qq" id="qc0-QJ-eHd"/>
+                        <outlet property="collectionView" destination="M0K-Br-eAM" id="Cc3-Da-OAI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bjp-O5-OOF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3814" y="2645"/>
+            <point key="canvasLocation" x="3813.8461538461538" y="2644.5497630331752"/>
         </scene>
         <!--Item-->
         <scene sceneID="qOz-ys-m7t">
@@ -793,17 +849,12 @@
     <resources>
         <image name="location" catalog="system" width="128" height="121"/>
         <image name="map" catalog="system" width="128" height="110"/>
+        <image name="munch" width="8256" height="5504"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray3Color">
-            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

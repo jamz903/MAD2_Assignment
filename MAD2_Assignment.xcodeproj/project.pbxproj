@@ -15,7 +15,6 @@
 		7EE1AE0A25BC23C800348C4E /* CustomUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1AE0925BC23C800348C4E /* CustomUITextField.swift */; };
 		7EE1AE3425C0FA3900348C4E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1AE3325C0FA3900348C4E /* MapViewController.swift */; };
 		7EE1AE3725C0FA7600348C4E /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1AE3625C0FA7600348C4E /* CustomAnnotation.swift */; };
-		7EE1AE4A25C5C82C00348C4E /* bookingLocation.json in Resources */ = {isa = PBXBuildFile; fileRef = 7EE1AE4925C5C82C00348C4E /* bookingLocation.json */; };
 		BF5AA9E425A6DBF200409FD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5AA9E325A6DBF200409FD4 /* AppDelegate.swift */; };
 		BF5AA9E625A6DBF200409FD4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5AA9E525A6DBF200409FD4 /* SceneDelegate.swift */; };
 		BF5AA9E825A6DBF200409FD4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5AA9E725A6DBF200409FD4 /* ViewController.swift */; };
@@ -53,7 +52,9 @@
 		BFF942BB25B31B3B0052C619 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF942BA25B31B3B0052C619 /* TaskListView.swift */; };
 		E6433FD725BDA9510009FD73 /* Canteen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6433FD625BDA9510009FD73 /* Canteen.swift */; };
 		E6433FDA25BDA96F0009FD73 /* CanteenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6433FD925BDA96F0009FD73 /* CanteenViewController.swift */; };
-		E6433FEF25BFB2330009FD73 /* CanteenBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6433FEE25BFB2330009FD73 /* CanteenBar.swift */; };
+		E6500CCB25C5D42A006ED6A4 /* bookingLocation.json in Resources */ = {isa = PBXBuildFile; fileRef = E6500CCA25C5D42A006ED6A4 /* bookingLocation.json */; };
+		E6500CD025C5DC2E006ED6A4 /* CanteenViewControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6500CCF25C5DC2E006ED6A4 /* CanteenViewControllerCell.swift */; };
+		E6500CD325C5E0BD006ED6A4 /* CanteenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6500CD225C5E0BD006ED6A4 /* CanteenCell.swift */; };
 		E6FD15E425AFE9E1006A8B33 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E6FD15E325AFE9E1006A8B33 /* GoogleService-Info.plist */; };
 		E6FD15F625B2D9B8006A8B33 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FD15F525B2D9B8006A8B33 /* LoginViewController.swift */; };
 		E6FD161925B86F0E006A8B33 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FD161825B86F0E006A8B33 /* Student.swift */; };
@@ -72,7 +73,6 @@
 		7EE1AE0925BC23C800348C4E /* CustomUITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUITextField.swift; sourceTree = "<group>"; };
 		7EE1AE3325C0FA3900348C4E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		7EE1AE3625C0FA7600348C4E /* CustomAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
-		7EE1AE4925C5C82C00348C4E /* bookingLocation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = bookingLocation.json; path = ../../../../../Downloads/bookingLocation.json; sourceTree = "<group>"; };
 		853D1C70FFF3B0EFD60548E1 /* Pods-MAD2_Assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MAD2_Assignment.debug.xcconfig"; path = "Target Support Files/Pods-MAD2_Assignment/Pods-MAD2_Assignment.debug.xcconfig"; sourceTree = "<group>"; };
 		BF5AA9E025A6DBF200409FD4 /* MAD2_Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MAD2_Assignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF5AA9E325A6DBF200409FD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -113,7 +113,9 @@
 		BFF942BA25B31B3B0052C619 /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TaskListView.swift; path = MAD2_Assignment/TaskListView.swift; sourceTree = SOURCE_ROOT; };
 		E6433FD625BDA9510009FD73 /* Canteen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Canteen.swift; sourceTree = "<group>"; };
 		E6433FD925BDA96F0009FD73 /* CanteenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanteenViewController.swift; sourceTree = "<group>"; };
-		E6433FEE25BFB2330009FD73 /* CanteenBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanteenBar.swift; sourceTree = "<group>"; };
+		E6500CCA25C5D42A006ED6A4 /* bookingLocation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = bookingLocation.json; path = ../../../Downloads/bookingLocation.json; sourceTree = "<group>"; };
+		E6500CCF25C5DC2E006ED6A4 /* CanteenViewControllerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanteenViewControllerCell.swift; sourceTree = "<group>"; };
+		E6500CD225C5E0BD006ED6A4 /* CanteenCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanteenCell.swift; sourceTree = "<group>"; };
 		E6FD15E325AFE9E1006A8B33 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E6FD15F525B2D9B8006A8B33 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E6FD161825B86F0E006A8B33 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
@@ -165,7 +167,7 @@
 				BFD7B8C825B5CA240073B1D8 /* ToDoListViewController.swift */,
 				BFF3900A25BDCEFB0003DCF1 /* BookingViewController.swift */,
 				BFF3902625C30EEE0003DCF1 /* BookingView.swift */,
-				7EE1AE4925C5C82C00348C4E /* bookingLocation.json */,
+				E6500CCA25C5D42A006ED6A4 /* bookingLocation.json */,
 				BF9CD3F125C3111B0024BE9C /* BookingLocation.swift */,
 				BF9CD42125C458A20024BE9C /* CategoryRow.swift */,
 				BF96F8D025C5342B00036BF2 /* LocationDetail.swift */,
@@ -190,8 +192,9 @@
 				BF5AA9E725A6DBF200409FD4 /* ViewController.swift */,
 				E6FD15F525B2D9B8006A8B33 /* LoginViewController.swift */,
 				E6433FD625BDA9510009FD73 /* Canteen.swift */,
+				E6500CD225C5E0BD006ED6A4 /* CanteenCell.swift */,
 				E6433FD925BDA96F0009FD73 /* CanteenViewController.swift */,
-				E6433FEE25BFB2330009FD73 /* CanteenBar.swift */,
+				E6500CCF25C5DC2E006ED6A4 /* CanteenViewControllerCell.swift */,
 				7EE1AE0925BC23C800348C4E /* CustomUITextField.swift */,
 				BF9C7C7025B9BA8A0015574F /* TaskRepository.swift */,
 				E6FD163C25B91ADC006A8B33 /* SignUpViewController.swift */,
@@ -295,7 +298,7 @@
 			files = (
 				BF5AA9F325A6DBF300409FD4 /* LaunchScreen.storyboard in Resources */,
 				E6FD15E425AFE9E1006A8B33 /* GoogleService-Info.plist in Resources */,
-				7EE1AE4A25C5C82C00348C4E /* bookingLocation.json in Resources */,
+				E6500CCB25C5D42A006ED6A4 /* bookingLocation.json in Resources */,
 				BF5AA9F025A6DBF300409FD4 /* Assets.xcassets in Resources */,
 				BF5AA9EB25A6DBF200409FD4 /* Main.storyboard in Resources */,
 			);
@@ -350,11 +353,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6500CD325C5E0BD006ED6A4 /* CanteenCell.swift in Sources */,
 				BFD7B8C925B5CA240073B1D8 /* ToDoListViewController.swift in Sources */,
 				BF96F8D425C534EA00036BF2 /* CircleImage.swift in Sources */,
 				BFF942BB25B31B3B0052C619 /* TaskListView.swift in Sources */,
 				BF96F90C25C5B4BA00036BF2 /* DateExt.swift in Sources */,
-				E6433FEF25BFB2330009FD73 /* CanteenBar.swift in Sources */,
 				BF9CD3F225C3111B0024BE9C /* BookingLocation.swift in Sources */,
 				7EE1ADF825B9109D00348C4E /* BusService.swift in Sources */,
 				BF96F91025C5B6A800036BF2 /* DateShape.swift in Sources */,
@@ -382,6 +385,7 @@
 				BFD7B8CC25B5DA780073B1D8 /* TaskCellViewModel.swift in Sources */,
 				BF96F8FD25C5AFF600036BF2 /* BookingDate.swift in Sources */,
 				BF96F90525C5B29100036BF2 /* DateTimeView.swift in Sources */,
+				E6500CD025C5DC2E006ED6A4 /* CanteenViewControllerCell.swift in Sources */,
 				7EE1ADF525B9106600348C4E /* BusTableViewController.swift in Sources */,
 				BFF3902725C30EEE0003DCF1 /* BookingView.swift in Sources */,
 				E6433FD725BDA9510009FD73 /* Canteen.swift in Sources */,

@@ -19,4 +19,8 @@ class Canteen {
         color = Color
         label = Label
     }
+    
+    
+    
+    
 }
