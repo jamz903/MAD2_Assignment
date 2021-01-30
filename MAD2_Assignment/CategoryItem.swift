@@ -14,12 +14,14 @@ struct CategoryItem: View {
     var body: some View {
         VStack(alignment: .leading) {
             location.image
+                .renderingMode(.original)
                 .resizable()
                 .frame(width: 300, height: 200)
                 .cornerRadius(5)
             Text(location.name)
                 //.font(.caption)
                 .font(.system(size: 15))
+                .foregroundColor(.primary)
         }
         .padding(.leading, 15)
     }

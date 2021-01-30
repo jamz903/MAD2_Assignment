@@ -22,6 +22,9 @@
 		BF5AA9EE25A6DBF200409FD4 /* MAD2_Assignment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF5AA9EC25A6DBF200409FD4 /* MAD2_Assignment.xcdatamodeld */; };
 		BF5AA9F025A6DBF300409FD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF5AA9EF25A6DBF300409FD4 /* Assets.xcassets */; };
 		BF5AA9F325A6DBF300409FD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF5AA9F125A6DBF300409FD4 /* LaunchScreen.storyboard */; };
+		BF96F8D125C5342B00036BF2 /* LocationDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF96F8D025C5342B00036BF2 /* LocationDetail.swift */; };
+		BF96F8D425C534EA00036BF2 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF96F8D325C534EA00036BF2 /* CircleImage.swift */; };
+		BF96F8D725C5358400036BF2 /* FavouriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF96F8D625C5358400036BF2 /* FavouriteButton.swift */; };
 		BF9C7C7125B9BA8A0015574F /* TaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9C7C7025B9BA8A0015574F /* TaskRepository.swift */; };
 		BF9CD3F225C3111B0024BE9C /* BookingLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9CD3F125C3111B0024BE9C /* BookingLocation.swift */; };
 		BF9CD3F925C44E300024BE9C /* bookingLocation.json in Resources */ = {isa = PBXBuildFile; fileRef = BF9CD3F825C44E300024BE9C /* bookingLocation.json */; };
@@ -66,6 +69,9 @@
 		BF5AA9EF25A6DBF300409FD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF5AA9F225A6DBF300409FD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF5AA9F425A6DBF300409FD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF96F8D025C5342B00036BF2 /* LocationDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetail.swift; sourceTree = "<group>"; };
+		BF96F8D325C534EA00036BF2 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		BF96F8D625C5358400036BF2 /* FavouriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteButton.swift; sourceTree = "<group>"; };
 		BF9C7C7025B9BA8A0015574F /* TaskRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRepository.swift; sourceTree = "<group>"; };
 		BF9CD3F125C3111B0024BE9C /* BookingLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingLocation.swift; sourceTree = "<group>"; };
 		BF9CD3F825C44E300024BE9C /* bookingLocation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = bookingLocation.json; path = ../../bookingLocation.json; sourceTree = "<group>"; };
@@ -136,6 +142,9 @@
 				BF9CD3F825C44E300024BE9C /* bookingLocation.json */,
 				BF9CD3F125C3111B0024BE9C /* BookingLocation.swift */,
 				BF9CD42125C458A20024BE9C /* CategoryRow.swift */,
+				BF96F8D025C5342B00036BF2 /* LocationDetail.swift */,
+				BF96F8D625C5358400036BF2 /* FavouriteButton.swift */,
+				BF96F8D325C534EA00036BF2 /* CircleImage.swift */,
 				BF9CD42425C45A000024BE9C /* CategoryItem.swift */,
 				BF9CD3FB25C44F270024BE9C /* ModelData.swift */,
 				BF5AA9E525A6DBF200409FD4 /* SceneDelegate.swift */,
@@ -295,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFD7B8C925B5CA240073B1D8 /* ToDoListViewController.swift in Sources */,
+				BF96F8D425C534EA00036BF2 /* CircleImage.swift in Sources */,
 				BFF942BB25B31B3B0052C619 /* TaskListView.swift in Sources */,
 				E6433FEF25BFB2330009FD73 /* CanteenBar.swift in Sources */,
 				BF9CD3F225C3111B0024BE9C /* BookingLocation.swift in Sources */,
@@ -311,12 +321,14 @@
 				BF5AA9EE25A6DBF200409FD4 /* MAD2_Assignment.xcdatamodeld in Sources */,
 				BF5AA9E825A6DBF200409FD4 /* ViewController.swift in Sources */,
 				BF9CD42225C458A20024BE9C /* CategoryRow.swift in Sources */,
+				BF96F8D725C5358400036BF2 /* FavouriteButton.swift in Sources */,
 				BFF3900B25BDCEFB0003DCF1 /* BookingViewController.swift in Sources */,
 				BF5AA9E425A6DBF200409FD4 /* AppDelegate.swift in Sources */,
 				BFD7B8CC25B5DA780073B1D8 /* TaskCellViewModel.swift in Sources */,
 				7EE1ADF525B9106600348C4E /* BusTableViewController.swift in Sources */,
 				BFF3902725C30EEE0003DCF1 /* BookingView.swift in Sources */,
 				E6433FD725BDA9510009FD73 /* Canteen.swift in Sources */,
+				BF96F8D125C5342B00036BF2 /* LocationDetail.swift in Sources */,
 				BFD7B8CF25B5DC0E0073B1D8 /* TaskListViewModel.swift in Sources */,
 				E6FD15F625B2D9B8006A8B33 /* LoginViewController.swift in Sources */,
 				7EE1ADFB25B910C900348C4E /* BusStops.swift in Sources */,

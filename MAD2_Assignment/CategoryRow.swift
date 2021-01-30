@@ -23,8 +23,9 @@ struct CategoryRow: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top, spacing: 10) {
                     ForEach(items) { location in
-                        CategoryItem(location: location)
-                        
+                        NavigationLink(destination: LocationDetail(location: location)) {
+                            CategoryItem(location: location)
+                        }
                     }
                 }
             }
