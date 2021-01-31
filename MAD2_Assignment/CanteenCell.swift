@@ -20,7 +20,6 @@ class CanteenCell {
         self.Canteen = canteen
         
     }
-    
-    
-    
 }
+
+
