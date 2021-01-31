@@ -708,6 +708,13 @@
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9HU-X7-YLT">
+                                                            <rect key="frame" x="100" y="115" width="121" height="55"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="46"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
                                                     </subviews>
                                                     <color key="backgroundColor" white="0.2937379405951836" alpha="0.62264799735915488" colorSpace="calibratedWhite"/>
                                                     <constraints>
@@ -732,6 +739,7 @@
                                         <connections>
                                             <outlet property="BGImageView" destination="tok-Ax-1kp" id="6bA-Be-WY1"/>
                                             <outlet property="backgroundColorView" destination="aMo-xS-NGH" id="cNx-Ze-qvz"/>
+                                            <outlet property="canteenNameLabel" destination="9HU-X7-YLT" id="mJz-jz-Tos"/>
                                             <outlet property="canteenNumLabel" destination="j7v-lj-kXt" id="yUe-Yb-kKG"/>
                                             <outlet property="comfyLevelLabel" destination="bSG-iB-T2O" id="jhK-BN-bj9"/>
                                         </connections>

@@ -14,6 +14,7 @@ class CanteenViewControllerCell: UICollectionViewCell{
     @IBOutlet weak var backgroundColorView: UIView!
     @IBOutlet weak var canteenNumLabel: UILabel!
     @IBOutlet weak var comfyLevelLabel: UILabel!
+    @IBOutlet weak var canteenNameLabel: UILabel!
     
     
     
@@ -28,6 +29,7 @@ class CanteenViewControllerCell: UICollectionViewCell{
             BGImageView.image = cant.featuredImage
             canteenNumLabel.text = String(cant.Canteen.value)
             comfyLevelLabel.text = String(cant.Canteen.label)
+            canteenNameLabel.text = String(cant.title)
             
             
         }

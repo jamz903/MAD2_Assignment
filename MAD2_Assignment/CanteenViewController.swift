@@ -19,17 +19,29 @@ class CanteenViewController:UIViewController{
     
     
     
-
-    var canteenl = Canteen.fetchDummy()
+    var canteenl = Canteen.fetchDummy()//for dummy values
+    //var canteenl = Canteen.getCanteens()
     
     
     
     override func viewDidLoad() {
         
         //fcProg.backgroundColor(patternImage: )
-    
+        var count = 0
         for i in canteenl{
-            CanteenCellList.append(CanteenCell(title: "foodclb", featuredImage: UIImage(named: "munch")!, canteen: i))
+            if count == 0{
+                CanteenCellList.append(CanteenCell(title: "munch", featuredImage: UIImage(named: "munch")!, canteen: i))
+                count += 1
+            }
+            else if count == 1{
+                CanteenCellList.append(CanteenCell(title: "food club", featuredImage: UIImage(named: "FC")!, canteen: i))
+                count += 1
+            }
+            else if count == 2{
+                CanteenCellList.append(CanteenCell(title: "Makan place", featuredImage: UIImage(named: "mkp")!, canteen: i))
+                count += 1
+            }
+            
         }
         print("done")
         super.viewDidLoad()
