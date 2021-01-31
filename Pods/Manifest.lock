@@ -60,6 +60,9 @@ PODS:
     - GoogleUtilities/Logger
   - GoogleUtilities/UserDefaults (7.2.0):
     - GoogleUtilities/Logger
+  - ImageSlideshow (1.9.2):
+    - ImageSlideshow/Core (= 1.9.2)
+  - ImageSlideshow/Core (1.9.2)
   - leveldb-library (1.22)
   - nanopb (2.30907.0):
     - nanopb/decode (= 2.30907.0)
@@ -72,6 +75,7 @@ PODS:
 DEPENDENCIES:
   - Firebase/Core
   - Firebase/Database
+  - ImageSlideshow (~> 1.9.0)
   - QRCodeReader.swift (~> 10.1)
 
 SPEC REPOS:
@@ -85,6 +89,7 @@ SPEC REPOS:
     - GoogleAppMeasurement
     - GoogleDataTransport
     - GoogleUtilities
+    - ImageSlideshow
     - leveldb-library
     - nanopb
     - PromisesObjC
@@ -100,11 +105,12 @@ SPEC CHECKSUMS:
   GoogleAppMeasurement: 688d7f00e2894d9e13823ed9a028b13b993bc277
   GoogleDataTransport: 1024b1a4dfbd7a0e92cb20d7e0a6f1fb66b449a4
   GoogleUtilities: d866834472f1324d080496bc67ab3ce5d0d46027
+  ImageSlideshow: be305b54eaf2b2cfc7a7141c7c734605d44dc07d
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   nanopb: 59221d7f958fb711001e6a449489542d92ae113e
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
   QRCodeReader.swift: 373a389fe9a22d513c879a32a6f647c58f4ef572
 
-PODFILE CHECKSUM: b7a2df63ac908be19feee9c805c40a18b33c1720
+PODFILE CHECKSUM: f2dbf9c38fe4269b1665af566e57c82b21281fa7
 
 COCOAPODS: 1.10.0

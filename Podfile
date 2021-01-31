@@ -9,7 +9,7 @@ target 'MAD2_Assignment' do
   pod 'Firebase/Core'
   pod 'Firebase/Database'
   pod 'QRCodeReader.swift', '~> 10.1'
-
+  pod 'ImageSlideshow', '~> 1.9.0'
 
 
 end
