@@ -16,7 +16,7 @@ class BookingViewController: UIHostingController<BookingView> {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.prefersLargeTitles = true
-        self.navigationItem.title = "Make A Booking";
+        self.navigationItem.title = "Book";
         //Do any additional setup after loading the view
     }
     
