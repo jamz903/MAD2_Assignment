@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BUT-vs-4kx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BUT-vs-4kx">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -631,52 +631,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Canteens" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBI-N9-G1N">
-                                <rect key="frame" x="39" y="120" width="186" height="48"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBI-N9-G1N">
+                                <rect key="frame" x="39" y="120" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="M0K-Br-eAM">
-                                <rect key="frame" x="30" y="176" width="330" height="585"/>
+                                <rect key="frame" x="30" y="88" width="360" height="709"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mEr-EE-wJj">
-                                    <size key="itemSize" width="320" height="570"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="1" minimumInteritemSpacing="1" id="mEr-EE-wJj">
+                                    <size key="itemSize" width="375" height="598"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CanteenViewControllerCell" id="dH1-3D-NI7" customClass="CanteenViewControllerCell" customModule="MAD2_Assignment" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="7.666666666666667" width="320" height="570"/>
+                                        <rect key="frame" x="0.0" y="55.666666666666664" width="349" height="598"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="aMo-xS-NGH">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="570"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="349" height="598"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="munch" translatesAutoresizingMaskIntoConstraints="NO" id="tok-Ax-1kp">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="562"/>
+                                                    <rect key="frame" x="-26" y="-97" width="378" height="722"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ef3-1c-hNA">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="570"/>
+                                                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ef3-1c-hNA">
+                                                    <rect key="frame" x="0.0" y="0.0" width="349" height="608"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="XX" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j7v-lj-kXt">
-                                                            <rect key="frame" x="113" y="199" width="94" height="67"/>
+                                                            <rect key="frame" x="113" y="199" width="123" height="67"/>
                                                             <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="56"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Comfortlevel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSG-iB-T2O">
-                                                            <rect key="frame" x="62" y="274" width="196" height="25"/>
+                                                            <rect key="frame" x="62" y="274" width="225" height="25"/>
                                                             <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="21"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9HU-X7-YLT">
-                                                            <rect key="frame" x="100" y="115" width="121" height="55"/>
+                                                            <rect key="frame" x="83" y="98" width="183" height="92"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="46"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="38"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -700,7 +700,7 @@
                                                 <constraint firstItem="Ef3-1c-hNA" firstAttribute="leading" secondItem="aMo-xS-NGH" secondAttribute="leading" id="nfV-bL-S29"/>
                                             </constraints>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="320" height="570"/>
+                                        <size key="customSize" width="349" height="598"/>
                                         <connections>
                                             <outlet property="BGImageView" destination="tok-Ax-1kp" id="6bA-Be-WY1"/>
                                             <outlet property="backgroundColorView" destination="aMo-xS-NGH" id="cNx-Ze-qvz"/>
@@ -730,7 +730,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bjp-O5-OOF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5205" y="-1250"/>
+            <point key="canvasLocation" x="5204.6153846153848" y="-1250.4739336492889"/>
         </scene>
         <!--Item-->
         <scene sceneID="qOz-ys-m7t">
