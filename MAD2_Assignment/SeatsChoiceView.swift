@@ -35,7 +35,7 @@ struct SeatsChoiceView: View {
                             self.showPopup = !self.validateInputs()
                         }
                     }).sheet(isPresented: self.$showBasket) {
-                        Text("To be implemented")
+                        OkView()
                     }.padding()
                     
                 }.navigationBarTitle("Choose Seats", displayMode: .large)

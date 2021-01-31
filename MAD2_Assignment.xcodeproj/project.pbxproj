@@ -40,6 +40,8 @@
 		BF96F91025C5B6A800036BF2 /* DateShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF96F90F25C5B6A800036BF2 /* DateShape.swift */; };
 		BF96F91325C5B74400036BF2 /* TimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF96F91225C5B74400036BF2 /* TimeView.swift */; };
 		BF96F98525C70E8F00036BF2 /* bookingLocation.json in Resources */ = {isa = PBXBuildFile; fileRef = BF96F98425C70E8F00036BF2 /* bookingLocation.json */; };
+		BF96F99425C7117000036BF2 /* OkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF96F99325C7117000036BF2 /* OkView.swift */; };
+		BF96F99725C7118B00036BF2 /* OkShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF96F99625C7118B00036BF2 /* OkShape.swift */; };
 		BF9C7C7125B9BA8A0015574F /* TaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9C7C7025B9BA8A0015574F /* TaskRepository.swift */; };
 		BF9CD3F225C3111B0024BE9C /* BookingLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9CD3F125C3111B0024BE9C /* BookingLocation.swift */; };
 		BF9CD3FC25C44F270024BE9C /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9CD3FB25C44F270024BE9C /* ModelData.swift */; };
@@ -102,6 +104,8 @@
 		BF96F90F25C5B6A800036BF2 /* DateShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateShape.swift; sourceTree = "<group>"; };
 		BF96F91225C5B74400036BF2 /* TimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeView.swift; sourceTree = "<group>"; };
 		BF96F98425C70E8F00036BF2 /* bookingLocation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = bookingLocation.json; path = ../../../Downloads/bookingLocation.json; sourceTree = "<group>"; };
+		BF96F99325C7117000036BF2 /* OkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OkView.swift; sourceTree = "<group>"; };
+		BF96F99625C7118B00036BF2 /* OkShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OkShape.swift; sourceTree = "<group>"; };
 		BF9C7C7025B9BA8A0015574F /* TaskRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRepository.swift; sourceTree = "<group>"; };
 		BF9CD3F125C3111B0024BE9C /* BookingLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingLocation.swift; sourceTree = "<group>"; };
 		BF9CD3FB25C44F270024BE9C /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
@@ -176,6 +180,8 @@
 				BF96F8D025C5342B00036BF2 /* LocationDetail.swift */,
 				BF96F8E925C5A1B300036BF2 /* LocationView.swift */,
 				BF96F8F925C5AF7E00036BF2 /* SeatsChoiceView.swift */,
+				BF96F99325C7117000036BF2 /* OkView.swift */,
+				BF96F99625C7118B00036BF2 /* OkShape.swift */,
 				BF96F90425C5B29100036BF2 /* DateTimeView.swift */,
 				BF96F90725C5B49D00036BF2 /* DateView.swift */,
 				BF96F91225C5B74400036BF2 /* TimeView.swift */,
@@ -379,6 +385,7 @@
 				BF9CD3FC25C44F270024BE9C /* ModelData.swift in Sources */,
 				BF5AA9EE25A6DBF200409FD4 /* MAD2_Assignment.xcdatamodeld in Sources */,
 				BF96F8F725C5AC6100036BF2 /* ChairLegendView.swift in Sources */,
+				BF96F99725C7118B00036BF2 /* OkShape.swift in Sources */,
 				BF5AA9E825A6DBF200409FD4 /* ViewController.swift in Sources */,
 				BF9CD42225C458A20024BE9C /* CategoryRow.swift in Sources */,
 				BF96F8D725C5358400036BF2 /* FavouriteButton.swift in Sources */,
@@ -388,6 +395,7 @@
 				BFD7B8CC25B5DA780073B1D8 /* TaskCellViewModel.swift in Sources */,
 				BF96F8FD25C5AFF600036BF2 /* BookingDate.swift in Sources */,
 				BF96F90525C5B29100036BF2 /* DateTimeView.swift in Sources */,
+				BF96F99425C7117000036BF2 /* OkView.swift in Sources */,
 				E6500CD025C5DC2E006ED6A4 /* CanteenViewControllerCell.swift in Sources */,
 				7EE1ADF525B9106600348C4E /* BusTableViewController.swift in Sources */,
 				BFF3902725C30EEE0003DCF1 /* BookingView.swift in Sources */,
