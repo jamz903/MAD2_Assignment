@@ -56,7 +56,7 @@ class HomepageViewController: UIViewController, ImageSlideshowDelegate {
         Imageview.contentScaleMode = UIViewContentMode.scaleAspectFill
 
         let pageControl = UIPageControl()
-        pageControl.currentPageIndicatorTintColor = UIColor.white
+        pageControl.currentPageIndicatorTintColor = UIColor.black
         pageControl.pageIndicatorTintColor = UIColor.lightGray
         Imageview.pageIndicator = pageControl
         

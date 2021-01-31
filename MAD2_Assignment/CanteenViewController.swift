@@ -25,7 +25,8 @@ class CanteenViewController:UIViewController{
     
     
     override func viewDidLoad() {
-        
+        navigationController?.navigationBar.prefersLargeTitles = true
+        self.navigationItem.title = "Seats Available";
         //fcProg.backgroundColor(patternImage: )
         var count = 0
         for i in canteenl{
