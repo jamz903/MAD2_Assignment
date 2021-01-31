@@ -31,11 +31,6 @@ struct BookingView: View {
     @ObservedObject var modelData = ModelData()
     
     var body: some View {
-        Text("Make A Booking").fontWeight(.bold).font(.largeTitle)
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .padding(.leading, CGFloat(15))
-            .padding(.top)
-            //.padding(.bottom, CGFloat(15))
         List {
             modelData.features[0].image
                 .resizable()

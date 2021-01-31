@@ -15,7 +15,6 @@
 		7EE1AE0A25BC23C800348C4E /* CustomUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1AE0925BC23C800348C4E /* CustomUITextField.swift */; };
 		7EE1AE3425C0FA3900348C4E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1AE3325C0FA3900348C4E /* MapViewController.swift */; };
 		7EE1AE3725C0FA7600348C4E /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1AE3625C0FA7600348C4E /* CustomAnnotation.swift */; };
-		7EE1AE4F25C6BF1D00348C4E /* bookingLocation.json in Resources */ = {isa = PBXBuildFile; fileRef = 7EE1AE4E25C6BF1D00348C4E /* bookingLocation.json */; };
 		7EE1AE6325C6C27C00348C4E /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1AE6225C6C27C00348C4E /* HomepageViewController.swift */; };
 		BF5AA9E425A6DBF200409FD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5AA9E325A6DBF200409FD4 /* AppDelegate.swift */; };
 		BF5AA9E625A6DBF200409FD4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5AA9E525A6DBF200409FD4 /* SceneDelegate.swift */; };
@@ -40,6 +39,7 @@
 		BF96F90C25C5B4BA00036BF2 /* DateExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF96F90B25C5B4BA00036BF2 /* DateExt.swift */; };
 		BF96F91025C5B6A800036BF2 /* DateShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF96F90F25C5B6A800036BF2 /* DateShape.swift */; };
 		BF96F91325C5B74400036BF2 /* TimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF96F91225C5B74400036BF2 /* TimeView.swift */; };
+		BF96F93C25C6CE9700036BF2 /* bookingLocation.json in Resources */ = {isa = PBXBuildFile; fileRef = BF96F93B25C6CE9700036BF2 /* bookingLocation.json */; };
 		BF9C7C7125B9BA8A0015574F /* TaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9C7C7025B9BA8A0015574F /* TaskRepository.swift */; };
 		BF9CD3F225C3111B0024BE9C /* BookingLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9CD3F125C3111B0024BE9C /* BookingLocation.swift */; };
 		BF9CD3FC25C44F270024BE9C /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9CD3FB25C44F270024BE9C /* ModelData.swift */; };
@@ -74,7 +74,6 @@
 		7EE1AE0925BC23C800348C4E /* CustomUITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUITextField.swift; sourceTree = "<group>"; };
 		7EE1AE3325C0FA3900348C4E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		7EE1AE3625C0FA7600348C4E /* CustomAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
-		7EE1AE4E25C6BF1D00348C4E /* bookingLocation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = bookingLocation.json; path = ../../../../../Downloads/bookingLocation.json; sourceTree = "<group>"; };
 		7EE1AE6225C6C27C00348C4E /* HomepageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageViewController.swift; sourceTree = "<group>"; };
 		853D1C70FFF3B0EFD60548E1 /* Pods-MAD2_Assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MAD2_Assignment.debug.xcconfig"; path = "Target Support Files/Pods-MAD2_Assignment/Pods-MAD2_Assignment.debug.xcconfig"; sourceTree = "<group>"; };
 		BF5AA9E025A6DBF200409FD4 /* MAD2_Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MAD2_Assignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,6 +101,7 @@
 		BF96F90B25C5B4BA00036BF2 /* DateExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExt.swift; sourceTree = "<group>"; };
 		BF96F90F25C5B6A800036BF2 /* DateShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateShape.swift; sourceTree = "<group>"; };
 		BF96F91225C5B74400036BF2 /* TimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeView.swift; sourceTree = "<group>"; };
+		BF96F93B25C6CE9700036BF2 /* bookingLocation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = bookingLocation.json; path = ../../../Downloads/bookingLocation.json; sourceTree = "<group>"; };
 		BF9C7C7025B9BA8A0015574F /* TaskRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRepository.swift; sourceTree = "<group>"; };
 		BF9CD3F125C3111B0024BE9C /* BookingLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingLocation.swift; sourceTree = "<group>"; };
 		BF9CD3FB25C44F270024BE9C /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
@@ -170,7 +170,7 @@
 				BFD7B8C825B5CA240073B1D8 /* ToDoListViewController.swift */,
 				BFF3900A25BDCEFB0003DCF1 /* BookingViewController.swift */,
 				BFF3902625C30EEE0003DCF1 /* BookingView.swift */,
-				7EE1AE4E25C6BF1D00348C4E /* bookingLocation.json */,
+				BF96F93B25C6CE9700036BF2 /* bookingLocation.json */,
 				BF9CD3F125C3111B0024BE9C /* BookingLocation.swift */,
 				BF9CD42125C458A20024BE9C /* CategoryRow.swift */,
 				BF96F8D025C5342B00036BF2 /* LocationDetail.swift */,
@@ -301,7 +301,7 @@
 			files = (
 				BF5AA9F325A6DBF300409FD4 /* LaunchScreen.storyboard in Resources */,
 				E6FD15E425AFE9E1006A8B33 /* GoogleService-Info.plist in Resources */,
-				7EE1AE4F25C6BF1D00348C4E /* bookingLocation.json in Resources */,
+				BF96F93C25C6CE9700036BF2 /* bookingLocation.json in Resources */,
 				BF5AA9F025A6DBF300409FD4 /* Assets.xcassets in Resources */,
 				BF5AA9EB25A6DBF200409FD4 /* Main.storyboard in Resources */,
 			);

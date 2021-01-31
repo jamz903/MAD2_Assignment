@@ -14,11 +14,11 @@ struct TaskListView: View {
     @State var presentAddNewItem = false
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
-            Text("Tasks").fontWeight(.bold).font(.largeTitle)
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(.leading, CGFloat(15))
-                .padding(.top)
-                .padding(.bottom, CGFloat(15))
+//            Text("Tasks").fontWeight(.bold).font(.largeTitle)
+//                .frame(maxWidth: .infinity, alignment: .leading)
+//                .padding(.leading, CGFloat(15))
+//                .padding(.top)
+//                .padding(.bottom, CGFloat(15))
             VStack(alignment: .trailing) {
                 List {
                     ForEach(taskListVM.taskCellViewModels) { taskCellVM in

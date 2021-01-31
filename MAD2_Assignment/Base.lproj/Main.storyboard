@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BUT-vs-4kx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BUT-vs-4kx">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -342,7 +342,7 @@
         <scene sceneID="CwH-BB-KPt">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nY9-s7-A54" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="To Do List" id="NQX-wY-dbT"/>
+                    <tabBarItem key="tabBarItem" title="To Do List" image="list.bullet" catalog="system" id="NQX-wY-dbT"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="82X-w7-iH1">
                         <rect key="frame" x="0.0" y="44" width="390" height="44"/>
@@ -799,11 +799,11 @@
             </objects>
             <point key="canvasLocation" x="2563" y="900"/>
         </scene>
-        <!--Item-->
+        <!--Book-->
         <scene sceneID="OMc-S0-YGM">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fzJ-ym-eDG" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="CCa-eG-oex"/>
+                    <tabBarItem key="tabBarItem" title="Book" image="ticket" catalog="system" id="CCa-eG-oex"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ml0-1O-m48">
                         <rect key="frame" x="0.0" y="44" width="390" height="44"/>
@@ -818,7 +818,7 @@
             </objects>
             <point key="canvasLocation" x="1625" y="1630"/>
         </scene>
-        <!--Slideshow-->
+        <!--Home-->
         <scene sceneID="zgc-SW-jpc">
             <objects>
                 <viewController id="yp8-fj-4z8" customClass="HomepageViewController" customModule="MAD2_Assignment" customModuleProvider="target" sceneMemberID="viewController">
@@ -973,7 +973,7 @@
                             <constraint firstItem="6ho-Z3-SJm" firstAttribute="top" secondItem="FUa-Z3-op1" secondAttribute="top" id="xHo-GX-7YH"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Slideshow" id="3Ok-i6-iue"/>
+                    <navigationItem key="navigationItem" title="Home" id="3Ok-i6-iue"/>
                     <connections>
                         <outlet property="Imageview" destination="7tr-g0-zNO" id="EPa-0H-MLv"/>
                         <outlet property="TOMSContainer" destination="7eU-ZZ-u8w" id="h0S-oa-WdR"/>
@@ -1010,9 +1010,11 @@
     </scenes>
     <resources>
         <image name="house" catalog="system" width="128" height="106"/>
+        <image name="list.bullet" catalog="system" width="128" height="88"/>
         <image name="location" catalog="system" width="128" height="121"/>
         <image name="map" catalog="system" width="128" height="110"/>
         <image name="munch" width="8256" height="5504"/>
+        <image name="ticket" catalog="system" width="128" height="84"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
