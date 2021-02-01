@@ -19,28 +19,33 @@ class CanteenViewController:UIViewController{
     
     
     //for dummy values
-    var canteenl = Canteen.fetchDummy()
+    //var canteenl = Canteen.fetchDummy()
     
     //real API - but api currently not working so using hardcoded values
-    //var canteenl = Canteen.getCanteens()
+    var canteenl = Canteen.getCanteens()
     
     
     
     override func viewDidLoad() {
+        //title header for design
         navigationController?.navigationBar.prefersLargeTitles = true
         self.navigationItem.title = "Seats Available";
         //fcProg.backgroundColor(patternImage: )
         var count = 0
         for i in canteenl{
-            if count == 0{
+            
+            //changes to seats available at canteens
+            i.value = 150-i.value
+            
+            if count == 0{//munch data slide
                 CanteenCellList.append(CanteenCell(title: "munch", featuredImage: UIImage(named: "munch")!, canteen: i))
                 count += 1
             }
-            else if count == 1{
+            else if count == 1{//fc data slide
                 CanteenCellList.append(CanteenCell(title: "food club", featuredImage: UIImage(named: "FC")!, canteen: i))
                 count += 1
             }
-            else if count == 2{
+            else if count == 2{//mkp data slide
                 CanteenCellList.append(CanteenCell(title: "Makan place", featuredImage: UIImage(named: "mkp")!, canteen: i))
                 count += 1
             }
@@ -48,6 +53,7 @@ class CanteenViewController:UIViewController{
         }
         print("done")
         super.viewDidLoad()
+        //display collectionview datasource
         collectionView.dataSource = self
        
         
@@ -55,7 +61,9 @@ class CanteenViewController:UIViewController{
     
 }
 
+//extension to display collectionview
 extension CanteenViewController: UICollectionViewDataSource{
+    //strut
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
@@ -64,11 +72,13 @@ extension CanteenViewController: UICollectionViewDataSource{
         return CanteenCellList.count
     }
     
+    //connect to Canteenviewcontrollercell which has the display and layout of each cell for the data to follow
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CanteenViewControllerCell",
                                                       for: indexPath) as! CanteenViewControllerCell
         let Canteenq = CanteenCellList[indexPath.item]
         
+        //enter data from the class into the sections set in the ell
         cell.cant = Canteenq
         
         return cell
@@ -76,26 +86,7 @@ extension CanteenViewController: UICollectionViewDataSource{
     }
 }
 
-//extension CanteenViewController: UICollectionViewDataSource{
-//    func numberOfSection(in collectionView: UICollectionView) ->
-//    Int{
-//        return 1
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        return //CanteenCellsList.count
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CanteenViewControllerCell", for: indexPath) as! CanteenViewControllerCell
-//
-//        //let can = CanteenCellsList[indexPath.item]
-//
-//        cell.cant = can
-//
-//        return cell
-//    }
-//}
+
     
 
 

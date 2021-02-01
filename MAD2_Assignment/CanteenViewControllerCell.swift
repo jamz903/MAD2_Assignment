@@ -24,6 +24,9 @@ class CanteenViewControllerCell: UICollectionViewCell{
         }
     }
     
+    
+    //When the update UI is called from the main view controller for Canteen it will replace these values into the
+    //corresponding parts
     func updateUI(){
         if let cell = cant{
             BGImageView.image = cant.featuredImage

@@ -33,30 +33,39 @@ class SignUpViewController: UIViewController{
 //        LoginBtn.layer.cornerRadius = 10
         
     }
-    
+    //back to login page
     @IBAction func backToLoginBtn(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     
+    //sign up button pressed
     @IBAction func SignUp(_ sender: Any) {
+        
+        //check that the 2 datafields are not empty
         if SignUpID.text != "" && SignUpPW.text != "" {
+            //make id entered variabel into the text in the datafield
             if let idEntered = SignUpID.text?.lowercased() {
-                
+                //made pw entered variable into the text of the textfield
                 if let pwEntered = SignUpPW.text {
                     var profilesList: [Student] = [Student]()
+                    
+                    //create reference for the firebase database
                     ref.child("Profiles").observeSingleEvent(of: .value, with: { [self] (snapshot) in
+                        //set the values of the push data as a dictionary
                         let value = snapshot.value as! NSDictionary
                         
                         //get all the names
-                        
+                        //add the keys from the database into an array
                         let Keys : NSArray = (value.allKeys as! [String]) as NSArray
                         
+                        //add new member into variable before pushing it to the database
                         for i in 0..<(Keys.count){
                             let guy = value[Keys[i]] as! NSDictionary
                             let student = Student(Name: Keys[i] as! String, PW: guy["PW"] as! String, Log: guy["Log"] as! String)
                             profilesList.append(student)
                         }
                         
+                        //variable for later to check if the user has been created ebfore
                         var userExists: Bool = false
                         for i in profilesList {
                             if i.name == idEntered { // Student ID entered is already a registered account
@@ -66,7 +75,7 @@ class SignUpViewController: UIViewController{
                                 break
                             }
                         }
-                        if !userExists {
+                        if !userExists {//push the value to the database
                             let details = ["Log": "true", //by default
                                            "PW": pwEntered] as [String : Any]
                             self.ref.child("Profiles").child(idEntered).setValue(details)

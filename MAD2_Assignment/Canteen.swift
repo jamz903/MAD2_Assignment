@@ -10,17 +10,19 @@ import UIKit
 
 class Canteen {
     
+    //set up variables
     var value:Int
     var color:String
     var label:String
     
+    //set up init to make new varaibles
     init(Value:Int, Color:String, Label:String){
         value = Value
         color = Color
         label = Label
     }
     
-    
+    //dummy data for test/ presentationation
     static func fetchDummy() -> [Canteen]{
         var CanteenList: [Canteen] = [Canteen]()
         //CanteenList.append(getCanteens(Canteen))
@@ -31,21 +33,23 @@ class Canteen {
         ]
     }
     
-    
+    //get Canteens from School Canteen API
     static func getCanteens() -> [Canteen]{
+        
+        //Munch/MKP/FC Canteen API
         let urls = ["https://www1.np.edu.sg/npnet/wifiatcanteen/CMXService.asmx/getChartData?Location=System%20Campus%3EBlk%2073%3ELevel%201%3EMunch",
 
             "https://www1.np.edu.sg/npnet/wifiatcanteen/CMXService.asmx/getChartData?Location=System%20Campus%3EBlk%2051%3ELevel%202%20-%20Canteen%3ECoverageArea-B51L02",
 
         "https://www1.np.edu.sg/npnet/wifiatcanteen/CMXService.asmx/getChartData?Location=System%20Campus%3EBlk%2022%3ELevel%201%3ECoverageArea-B22L01" ]
+        
+        //create canteen list to hold canteen data
         var CanteenList: [Canteen] = [Canteen]()
 
 
-
-        var newCanteen = Canteen.self
-
-        var value = ""
-
+        
+        
+        //get canteen data for each api
         for i in urls{
             CanteenList.append(loadDataXML(from: i))
 
@@ -57,16 +61,20 @@ class Canteen {
         return CanteenList
     }
 
-
+    
+    //get data from API which is in XML
     static func loadDataXML(from url: String) -> Canteen{
         let url = url
+        //create dummy variable
         var newcanteens = MAD2_Assignment.Canteen(Value: 0, Color: "", Label: "")
+        //request URL from school api
         let request = URLRequest(url: URL(string: url)!)
+        //create session for api data
         let session = URLSession.shared.dataTask(with: request){
             (data, _, error) in
 
             if error != nil{
-                //
+                //incase of error
                 print("error")
                 return
             }
@@ -82,20 +90,24 @@ class Canteen {
             print(s)
             print("yhhh")
             //parse XML
-
+            
+            //cut out sides of XML data
             if let edit = s.range(of: "]") {
               s.removeSubrange(edit.lowerBound..<s.endIndex)
             }
 
-            print("YUIEF")
+            print("CanteenAPI working")
             if let edit2 = s.range(of: "{") {
                 s.removeSubrange(s.startIndex..<edit2.lowerBound)
             }
             print(s)
-
+            
+            
+            //convert XML/JSON to dictionary
             let dict = self.convertToDictionary(text: s)
 
-            newcanteens = MAD2_Assignment.Canteen.init(Value: dict!["value"] as! Int,
+            //add values from newly made dictionary to new Canteen Item
+            newcanteens = MAD2_Assignment.Canteen.init(Value: (dict!["value"] as! Int),
                                                            Color: dict!["color"] as! String,
                                                            Label: dict!["label"] as! String)
 
@@ -114,7 +126,7 @@ class Canteen {
     }
 
 
-
+    //convert data to dictionary
     static func convertToDictionary(text: String) -> [String: Any]? {
         if let data = text.data(using: .utf8) {
             do {

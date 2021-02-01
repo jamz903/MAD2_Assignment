@@ -55,16 +55,26 @@ class BusTableViewController: UITableViewController, UISearchBarDelegate {
         let ngeeAnnBusStopCodes: [BusStop] = GetBusStopsByBusStopNameOrCode(allBusStops: allBusStops, busStopNameOrCode: "Ngee Ann Poly")
 //        print("NP HAS \(ngeeAnnBusStopCodes.count) STOPS")
         
+        
+        
         for j in ngeeAnnBusStopCodes {
             print("=====\(j.Description)=====")
             let busServices: [Service] = GetBusServicesByBusStopCode(busStopCode: j.BusStopCode)
+            
+        
             
             // Sort based on bus service number (e.g. 52, 151, 154 etc.)
             let sortedArray = busServices.sorted(by: {x, y in return x.ServiceNo.compare(y.ServiceNo, options: .numeric, range: nil, locale: nil) == .orderedAscending})
             tableViewData.append(cellData(opened: false, title: j.Description, subtitle: j.RoadName, sectionData: sortedArray))
         }
+        
+        
+        
     
     }
+    
+    
+    
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
             let latestLocation:CLLocation = locations.last!

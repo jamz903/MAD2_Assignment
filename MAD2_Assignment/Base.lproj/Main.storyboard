@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BUT-vs-4kx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BUT-vs-4kx">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -204,14 +204,6 @@
                                 <exclude reference="Xo6-4T-ppQ"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="1Pw-9b-EHQ"/>
-                                <exclude reference="4vT-UY-uIe"/>
-                                <exclude reference="66k-qi-zgd"/>
-                                <exclude reference="TkV-uJ-39h"/>
-                                <exclude reference="Utm-GV-yqg"/>
-                                <exclude reference="eMk-RN-YdI"/>
-                                <exclude reference="hNo-SB-aiu"/>
-                                <exclude reference="t3z-go-Pm0"/>
                                 <exclude reference="LfA-ps-GTc"/>
                                 <exclude reference="isX-ZU-cTr"/>
                                 <exclude reference="qYl-cI-GAp"/>
@@ -228,6 +220,14 @@
                                 <exclude reference="ylk-iG-Poq"/>
                                 <exclude reference="5sa-TZ-Jpt"/>
                                 <exclude reference="dyy-Q9-bGW"/>
+                                <exclude reference="1Pw-9b-EHQ"/>
+                                <exclude reference="4vT-UY-uIe"/>
+                                <exclude reference="66k-qi-zgd"/>
+                                <exclude reference="TkV-uJ-39h"/>
+                                <exclude reference="Utm-GV-yqg"/>
+                                <exclude reference="eMk-RN-YdI"/>
+                                <exclude reference="hNo-SB-aiu"/>
+                                <exclude reference="t3z-go-Pm0"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -242,14 +242,6 @@
                                 <include reference="Xo6-4T-ppQ"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="1Pw-9b-EHQ"/>
-                                <include reference="4vT-UY-uIe"/>
-                                <include reference="66k-qi-zgd"/>
-                                <include reference="TkV-uJ-39h"/>
-                                <include reference="Utm-GV-yqg"/>
-                                <include reference="eMk-RN-YdI"/>
-                                <include reference="hNo-SB-aiu"/>
-                                <include reference="t3z-go-Pm0"/>
                                 <include reference="LfA-ps-GTc"/>
                                 <include reference="isX-ZU-cTr"/>
                                 <include reference="qYl-cI-GAp"/>
@@ -266,6 +258,14 @@
                                 <include reference="ylk-iG-Poq"/>
                                 <include reference="5sa-TZ-Jpt"/>
                                 <include reference="dyy-Q9-bGW"/>
+                                <include reference="1Pw-9b-EHQ"/>
+                                <include reference="4vT-UY-uIe"/>
+                                <include reference="66k-qi-zgd"/>
+                                <include reference="TkV-uJ-39h"/>
+                                <include reference="Utm-GV-yqg"/>
+                                <include reference="eMk-RN-YdI"/>
+                                <include reference="hNo-SB-aiu"/>
+                                <include reference="t3z-go-Pm0"/>
                             </mask>
                         </variation>
                     </view>
@@ -514,7 +514,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Search for Bus Stops" id="dg0-hs-8VZ">
-                            <rect key="frame" x="0.0" y="0.0" width="430" height="44"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <textInputTraits key="textInputTraits"/>
                         </searchBar>
@@ -934,10 +934,10 @@
             </objects>
             <point key="canvasLocation" x="1625" y="1630"/>
         </scene>
-        <!--Home-->
+        <!--HomepageViewController-->
         <scene sceneID="zgc-SW-jpc">
             <objects>
-                <viewController id="yp8-fj-4z8" customClass="HomepageViewController" customModule="MAD2_Assignment" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomepageViewController" title="HomepageViewController" id="yp8-fj-4z8" customClass="HomepageViewController" customModule="MAD2_Assignment" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zmf-0M-vAt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
