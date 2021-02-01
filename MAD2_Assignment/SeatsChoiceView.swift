@@ -36,6 +36,7 @@ struct SeatsChoiceView: View {
                         }
                     }).sheet(isPresented: self.$showBasket) {
                         OkView()
+                        
                     }.padding()
                     
                 }.navigationBarTitle("Choose Seats", displayMode: .large)

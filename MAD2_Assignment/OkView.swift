@@ -12,18 +12,22 @@ struct OkView: View {
     var width: CGFloat = 30
     var lineWidth: CGFloat = 7
     @Environment(\.presentationMode) var mode: Binding<PresentationMode>
+    @Environment(\.showingSheet) var showingSheet
     var body: some View {
           OkShape()
             .stroke(style: StrokeStyle(lineWidth: self.lineWidth, lineCap: .round,lineJoin: .round))
             .fill(LinearGradient(gradient: Gradient(colors: [.blue, .purple]) , startPoint: .leading, endPoint: .trailing))
             .frame(width: self.width, height: self.width * 2).rotationEffect(Angle(degrees: 45) )
-            .animation(.easeInOut(duration: 10))
+            .animation(.easeIn)
         Text("Booking Succesful")
             .fontWeight(.semibold)
             .font(.system(size: 20))
             .padding(.top, 10)
         
-        BookingButton(text: "Done", action: {self.mode.wrappedValue.dismiss()})
+        BookingButton(text: "Done", action: {
+            self.mode.wrappedValue.dismiss()
+            self.showingSheet?.wrappedValue = false
+        })
             .padding()
             .padding(.top, 10)
     }

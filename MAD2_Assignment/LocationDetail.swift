@@ -8,6 +8,17 @@
 import Foundation
 import SwiftUI
 
+struct ShowSeatsKey: EnvironmentKey {
+    static let defaultValue: Binding<Bool>? = nil
+}
+
+extension EnvironmentValues {
+    var showingSheet: Binding<Bool>? {
+        get { self[ShowSeatsKey.self] }
+        set { self[ShowSeatsKey.self] = newValue }
+    }
+}
+
 struct LocationDetail: View {
     @ObservedObject var modelData = ModelData()
     var location: BookingLocation
@@ -52,6 +63,7 @@ struct LocationDetail: View {
                     self.showSeats.toggle()
                 }.sheet(isPresented: self.$showSeats) {
                     SeatsChoiceView(location: self.location, selectedSeats: [])
+                        .environment(\.showingSheet, self.$showSeats)
                 }
                 .padding()
             }
@@ -69,3 +81,5 @@ struct LocationDetail_Previews: PreviewProvider {
             .environmentObject(modelData)
     }
 }
+
+

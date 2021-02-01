@@ -18,8 +18,10 @@ class CanteenViewController:UIViewController{
     
     
     
+    //for dummy values
+    var canteenl = Canteen.fetchDummy()
     
-    var canteenl = Canteen.fetchDummy()//for dummy values
+    //real API - but api currently not working so using hardcoded values
     //var canteenl = Canteen.getCanteens()
     
     
