@@ -176,16 +176,11 @@ class MapViewController: UIViewController, MKMapViewDelegate, QRCodeReaderViewCo
           view = dequeuedView
         }
         else {
-            
             // 5
             view = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: identifier)
             view.canShowCallout = true
             view.calloutOffset = CGPoint(x: -5, y: 5)
             let smallSquare = CGSize(width: 30, height: 30)
-//            let button = UIButton(frame: CGRect(origin: CGPoint.zero, size: smallSquare))
-//            button.setBackgroundImage(UIImage(named: "disclosureIndicator"), for: .normal)
-//            let btnImage = resizeImage(image: UIImage(named: "tableIndicator")!, targetSize: CGSize(width: 1, height: 1))
-//            button.setImage(btnImage, for: .normal)
             let button = UIButton(frame: CGRect(origin: CGPoint.zero, size: smallSquare))
             let disclosure = UITableViewCell()
             disclosure.frame = button.bounds
@@ -213,12 +208,16 @@ class MapViewController: UIViewController, MKMapViewDelegate, QRCodeReaderViewCo
     }
     
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
-        print("The annotation was selected: \(String(describing: view.annotation?.title))")
-        let annotation: CustomAnnotation = view.annotation as! CustomAnnotation
-        let annotationURL = annotation.url
-        let vc = SFSafariViewController(url: URL(string: annotationURL)!)
+        if (view.annotation?.title == "My Location") {
+            
+        }
+        else {
+            let annotation: CustomAnnotation = view.annotation as! CustomAnnotation
+            let annotationURL = annotation.url
+            let vc = SFSafariViewController(url: URL(string: annotationURL)!)
 
-        present(vc, animated: true, completion: nil)
+            present(vc, animated: true, completion: nil)
+        }
     }
     
     func resizeImage(image: UIImage, targetSize: CGSize) -> UIImage {
