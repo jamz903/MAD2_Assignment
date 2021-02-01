@@ -46,6 +46,7 @@
 		BF9CD3FC25C44F270024BE9C /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9CD3FB25C44F270024BE9C /* ModelData.swift */; };
 		BF9CD42225C458A20024BE9C /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9CD42125C458A20024BE9C /* CategoryRow.swift */; };
 		BF9CD42525C45A000024BE9C /* CategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9CD42425C45A000024BE9C /* CategoryItem.swift */; };
+		BFAEE2AD25C874A0000E1971 /* BookingRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAEE2AC25C874A0000E1971 /* BookingRepository.swift */; };
 		BFD7B8C925B5CA240073B1D8 /* ToDoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7B8C825B5CA240073B1D8 /* ToDoListViewController.swift */; };
 		BFD7B8CC25B5DA780073B1D8 /* TaskCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7B8CB25B5DA780073B1D8 /* TaskCellViewModel.swift */; };
 		BFD7B8CF25B5DC0E0073B1D8 /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7B8CE25B5DC0E0073B1D8 /* TaskListViewModel.swift */; };
@@ -141,6 +142,7 @@
 		BF9CD3FB25C44F270024BE9C /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		BF9CD42125C458A20024BE9C /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
 		BF9CD42425C45A000024BE9C /* CategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItem.swift; sourceTree = "<group>"; };
+		BFAEE2AC25C874A0000E1971 /* BookingRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingRepository.swift; sourceTree = "<group>"; };
 		BFD7B8C825B5CA240073B1D8 /* ToDoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListViewController.swift; sourceTree = "<group>"; };
 		BFD7B8CB25B5DA780073B1D8 /* TaskCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCellViewModel.swift; sourceTree = "<group>"; };
 		BFD7B8CE25B5DC0E0073B1D8 /* TaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
@@ -225,6 +227,7 @@
 				BFD7B8C825B5CA240073B1D8 /* ToDoListViewController.swift */,
 				E6500D6F25C83D4A006ED6A4 /* bookingLocation.json */,
 				BFF3900A25BDCEFB0003DCF1 /* BookingViewController.swift */,
+				BFAEE2AC25C874A0000E1971 /* BookingRepository.swift */,
 				BFF3902625C30EEE0003DCF1 /* BookingView.swift */,
 				BF9CD3F125C3111B0024BE9C /* BookingLocation.swift */,
 				BF9CD42125C458A20024BE9C /* CategoryRow.swift */,
@@ -472,6 +475,7 @@
 				7EE1AE0A25BC23C800348C4E /* CustomUITextField.swift in Sources */,
 				E6433FDA25BDA96F0009FD73 /* CanteenViewController.swift in Sources */,
 				BF96F8DF25C595B900036BF2 /* BookingButton.swift in Sources */,
+				BFAEE2AD25C874A0000E1971 /* BookingRepository.swift in Sources */,
 				BF9C7C7125B9BA8A0015574F /* TaskRepository.swift in Sources */,
 				E6FD161925B86F0E006A8B33 /* Student.swift in Sources */,
 				BF96F8EE25C5A2A700036BF2 /* Seat.swift in Sources */,

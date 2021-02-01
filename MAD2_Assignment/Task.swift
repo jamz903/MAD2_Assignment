@@ -2,13 +2,13 @@
 //  Task.swift
 //  MAD2_Assignment
 //
-//  Created by MAD2_P01 on 16/1/21.
+//  Created by Jamie on 16/1/21.
 //
 
 import Foundation
 import UIKit
 
-struct Task: Codable, Identifiable {
+struct Task: Codable, Identifiable, Equatable {
     var id: String?
     var title: String
     var completed: Bool

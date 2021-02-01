@@ -2,7 +2,7 @@
 //  SeatsChoiceView.swift
 //  MAD2_Assignment
 //
-//  Created by MAD2_P01 on 30/1/21.
+//  Created by Jamie on 30/1/21.
 //
 
 import Foundation
@@ -13,7 +13,7 @@ struct SeatsChoiceView: View {
     @ObservedObject var modelData = ModelData()
     var location: BookingLocation
     @State var selectedSeats: [Seat]
-    @State var showBasket: Bool = false
+    @State var showOk: Bool = false
     @State var date: BookingDate = BookingDate.default
     @State var hour: String = ""
     @State var showPopup = false
@@ -30,12 +30,13 @@ struct SeatsChoiceView: View {
                         .padding(.bottom, 8)
                     DateTimeView(date: self.$date, hour: self.$hour)
                     BookingButton(text: "Continue", action: {
-                        self.showBasket = self.validateInputs()
+                        self.showOk = self.validateInputs()
                         withAnimation {
                             self.showPopup = !self.validateInputs()
                         }
-                    }).sheet(isPresented: self.$showBasket) {
-                        OkView()
+                    }).sheet(isPresented: self.$showOk) {
+                        //moves on to Booking successful view
+                        OkView(location: self.location, selectedSeats: self.$selectedSeats, date: self.$date, hour: self.$hour)
                         
                     }.padding()
                     
@@ -57,6 +58,7 @@ struct SeatsChoiceView: View {
         )
     }
     
+    //validation pop-up to prompt user to select required elements
     fileprivate func createPopupContent() -> some View {
         VStack {
             Text("Not allowed").font(.system(size: 20, weight: Font.Weight.semibold))
@@ -75,6 +77,7 @@ struct SeatsChoiceView: View {
             .transition(.move(edge: .bottom))
     }
     
+    //checks if at least 1 seat, date & time is selected
     fileprivate func validateInputs() -> Bool {
         self.selectedSeats.count > 0
             && self.date != BookingDate.default

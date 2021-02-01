@@ -2,7 +2,7 @@
 //  DateView.swift
 //  MAD2_Assignment
 //
-//  Created by MAD2_P01 on 30/1/21.
+//  Created by Jamie on 30/1/21.
 //
 
 import SwiftUI
@@ -23,6 +23,7 @@ struct DateView: View {
                 .foregroundColor(isSelected ? .white : .black)
                 .font(.callout)
                 .padding(.top, 10)
+            
         }.padding()
         .background(isSelected ? Color.blue: Color.gray.opacity(0.3))
         .clipShape(DateShape())

@@ -2,7 +2,7 @@
 //  BookingLocation.swift
 //  MAD2_Assignment
 //
-//  Created by MAD2_P01 on 28/1/21.
+//  Created by Jamie on 28/1/21.
 //
 
 import Foundation

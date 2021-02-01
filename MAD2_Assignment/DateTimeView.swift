@@ -2,7 +2,7 @@
 //  DateTimeView.swift
 //  MAD2_Assignment
 //
-//  Created by MAD2_P01 on 30/1/21.
+//  Created by Jamie on 30/1/21.
 //
 
 import SwiftUI

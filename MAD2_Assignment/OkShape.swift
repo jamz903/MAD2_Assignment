@@ -2,7 +2,7 @@
 //  OkShape.swift
 //  MAD2_Assignment
 //
-//  Created by MAD2_P01 on 1/2/21.
+//  Created by Jamie on 1/2/21.
 //
 
 import Foundation

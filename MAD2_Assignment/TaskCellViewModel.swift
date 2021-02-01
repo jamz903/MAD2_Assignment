@@ -2,7 +2,7 @@
 //  TaskCellViewModel.swift
 //  MAD2_Assignment
 //
-//  Created by MAD2_P01 on 18/1/21.
+//  Created by Jamie on 18/1/21.
 //
 
 import Foundation
@@ -37,10 +37,10 @@ class TaskCellViewModel: ObservableObject, Identifiable {
         $task
             //only send following updates after the first one
             .dropFirst()
-            //task syncs to firebase in 8secs to only send updates when user stops typing
+            //task syncs to firebase in 0.8secs to only send updates when user stops typing
             .debounce(for: 0.8, scheduler: RunLoop.main)
             .sink { [weak self] task in
-              self?.taskRepository.updateTask(task)
+              self?.taskRepository.updateTick(task)
             }
             .store(in: &cancellables)
     }

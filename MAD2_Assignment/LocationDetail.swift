@@ -2,7 +2,7 @@
 //  LocationDetail.swift
 //  MAD2_Assignment
 //
-//  Created by MAD2_P01 on 30/1/21.
+//  Created by Jamie on 30/1/21.
 //
 
 import Foundation
@@ -30,6 +30,7 @@ struct LocationDetail: View {
 
     var body: some View {
         ScrollView {
+            //shows image of location
             CircleImage(image: location.image
                             .resizable())
                 .offset(y: -130)
@@ -41,6 +42,7 @@ struct LocationDetail: View {
                 HStack {
                     Text(location.name)
                         .font(.title)
+                    //allows user to favourite locations
                     FavoriteButton(isSet: $modelData.locations[locationIndex].isFavorite)
                 }
 
@@ -59,6 +61,7 @@ struct LocationDetail: View {
             .padding()
             
             HStack {
+                //allows user to book & opens a sheet of seats view
                 BookingButton(){
                     self.showSeats.toggle()
                 }.sheet(isPresented: self.$showSeats) {

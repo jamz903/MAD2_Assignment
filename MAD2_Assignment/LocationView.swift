@@ -2,7 +2,7 @@
 //  LocationView.swift
 //  MAD2_Assignment
 //
-//  Created by MAD2_P01 on 30/1/21.
+//  Created by Jamie on 30/1/21.
 //
 
 import Foundation
@@ -21,10 +21,6 @@ struct LocationView: View {
                 
                 VStack {
                     createRow()
-                        .padding(.bottom, 20)
-                    createRow()
-                        .padding(.bottom, 20)
-                    createRow()
                 }
                 
             }
@@ -35,21 +31,25 @@ struct LocationView: View {
     }
     
     fileprivate func createRow() -> some View {
+        let numberOfRows: Int = 3
         let numbersPerRow: Int = 5
         
         return
             VStack {
-                HStack {
-                    TableView()
-                }
-                HStack {
-                    ForEach(0..<numbersPerRow, id: \.self) { number in
-                        ChairView(width: 30, accentColor: .blue, seat: Seat(id: UUID(), row: 1, number: number+1), onSelect: { seat in
-                            self.selectedSeats.append(seat)
-                        }, onDeselect: {seat in
-                            self.selectedSeats.removeAll(where: {$0.id == seat.id})
-                        })
+                ForEach(0..<numberOfRows, id: \.self) { rowNum in
+                    HStack {
+                        TableView()
                     }
+                    HStack {
+                        ForEach(0..<numbersPerRow, id: \.self) { number in
+                            ChairView(width: 30, accentColor: .blue, seat: Seat(id: UUID(), row: rowNum+1, number: number+1), onSelect: { seat in
+                                self.selectedSeats.append(seat)
+                            }, onDeselect: {seat in
+                                self.selectedSeats.removeAll(where: {$0.id == seat.id})
+                            })
+                        }
+                    }
+                    .padding(.bottom, 20)
                 }
             }
     }

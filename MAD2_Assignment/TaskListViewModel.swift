@@ -2,7 +2,7 @@
 //  TaskListViewModel.swift
 //  MAD2_Assignment
 //
-//  Created by MAD2_P01 on 18/1/21.
+//  Created by Jamie on 18/1/21.
 //
 
 import Foundation
@@ -27,6 +27,7 @@ class TaskListViewModel: ObservableObject {
 //        }
     }
     
+    //adds task to UI view model & list
     func addTask(task: Task) {
         let taskVM = TaskCellViewModel(task: task)
         self.taskCellViewModels.append(taskVM)
@@ -34,11 +35,17 @@ class TaskListViewModel: ObservableObject {
         
     }
     
+    //removes task from UI view model & list
     func removeTasks(atOffsets indexSet: IndexSet){
         let viewModels = indexSet.lazy.map { self.taskCellViewModels[$0] }
         viewModels.forEach { taskCellViewModel in
             taskRepository.removeTask(taskCellViewModel.task)
         }
         taskCellViewModels.remove(atOffsets: indexSet)
+    }
+    
+    //updates task when enter is pressed
+    func updateTasks(task : Task){
+        taskRepository.updateTask(task)
     }
 }

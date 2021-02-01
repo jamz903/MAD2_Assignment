@@ -29,10 +29,10 @@
 			</array>
 		</dict>
 	</array>
-    <key>LSApplicationQueriesSchemes</key>
-    <array>
-        <string>ConnectMAD2</string>
-    </array>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>ConnectMAD2</string>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
@@ -98,5 +98,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSCalendarsUsageDescription</key>
+	<string>This application needs to access the calendar</string>
 </dict>
 </plist>

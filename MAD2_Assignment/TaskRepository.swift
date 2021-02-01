@@ -2,7 +2,7 @@
 //  TaskRepository.swift
 //  MAD2_Assignment
 //
-//  Created by MAD2_P01 on 21/1/21.
+//  Created by Jamie on 21/1/21.
 //
 
 import Foundation
@@ -18,6 +18,7 @@ class TaskRepository: ObservableObject {
         loadData()
     }
     
+    //loads tasklist data from firebase
     func loadData(){
         tasks.removeAll()
         self.ref.child("Tasks").observeSingleEvent(of: .value, with: { (snapshot) in
@@ -46,6 +47,7 @@ class TaskRepository: ObservableObject {
         
     }
     
+    //adds task to firebase & list
     func addTask(_ task: Task) -> String {
         let taskNum = "Task\(self.listSize+1)"
         print(taskNum)
@@ -75,12 +77,21 @@ class TaskRepository: ObservableObject {
         return taskNum
     }
     
+    //updates task title in firebase & list (when enter is pressed)
     func updateTask(_ task: Task){
         print(task.id)
         if task.id != nil {
             let taskID = task.id
-            self.ref.child("Tasks").child(taskID!).child("completed").setValue(task.completed)
             self.ref.child("Tasks").child(taskID!).child("title").setValue(task.title)
+            //loadData()
+            
+            var index = tasks.firstIndex(of: task)
+            if index != nil {
+                tasks[index!].title = task.title
+            }
+            else {
+                tasks[0].title = task.title
+            }
         }
         
         else {
@@ -89,9 +100,34 @@ class TaskRepository: ObservableObject {
         
     }
     
+    //updates completed status in firebase & in list (every 0.8 seconds)
+    func updateTick(_ task: Task) {
+        print(task.id)
+        if task.id != nil {
+            let taskID = task.id
+            self.ref.child("Tasks").child(taskID!).child("completed").setValue(task.completed)
+            //loadData()
+            
+            var index = tasks.firstIndex(of: task)
+            if index != nil {
+                tasks[index!].completed = task.completed
+            }
+            else {
+                tasks[0].completed = task.completed
+            }
+        }
+        
+        else {
+            print("no id")
+        }
+    }
+    
+    //removes task from firebase & list when deleted
     func removeTask(_ task: Task){
         let taskID = task.id
         self.ref.child("Tasks").child(taskID!).removeValue()
+        var index = tasks.firstIndex(of: task)!
+        tasks.remove(at: index)
     }
     
 }

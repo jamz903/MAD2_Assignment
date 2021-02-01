@@ -58,14 +58,14 @@ struct TOMSwidgetEntryView : View {
     var entry: Provider.Entry
 
     var body: some View {
-        ZStack{
-            //Image("—Pngtree—scan icon_4490375").resizable()
-            VStack{
-                Text("Click for TOMS").fontWeight(.heavy).foregroundColor(Color.white).widgetURL(entry.url)
-            }
-        }
         
-        
+                    ZStack {
+                        Color.blue
+                            .ignoresSafeArea()
+                        Text(" TOMS").fontWeight(.heavy).foregroundColor(.white).multilineTextAlignment(.center).font(.title).padding(3)
+
+                    }
+
     }
 }
 

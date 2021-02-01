@@ -2,14 +2,17 @@
 //  BookingView.swift
 //  MAD2_Assignment
 //
-//  Created by MAD2_P01 on 28/1/21.
+//  Created by Jamie on 28/1/21.
 //
 
 import Foundation
 import SwiftUI
 
+//Custom Text Label to Overlay on 'Featured' Image
 struct ImageOverlay: View {
+    
     @ObservedObject var modelData = ModelData()
+    
     var body: some View {
         ZStack {
             Text("Featured: \(modelData.features[0].name)")
@@ -21,17 +24,16 @@ struct ImageOverlay: View {
         .opacity(0.8)
         .cornerRadius(10)
         .padding(8)
-        //.padding(.bottom, 8)
     }
 }
 
-
+//Booking View
 struct BookingView: View {
-    //@EnvironmentObject var modelData: ModelData
     @ObservedObject var modelData = ModelData()
     
     var body: some View {
         List {
+            //shows the featured location
             modelData.features[0].image
                 .resizable()
                 .scaledToFill()
@@ -45,6 +47,7 @@ struct BookingView: View {
                 .padding(.trailing, 5)
                 .padding(.bottom, 8)
             
+            //shows a compositional layout by various locations
             ForEach(modelData.categories.keys.sorted(), id: \.self) { key in
                 CategoryRow(categoryName: key, items: modelData.categories[key]!)
                 
@@ -62,6 +65,8 @@ struct BookingView_Previews: PreviewProvider {
     }
 }
 
+//loading wheel
+//not in use
 struct Loader : View {
     @State var animate = false
     

@@ -2,7 +2,7 @@
 //  ModelData.swift
 //  MAD2_Assignment
 //
-//  Created by MAD2_P01 on 29/1/21.
+//  Created by Jamie on 29/1/21.
 //
 
 import Foundation
@@ -23,6 +23,7 @@ final class ModelData: ObservableObject {
     }
 }
 
+//loads data from json file
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
     

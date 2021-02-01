@@ -2,27 +2,30 @@
 //  CategoryRow.swift
 //  MAD2_Assignment
 //
-//  Created by MAD2_P01 on 29/1/21.
+//  Created by Jamie on 29/1/21.
 //
 
 import Foundation
 import SwiftUI
 
+//custom view of how a row of locations will look like
 struct CategoryRow: View {
     var categoryName: String
     var items: [BookingLocation]
     
     var body: some View {
         VStack(alignment: .leading){
+            //header
             Text(categoryName)
-                //.font(.headline)
                 .font(.system(size: 20, weight: .bold))
                 .padding(.leading, 15)
                 .padding(.top, 5)
             
+            //scrollable
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top, spacing: 10) {
                     ForEach(items) { location in
+                        //links it to location detail where they can view more details of the location & also make bookings
                         NavigationLink(destination: LocationDetail(location: location)) {
                             CategoryItem(location: location)
                         }
