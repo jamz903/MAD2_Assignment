@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class CustomUITextField: UITextField, UITextFieldDelegate {
+class CustomUITextField: UITextField {
     let padding = UIEdgeInsets(top: 0, left: 55, bottom: 0, right: 5)
 
     override open func textRect(forBounds bounds: CGRect) -> CGRect {
@@ -23,6 +23,7 @@ class CustomUITextField: UITextField, UITextFieldDelegate {
         return bounds.inset(by: padding)
     }
     
+    // Function to set image on the left of placeholder
     func setPlaceHolderImage(imageName: String) {
         let imgView = UIImageView(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
         imgView.contentMode = .scaleAspectFill
@@ -31,6 +32,7 @@ class CustomUITextField: UITextField, UITextFieldDelegate {
         self.leftViewMode = .always
     }
     
+    // Function to resize image based on specified dimensions (width x height)
     func resizeImage(image: UIImage, targetSize: CGSize) -> UIImage {
         let size = image.size
 
@@ -56,11 +58,6 @@ class CustomUITextField: UITextField, UITextFieldDelegate {
 
         return newImage!
     }
-    
-//    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-//        textField.resignFirstResponder()
-//        return true
-//    }
 }
 
 extension UIImage {

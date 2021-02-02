@@ -15,6 +15,7 @@ import AVFoundation
 
 class MapViewController: UIViewController, MKMapViewDelegate, QRCodeReaderViewControllerDelegate {
     
+    // Setting up of the location delegate and location manager
     let locationDelegate = LocationDelegate()
     var latestLocation: CLLocation? = nil
     
@@ -33,43 +34,50 @@ class MapViewController: UIViewController, MKMapViewDelegate, QRCodeReaderViewCo
 
     @IBOutlet weak var map: MKMapView!
     
+    // Defining the location for geocode to decode
     let npGeoCode: String = "535 Clementi Road Singapore 599489"
     let geoCoder = CLGeocoder()
     var myCoordinates: [Double] = [0, 0]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("Runninggg")
         
-        
+        // Adding the "scan" button with the QR logo at the top right hand of the navigation bar
         let view = UIView()
         let button = UIButton(type: .system)
-//        button.semanticContentAttribute = .forceRightToLeft
         button.setImage(UIImage(systemName: "qrcode.viewfinder"), for: .normal)
         button.setTitle(" Scan", for: .normal)
+        // Adding an onClick gesture
+        // Runs the QRBtnClicked function on-click
         button.addTarget(self, action: #selector(QRBtnClicked), for: .touchUpInside)
         button.sizeToFit()
         view.addSubview(button)
         view.frame = button.bounds
         navigationItem.rightBarButtonItem = UIBarButtonItem(customView: view)
         
+        // Setting the delegates for map, location manager and QR reader
         readerVC.delegate = self
         map.delegate = self
         map.showsUserLocation = true
         locationManager.delegate = locationDelegate
         
+        // Adding all the SafeEntry annotations on the map view
         AddAnnotationsOnMap()
         
+        // Decoding NP location
         geoCoder.geocodeAddressString(npGeoCode, completionHandler: {p,e in
             
             let lat = p![0].location!.coordinate.latitude
             let long = p![0].location!.coordinate.longitude
 
             let npLocation = CLLocation(latitude: lat, longitude: long)
+            
+            // Zooms in on NP location on the map view
             self.centerMapOnLocation(location: npLocation, regionRadius: self.regionRadius)
         })
     }
-        
+    
+    // Centers the map on a specified location
     func centerMapOnLocation(location: CLLocation, regionRadius: CLLocationDistance) {
         let coordinateRegion = MKCoordinateRegion(
             center: location.coordinate,
@@ -78,14 +86,15 @@ class MapViewController: UIViewController, MKMapViewDelegate, QRCodeReaderViewCo
         map.setRegion(coordinateRegion, animated: true)
     }
         
-    
+    // Adding all the SafeEntry locations as annotation on the map view
     func AddAnnotationsOnMap() {
+        
+        // Creates CustomAnnotation objects so that it can store the SafeEntry url of the respective locations
         let mkpAnnotation = CustomAnnotation()
         mkpAnnotation.coordinate = CLLocationCoordinate2D(latitude: 1.332251, longitude: 103.774441)
         mkpAnnotation.title = "Makan Place, Block 58"
         mkpAnnotation.subtitle = "Ngee Ann Polytechnic"
         mkpAnnotation.url = "https://www.safeentry-qr.gov.sg/tenant/PROD-T08GB0039A-NGEEANN-POLY-SE"
-        mkpAnnotation.iconName = "bowl"
         self.map.addAnnotation(mkpAnnotation)
         
         let fcAnnotation = CustomAnnotation()
@@ -93,7 +102,6 @@ class MapViewController: UIViewController, MKMapViewDelegate, QRCodeReaderViewCo
         fcAnnotation.title = "Food Club, Block 22"
         fcAnnotation.subtitle = "Ngee Ann Polytechnic"
         fcAnnotation.url = "https://www.safeentry-qr.gov.sg/tenant/PROD-T08GB0039A-803688-NGEEANNPOLYTECHNIC-SE"
-        fcAnnotation.iconName = "bowl"
         self.map.addAnnotation(fcAnnotation)
         
         let poolsideAnnotation = CustomAnnotation()
@@ -101,7 +109,6 @@ class MapViewController: UIViewController, MKMapViewDelegate, QRCodeReaderViewCo
         poolsideAnnotation.title = "Poolside, Block 18"
         poolsideAnnotation.subtitle = "Ngee Ann Polytechnic"
         poolsideAnnotation.url = "https://www.safeentry-qr.gov.sg/tenant/PROD-T08GB0039A-NGEEANN-POLY-SE"
-        poolsideAnnotation.iconName = "bowl"
         self.map.addAnnotation(poolsideAnnotation)
         
         let munchAnnotation = CustomAnnotation()
@@ -109,7 +116,6 @@ class MapViewController: UIViewController, MKMapViewDelegate, QRCodeReaderViewCo
         munchAnnotation.title = "Munch, Block 73"
         munchAnnotation.subtitle = "Ngee Ann Polytechnic"
         munchAnnotation.url = "https://www.safeentry-qr.gov.sg/tenant/PROD-T08GB0039A-890218-BLOCK73MUNCH-SE"
-        munchAnnotation.iconName = "bowl"
         self.map.addAnnotation(munchAnnotation)
         
         let studio27Annotation = CustomAnnotation()
@@ -117,7 +123,6 @@ class MapViewController: UIViewController, MKMapViewDelegate, QRCodeReaderViewCo
         studio27Annotation.title = "Studio 27, Block 27"
         studio27Annotation.subtitle = "Ngee Ann Polytechnic"
         studio27Annotation.url = "https://www.safeentry-qr.gov.sg/tenant/PROD-T08GB0039A-NGEEANN-POLY-SE"
-        studio27Annotation.iconName = "gameController"
         self.map.addAnnotation(studio27Annotation)
         
         let libraryAnnotation = CustomAnnotation()
@@ -125,7 +130,6 @@ class MapViewController: UIViewController, MKMapViewDelegate, QRCodeReaderViewCo
         libraryAnnotation.title = "Lien Ying Chow Library, Block 1"
         libraryAnnotation.subtitle = "Ngee Ann Polytechnic"
         libraryAnnotation.url = "https://www.safeentry-qr.gov.sg/tenant/PROD-T08GB0039A-NGEEANN-POLY-SE"
-        libraryAnnotation.iconName = "book"
         self.map.addAnnotation(libraryAnnotation)
         
         let ourSpaceAnnotation = CustomAnnotation()
@@ -133,7 +137,6 @@ class MapViewController: UIViewController, MKMapViewDelegate, QRCodeReaderViewCo
         ourSpaceAnnotation.title = "OurSpace@72, Block 72"
         ourSpaceAnnotation.subtitle = "Ngee Ann Polytechnic"
         ourSpaceAnnotation.url = "https://www.safeentry-qr.gov.sg/tenant/PROD-T08GB0039A-NGEEANN-POLY-SE"
-        ourSpaceAnnotation.iconName = "book"
         self.map.addAnnotation(ourSpaceAnnotation)
         
         let blk22Annotation = CustomAnnotation()
@@ -141,20 +144,24 @@ class MapViewController: UIViewController, MKMapViewDelegate, QRCodeReaderViewCo
         blk22Annotation.title = "Block 22"
         blk22Annotation.subtitle = "Ngee Ann Polytechnic"
         blk22Annotation.url = "https://www.safeentry-qr.gov.sg/tenant/PROD-T08GB0039A-NGEEANN-POLY-SE"
-        blk22Annotation.iconName = "book"
         self.map.addAnnotation(blk22Annotation)
-
     }
     
+    // Get the icons given the annotation title
     func GetAnnotationIconName(title: String) -> String {
+        
+        // List of annotation titles and their respective icon groups
         let foodIcons: [String] = ["Makan Place, Block 58", "Food Club, Block 22", "Poolside, Block 18", "Munch, Block 73"]
         let gameIcons: [String] = ["Studio 27, Block 27"]
         let bookIcons: [String] = ["Lien Ying Chow Library, Block 1", "OurSpace@72, Block 72", "Block 22"]
         
         var iconName: String = ""
+        
+        // If annotation belongs in foodIcons, they will have a bowl icon
         if foodIcons.contains(title) {
             iconName = "bowl"
         }
+        // else if annotation belongs in gameIcons, they will have a game controller icon
         else if gameIcons.contains(title) {
             iconName = "gameController"
         }
@@ -165,21 +172,21 @@ class MapViewController: UIViewController, MKMapViewDelegate, QRCodeReaderViewCo
     }
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-        // 3
-        
         let identifier = "AnnotationView"
         var view: MKMarkerAnnotationView
-        // 4
+        
         if let dequeuedView = mapView.dequeueReusableAnnotationView(
           withIdentifier: identifier) as? MKMarkerAnnotationView {
           dequeuedView.annotation = annotation
           view = dequeuedView
         }
         else {
-            // 5
+            // Allow the annotations to show callout (pop up, more details about the annotation)
             view = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: identifier)
             view.canShowCallout = true
             view.calloutOffset = CGPoint(x: -5, y: 5)
+            
+            // Adding the disclosure indicator to the annotation callout (">" icon)
             let smallSquare = CGSize(width: 30, height: 30)
             let button = UIButton(frame: CGRect(origin: CGPoint.zero, size: smallSquare))
             let disclosure = UITableViewCell()
@@ -188,12 +195,15 @@ class MapViewController: UIViewController, MKMapViewDelegate, QRCodeReaderViewCo
             disclosure.isUserInteractionEnabled = false
             button.addSubview(disclosure)
             
+            // Setting the callout's right accessory as the disclosure indicator (">" icon)
             view.rightCalloutAccessoryView = button
             
+            // Setting the icon for the respective annotations
             var leftImage: UIImage? = nil
             
+            // Retrieves the annotation's icon using the GetAnnotationIconName function
+            // Sets the icon colour to iOS default blue
             leftImage = UIImage(named: GetAnnotationIconName(title: annotation.title!!))?.withTintColor(UIColor(red: 0/255, green: 122/255, blue: 255/255, alpha: 1))
-            
             let leftBtn = UIButton(frame: CGRect(origin: CGPoint.zero, size: smallSquare))
             leftBtn.setImage(leftImage, for: .normal)
             view.leftCalloutAccessoryView = leftBtn
@@ -201,25 +211,34 @@ class MapViewController: UIViewController, MKMapViewDelegate, QRCodeReaderViewCo
         return view
     }
     
+    // Runs when an annotation is selected
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
         let lat: Double = (view.annotation?.coordinate.latitude)!
         let long: Double = (view.annotation?.coordinate.longitude)!
+        
+        // Centers the annotation on the user's map view
         self.centerMapOnLocation(location: CLLocation(latitude: lat, longitude: long), regionRadius: map.currentRadius())
     }
     
+    // Runs when the callout of an annotation is selected
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        // Checks if annotation callout selected is the user's location
         if (view.annotation?.title == "My Location") {
             
         }
         else {
+            // If callout selected is not user's location (means is SafeEntry annotation callout)
+            // Cast annotation as CustomAnnotation object
             let annotation: CustomAnnotation = view.annotation as! CustomAnnotation
             let annotationURL = annotation.url
+            
+            // Opens SafeEntry URL in web view
             let vc = SFSafariViewController(url: URL(string: annotationURL)!)
-
             present(vc, animated: true, completion: nil)
         }
     }
     
+    // function to resize image to a specified dimension (width x height)
     func resizeImage(image: UIImage, targetSize: CGSize) -> UIImage {
         let size = image.size
 
@@ -237,7 +256,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, QRCodeReaderViewCo
         // This is the rect that we've calculated out and this is what is actually used below
         let rect = CGRect(x: 0, y: 0, width: newSize.width, height: newSize.height)
 
-        // Actually do the resizing to the rect using the ImageContext stuff
+        // Actually do the resizing to the rect using the ImageContext
         UIGraphicsBeginImageContextWithOptions(newSize, false, 1.0)
         image.draw(in: rect)
         let newImage = UIGraphicsGetImageFromCurrentImageContext()
@@ -246,32 +265,31 @@ class MapViewController: UIViewController, MKMapViewDelegate, QRCodeReaderViewCo
         return newImage!
     }
     
-    
+    // Runs when the QR scanner has successfully scanned a QR code
     func reader(_ reader: QRCodeReaderViewController, didScanResult result: QRCodeReaderResult) {
         reader.stopScanning()
         print(result.value)
         dismiss(animated: true, completion: nil)
         
-        // code to open the URL in safari upon scanning
+        // Opens the SafeEntry URL in a web view
         guard let url = URL(string: result.value) else { return }
-        
         let vc = SFSafariViewController(url: url)
         present(vc, animated: true, completion: nil)
-        
-        
     }
     
+    // When user rotates QR scanner camera
     func reader(_ reader: QRCodeReaderViewController, didSwitchCamera newCaptureDevice: AVCaptureDeviceInput){
         print("Switching capture to: \(newCaptureDevice.device.localizedName)")
-        
     }
     
+    // When user clicks on cancel button
     func readerDidCancel(_ reader: QRCodeReaderViewController) {
         reader.stopScanning()
 
         dismiss(animated: true, completion: nil)
     }
     
+    // Configuring of the QR scanner
     lazy var readerVC: QRCodeReaderViewController = {
         let builder = QRCodeReaderViewControllerBuilder {
             $0.reader = QRCodeReader(metadataObjectTypes: [.qr], captureDevicePosition: .back)
@@ -288,10 +306,10 @@ class MapViewController: UIViewController, MKMapViewDelegate, QRCodeReaderViewCo
         return QRCodeReaderViewController(builder: builder)
     }()
     
+    // Runs when the "Scan" button at the right side of the navigation bar is clicked on
     @objc func QRBtnClicked() {
         print("Works")
         readerVC.completionBlock = { (result: QRCodeReaderResult?) in
-//            print(result!)
         }
 
         // Presents the readerVC as modal form sheet
@@ -302,6 +320,8 @@ class MapViewController: UIViewController, MKMapViewDelegate, QRCodeReaderViewCo
 }
 
 extension MKMapView {
+    
+    // Retrieves the current radius of the map
     func topCenterCoordinate() -> CLLocationCoordinate2D {
             return self.convert(CGPoint(x: self.frame.size.width / 2.0, y: 0), toCoordinateFrom: self)
         }

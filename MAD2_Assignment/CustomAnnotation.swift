@@ -12,7 +12,5 @@ import MapKit
 
 class CustomAnnotation: MKPointAnnotation {
     var url: String = ""
-    var iconName: String = ""
-    
-    
+
 }

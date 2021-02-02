@@ -8,7 +8,6 @@
 import Foundation
 
 struct BusService: Codable {
-//    public var odatametadata: String
     public var BusStopCode: String
     public var Services: [Service]
 }
@@ -19,14 +18,6 @@ struct Service: Codable {
     public var NextBus: NextBus
     public var NextBus2: NextBus2
     public var NextBus3: NextBus3
-    
-//    static func ==(lhs: Service, rhs: Service) -> Bool {
-//        return lhs.ServiceNo == rhs.ServiceNo
-//    }
-//
-//    static func <(lhs: Service, rhs: Service) -> Bool {
-//        return lhs.ServiceNo < rhs.ServiceNo
-//    }
 }
 
 struct NextBus: Codable {
