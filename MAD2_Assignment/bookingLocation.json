@@ -1,0 +1,122 @@
+[
+    {
+        "name": "Food Club",
+        "category": "Eat",
+        "id": 1001,
+        "isFeatured": true,
+        "isFavorite": true,
+        "block": "Block 22",
+        "description": "Thanks to Food Club's bevy of international cuisines such as Indonesian ayam penyet, Sichuanese mala xiangguo and Korean hot plate chicken, we're spoilt for choice with every meal.",
+        "imageName": "FC"
+    },
+    {
+        "name": "Makan Place",
+        "category": "Eat",
+        "id": 1002,
+        "isFeatured": false,
+        "isFavorite": false,
+        "block": "Block 51",
+        "description": "Be spoilt for choice at the biggest air-conditioned food court among the tertiary institutions in Singapore.",
+        "imageName": "mkp"
+    },
+    {
+        "name": "Munch",
+        "category": "Eat",
+        "id": 1003,
+        "isFeatured": false,
+        "isFavorite": true,
+        "block": "Block 73",
+        "description": "Located at the first floor of Seventy3 and right across from the us stop, the cosy food court is at the cross roads of some of the most popular hotspots on campus.",
+        "imageName": "munch"
+    },
+    {
+        "name": "Studio 27",
+        "category": "Chill",
+        "id": 1004,
+        "isFeatured": true,
+        "isFavorite": true,
+        "block": "Block 27",
+        "description": "The snazzy digital playground features a jamming and sound recording studio that comes complete with a DJ console, digital editing suites, video production studios and Wii stations.",
+        "imageName": "s27"
+    },
+    {
+        "name": "Makers'Academy",
+        "category": "Chill",
+        "id": 1005,
+        "isFeatured": false,
+        "isFavorite": false,
+        "block": "Block 56",
+        "description": "Turn your innovative ideas into real prototypes at Makers' Academy, where 3D printers and craft tools are available at your disposal. You can even approach staff for help or attend crafting workshops!",
+        "imageName": "makersacademy"
+    },
+    {
+        "name": "Study Lounge @ 22",
+        "category": "Chill",
+        "id": 1006,
+        "isFeatured": false,
+        "isFavorite": false,
+        "block": "Block 22",
+        "description": "The cosy corners and plush seats at the new student lounge makes ploughing through group work that much easier!",
+        "imageName": "studylounge"
+    },
+    {
+        "name": "Lien Ying Chow Library",
+        "category": "Chill",
+        "id": 1007,
+        "isFeatured": true,
+        "isFavorite": false,
+        "block": "Block 1",
+        "description": "Dive in your favoruite bestsellers or find reference materials for your essay at the Lien Ying Chow Library, which sports both a lifestyle library and reference library. There's even a board games corner and an Internet cafe for students to chill.",
+        "imageName": "library",
+    },
+    {
+        "name": "Information Security & Forensics Lab",
+        "category": "Study",
+        "id": 1008,
+        "isFeatured": false,
+        "isFavorite": false,
+        "block": "Block 27",
+        "description": "Learn in a campus of the future! Our technologically-enhanced Smart Learning Spaces help prepare you for the digital future.",
+        "imageName": "lab"
+    },
+    {
+        "name": "Early Childhood Learning Facilities",
+        "category": "Study",
+        "id": 1009,
+        "isFeatured": false,
+        "isFavorite": false,
+        "block": "Block 31",
+        "description": "Innovative learning facilities provide realistic training before early childhood students to go for their practicums at pre-schools",
+        "imageName": "classroom"
+    },
+    {
+        "name": "TV Studio",
+        "category": "Study",
+        "id": 1010,
+        "isFeatured": false,
+        "isFavorite": false,
+        "block": "Block 53",
+        "description": "Equipped with the same technologies used by the industry, our media students are ready to hit the ground running upon graduation. Book slots to access this room in your free time here.",
+        "imageName": "studio"
+    },
+    {
+        "name": "Product Design & Innovation Studio",
+        "category": "Study",
+        "id": 1011,
+        "isFeatured": false,
+        "isFavorite": false,
+        "block": "Block 34",
+        "description": "Students bring up their ideas to life as they turn their creative concepts into working prototypes in design studios. Book your seat here!",
+        "imageName": "designstudio"
+    },
+    {
+        "name": "Poolside",
+        "category": "Eat",
+        "id": 1012,
+        "isFeatured": false,
+        "isFavorite": false,
+        "block": "Block 18",
+        "description": "Poolside is the perfect spot for grabbing a bite after working out in our newly minted Sports Complex, with a variety of food sure to satisfy your cravings, even if you are craving a bowl of instant noodles.",
+        "imageName": "poolside"
+    }
+]

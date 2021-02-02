@@ -23,7 +23,6 @@
 		BF5AA9EE25A6DBF200409FD4 /* MAD2_Assignment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF5AA9EC25A6DBF200409FD4 /* MAD2_Assignment.xcdatamodeld */; };
 		BF5AA9F025A6DBF300409FD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF5AA9EF25A6DBF300409FD4 /* Assets.xcassets */; };
 		BF5AA9F325A6DBF300409FD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF5AA9F125A6DBF300409FD4 /* LaunchScreen.storyboard */; };
-		BF96CEFE25C915D200DF885A /* bookingLocation.json in Resources */ = {isa = PBXBuildFile; fileRef = BF96CEFD25C915D200DF885A /* bookingLocation.json */; };
 		BF96F8D125C5342B00036BF2 /* LocationDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF96F8D025C5342B00036BF2 /* LocationDetail.swift */; };
 		BF96F8D425C534EA00036BF2 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF96F8D325C534EA00036BF2 /* CircleImage.swift */; };
 		BF96F8D725C5358400036BF2 /* FavouriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF96F8D625C5358400036BF2 /* FavouriteButton.swift */; };
@@ -66,6 +65,7 @@
 		E6500D8225C83D5C006ED6A4 /* TOMSwidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = E6500D7E25C83D5B006ED6A4 /* TOMSwidget.intentdefinition */; };
 		E6500D8325C83D5C006ED6A4 /* TOMSwidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = E6500D7E25C83D5B006ED6A4 /* TOMSwidget.intentdefinition */; };
 		E6500D8625C83D5C006ED6A4 /* TOMSwidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E6500D7625C83D5B006ED6A4 /* TOMSwidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E6500DDC25C92C44006ED6A4 /* bookingLocation.json in Resources */ = {isa = PBXBuildFile; fileRef = E6500DDB25C92C43006ED6A4 /* bookingLocation.json */; };
 		E6FD15E425AFE9E1006A8B33 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E6FD15E325AFE9E1006A8B33 /* GoogleService-Info.plist */; };
 		E6FD15F625B2D9B8006A8B33 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FD15F525B2D9B8006A8B33 /* LoginViewController.swift */; };
 		E6FD161925B86F0E006A8B33 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FD161825B86F0E006A8B33 /* Student.swift */; };
@@ -119,7 +119,6 @@
 		BF5AA9EF25A6DBF300409FD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF5AA9F225A6DBF300409FD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF5AA9F425A6DBF300409FD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BF96CEFD25C915D200DF885A /* bookingLocation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = bookingLocation.json; path = "../../MAD2_Assignment (Draft)/MAD2_Assignment/bookingLocation.json"; sourceTree = "<group>"; };
 		BF96F8D025C5342B00036BF2 /* LocationDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetail.swift; sourceTree = "<group>"; };
 		BF96F8D325C534EA00036BF2 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		BF96F8D625C5358400036BF2 /* FavouriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteButton.swift; sourceTree = "<group>"; };
@@ -163,6 +162,7 @@
 		E6500D7F25C83D5C006ED6A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6500D8125C83D5C006ED6A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6500DA025C83EBF006ED6A4 /* MAD2_Assignment.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MAD2_Assignment.entitlements; sourceTree = "<group>"; };
+		E6500DDB25C92C43006ED6A4 /* bookingLocation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bookingLocation.json; sourceTree = "<group>"; };
 		E6FD15E325AFE9E1006A8B33 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E6FD15F525B2D9B8006A8B33 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E6FD161825B86F0E006A8B33 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
@@ -249,7 +249,7 @@
 				BF96F8D325C534EA00036BF2 /* CircleImage.swift */,
 				BF9CD42425C45A000024BE9C /* CategoryItem.swift */,
 				BF9CD3FB25C44F270024BE9C /* ModelData.swift */,
-				BF96CEFD25C915D200DF885A /* bookingLocation.json */,
+				E6500DDB25C92C43006ED6A4 /* bookingLocation.json */,
 				BF5AA9E525A6DBF200409FD4 /* SceneDelegate.swift */,
 				BF5AA9E725A6DBF200409FD4 /* ViewController.swift */,
 				E6FD15F525B2D9B8006A8B33 /* LoginViewController.swift */,
@@ -397,7 +397,7 @@
 			files = (
 				BF5AA9F325A6DBF300409FD4 /* LaunchScreen.storyboard in Resources */,
 				E6FD15E425AFE9E1006A8B33 /* GoogleService-Info.plist in Resources */,
-				BF96CEFE25C915D200DF885A /* bookingLocation.json in Resources */,
+				E6500DDC25C92C44006ED6A4 /* bookingLocation.json in Resources */,
 				BF5AA9F025A6DBF300409FD4 /* Assets.xcassets in Resources */,
 				BF5AA9EB25A6DBF200409FD4 /* Main.storyboard in Resources */,
 			);

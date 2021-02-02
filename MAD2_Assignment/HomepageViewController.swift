@@ -20,6 +20,8 @@ class HomepageViewController: UIViewController, ImageSlideshowDelegate {
     @IBOutlet weak var busArrivalContainer: UIView!
     @IBOutlet weak var TOMSImage: UIImageView!
     @IBOutlet weak var TOMSContainer: UIView!
+    @IBOutlet weak var logOutImage: UIImageView!
+    @IBOutlet weak var logOutContainer: UIView!
     
     // Defining the images to be used for slideshow/carousel
     let localSource = [BundleImageSource(imageString: "ngeeAnn1"), BundleImageSource(imageString: "ngeeAnn2"), BundleImageSource(imageString: "ngeeAnn3"), BundleImageSource(imageString: "ngeeAnn4")]
@@ -36,7 +38,7 @@ class HomepageViewController: UIViewController, ImageSlideshowDelegate {
         
         // Desining the Food Court API, Bus Arrival API and TOMS button
         // Also adds the onClick function to these buttons
-        buttonContainers = [foodCourtContainer, busArrivalContainer, TOMSContainer]
+        buttonContainers = [foodCourtContainer, busArrivalContainer, TOMSContainer, logOutContainer]
         for i in buttonContainers {
             i.layer.cornerRadius = 10
             if i == foodCourtContainer {
@@ -54,12 +56,17 @@ class HomepageViewController: UIViewController, ImageSlideshowDelegate {
                 let gesture = UITapGestureRecognizer(target: self, action: #selector(self.TOMSOnClick))
                 i.addGestureRecognizer(gesture)
             }
+            else if i == logOutContainer{
+                let gesture = UITapGestureRecognizer(target: self, action: #selector(self.logOutClick))
+                i.addGestureRecognizer(gesture)
+            }
         }
         
         // Setting the images
         foodCourtAPIImage.image = UIImage(named: "food")
         busArrivalImage.image = UIImage(named: "busStop")
         TOMSImage.image = UIImage(named: "TOMS")
+        logOutImage.image = UIImage(named: "logout")
         
         // Designing the slideshow/carousel
         Imageview.slideshowInterval = 5.0
@@ -115,5 +122,10 @@ class HomepageViewController: UIViewController, ImageSlideshowDelegate {
     @objc func TOMSOnClick(_ sender: UITapGestureRecognizer) {
         let vc = SFSafariViewController(url: URL(string: "https://npweb.np.edu.sg/np/TravelDeclare/Pages/StudentTOMS.aspx")!)
         present(vc, animated: true)
+    }
+    //When Logout button is selected
+    @objc func logOutClick(_ sender: UITapGestureRecognizer){
+        let controller = storyboard?.instantiateViewController(withIdentifier: "LoginViewController")
+        present(controller!, animated: true, completion: nil)
     }
 }
