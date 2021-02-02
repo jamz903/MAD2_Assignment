@@ -8,9 +8,10 @@
 import Foundation
 
 struct BookingDate: Equatable {
+    var id: Int
     var day: String
     var month: String
     var year: String
     
-    static var `default`: BookingDate { BookingDate(day: "", month: "", year: "") }
+    static var `default`: BookingDate { BookingDate(id: 0, day: "", month: "", year: "") }
 }

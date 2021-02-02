@@ -45,7 +45,7 @@ struct DateTimeView: View {
                 .font(.headline).padding(.leading)
             ScrollView(.horizontal, showsIndicators: false){
                 HStack{
-                    ForEach(dates, id: \.day){ date in
+                    ForEach(dates, id: \.id){ date in
                         DateView(date: date, isSelected: self.selectedDate.day == date.day, onSelect: { selectedDate in
                             self.selectedDate = selectedDate
                             self.date = selectedDate

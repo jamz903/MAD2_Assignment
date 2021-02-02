@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct DateView: View {
-    var date: BookingDate = BookingDate(day: "30", month: "1", year: "21")
+    var date: BookingDate = BookingDate(id: 0, day: "30", month: "1", year: "21")
     var isSelected: Bool
     var onSelect: ((BookingDate) -> ()) = {_ in }
     

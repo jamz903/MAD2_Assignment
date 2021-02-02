@@ -43,8 +43,9 @@ extension Date {
             let d = getComponent(date: fullDate, format: "dd")
             let m = getComponent(date: fullDate, format: "MM")
             let y = getComponent(date: fullDate, format: "yy")
-            let bookingDate = BookingDate(day: d, month: m, year: y)
+            let bookingDate = BookingDate(id: i, day: d, month: m, year: y)
             dates.append(bookingDate)
+            print(bookingDate)
         }
         
         return dates
