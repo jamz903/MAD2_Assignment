@@ -125,7 +125,8 @@ class HomepageViewController: UIViewController, ImageSlideshowDelegate {
     }
     //When Logout button is selected
     @objc func logOutClick(_ sender: UITapGestureRecognizer){
-        let controller = storyboard?.instantiateViewController(withIdentifier: "LoginViewController")
-        present(controller!, animated: true, completion: nil)
+        let vc = (storyboard?.instantiateViewController(withIdentifier: "LoginViewController"))! as UIViewController
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true, completion: nil)
     }
 }
