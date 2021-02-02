@@ -16,7 +16,6 @@
 		7EE1AE3425C0FA3900348C4E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1AE3325C0FA3900348C4E /* MapViewController.swift */; };
 		7EE1AE3725C0FA7600348C4E /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1AE3625C0FA7600348C4E /* CustomAnnotation.swift */; };
 		7EE1AE6325C6C27C00348C4E /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1AE6225C6C27C00348C4E /* HomepageViewController.swift */; };
-		7EE1AEBC25C8DB0E00348C4E /* bookingLocation.json in Resources */ = {isa = PBXBuildFile; fileRef = 7EE1AEBB25C8DB0D00348C4E /* bookingLocation.json */; };
 		BF5AA9E425A6DBF200409FD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5AA9E325A6DBF200409FD4 /* AppDelegate.swift */; };
 		BF5AA9E625A6DBF200409FD4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5AA9E525A6DBF200409FD4 /* SceneDelegate.swift */; };
 		BF5AA9E825A6DBF200409FD4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5AA9E725A6DBF200409FD4 /* ViewController.swift */; };
@@ -24,6 +23,7 @@
 		BF5AA9EE25A6DBF200409FD4 /* MAD2_Assignment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF5AA9EC25A6DBF200409FD4 /* MAD2_Assignment.xcdatamodeld */; };
 		BF5AA9F025A6DBF300409FD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF5AA9EF25A6DBF300409FD4 /* Assets.xcassets */; };
 		BF5AA9F325A6DBF300409FD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF5AA9F125A6DBF300409FD4 /* LaunchScreen.storyboard */; };
+		BF96CEFE25C915D200DF885A /* bookingLocation.json in Resources */ = {isa = PBXBuildFile; fileRef = BF96CEFD25C915D200DF885A /* bookingLocation.json */; };
 		BF96F8D125C5342B00036BF2 /* LocationDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF96F8D025C5342B00036BF2 /* LocationDetail.swift */; };
 		BF96F8D425C534EA00036BF2 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF96F8D325C534EA00036BF2 /* CircleImage.swift */; };
 		BF96F8D725C5358400036BF2 /* FavouriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF96F8D625C5358400036BF2 /* FavouriteButton.swift */; };
@@ -109,7 +109,6 @@
 		7EE1AE3325C0FA3900348C4E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		7EE1AE3625C0FA7600348C4E /* CustomAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
 		7EE1AE6225C6C27C00348C4E /* HomepageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageViewController.swift; sourceTree = "<group>"; };
-		7EE1AEBB25C8DB0D00348C4E /* bookingLocation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = bookingLocation.json; path = ../../Images/bookingLocation.json; sourceTree = "<group>"; };
 		853D1C70FFF3B0EFD60548E1 /* Pods-MAD2_Assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MAD2_Assignment.debug.xcconfig"; path = "Target Support Files/Pods-MAD2_Assignment/Pods-MAD2_Assignment.debug.xcconfig"; sourceTree = "<group>"; };
 		BF5AA9E025A6DBF200409FD4 /* MAD2_Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MAD2_Assignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF5AA9E325A6DBF200409FD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -120,6 +119,7 @@
 		BF5AA9EF25A6DBF300409FD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF5AA9F225A6DBF300409FD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF5AA9F425A6DBF300409FD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF96CEFD25C915D200DF885A /* bookingLocation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = bookingLocation.json; path = "../../MAD2_Assignment (Draft)/MAD2_Assignment/bookingLocation.json"; sourceTree = "<group>"; };
 		BF96F8D025C5342B00036BF2 /* LocationDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetail.swift; sourceTree = "<group>"; };
 		BF96F8D325C534EA00036BF2 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		BF96F8D625C5358400036BF2 /* FavouriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteButton.swift; sourceTree = "<group>"; };
@@ -218,15 +218,14 @@
 				BF5AA9E925A6DBF200409FD4 /* Main.storyboard */,
 				7EE1AE6225C6C27C00348C4E /* HomepageViewController.swift */,
 				7EE1AE3325C0FA3900348C4E /* MapViewController.swift */,
+				BFD7B8C825B5CA240073B1D8 /* ToDoListViewController.swift */,
+				BFF3900A25BDCEFB0003DCF1 /* BookingViewController.swift */,
 				7EE1AE3625C0FA7600348C4E /* CustomAnnotation.swift */,
 				7EE1AE0025B9118800348C4E /* BusCustomTableViewCell.swift */,
 				7EE1ADF425B9106600348C4E /* BusTableViewController.swift */,
 				7EE1ADFD25B910FE00348C4E /* LocationDelegate.swift */,
 				7EE1ADF725B9109D00348C4E /* BusService.swift */,
 				7EE1ADFA25B910C900348C4E /* BusStops.swift */,
-				BFD7B8C825B5CA240073B1D8 /* ToDoListViewController.swift */,
-				7EE1AEBB25C8DB0D00348C4E /* bookingLocation.json */,
-				BFF3900A25BDCEFB0003DCF1 /* BookingViewController.swift */,
 				BFAEE2AC25C874A0000E1971 /* BookingRepository.swift */,
 				BFF3902625C30EEE0003DCF1 /* BookingView.swift */,
 				BF9CD3F125C3111B0024BE9C /* BookingLocation.swift */,
@@ -240,7 +239,6 @@
 				BF96F90725C5B49D00036BF2 /* DateView.swift */,
 				BF96F91225C5B74400036BF2 /* TimeView.swift */,
 				BF96F90F25C5B6A800036BF2 /* DateShape.swift */,
-				BF96F90A25C5B4A100036BF2 /* Extensions */,
 				BF96F8FC25C5AFF600036BF2 /* BookingDate.swift */,
 				BF96F8F625C5AC6100036BF2 /* ChairLegendView.swift */,
 				BF96F8F025C5A41B00036BF2 /* ChairView.swift */,
@@ -251,6 +249,7 @@
 				BF96F8D325C534EA00036BF2 /* CircleImage.swift */,
 				BF9CD42425C45A000024BE9C /* CategoryItem.swift */,
 				BF9CD3FB25C44F270024BE9C /* ModelData.swift */,
+				BF96CEFD25C915D200DF885A /* bookingLocation.json */,
 				BF5AA9E525A6DBF200409FD4 /* SceneDelegate.swift */,
 				BF5AA9E725A6DBF200409FD4 /* ViewController.swift */,
 				E6FD15F525B2D9B8006A8B33 /* LoginViewController.swift */,
@@ -259,13 +258,14 @@
 				E6433FD925BDA96F0009FD73 /* CanteenViewController.swift */,
 				E6500CCF25C5DC2E006ED6A4 /* CanteenViewControllerCell.swift */,
 				7EE1AE0925BC23C800348C4E /* CustomUITextField.swift */,
-				BF9C7C7025B9BA8A0015574F /* TaskRepository.swift */,
 				E6FD163C25B91ADC006A8B33 /* SignUpViewController.swift */,
+				BF9C7C7025B9BA8A0015574F /* TaskRepository.swift */,
 				BFD7B8CB25B5DA780073B1D8 /* TaskCellViewModel.swift */,
 				BFD7B8CE25B5DC0E0073B1D8 /* TaskListViewModel.swift */,
 				E6FD161825B86F0E006A8B33 /* Student.swift */,
 				BFF942BA25B31B3B0052C619 /* TaskListView.swift */,
 				BFF942A925B313730052C619 /* Task.swift */,
+				BF96F90A25C5B4A100036BF2 /* Extensions */,
 				BF5AA9EF25A6DBF300409FD4 /* Assets.xcassets */,
 				BF5AA9F125A6DBF300409FD4 /* LaunchScreen.storyboard */,
 				BF5AA9F425A6DBF300409FD4 /* Info.plist */,
@@ -397,7 +397,7 @@
 			files = (
 				BF5AA9F325A6DBF300409FD4 /* LaunchScreen.storyboard in Resources */,
 				E6FD15E425AFE9E1006A8B33 /* GoogleService-Info.plist in Resources */,
-				7EE1AEBC25C8DB0E00348C4E /* bookingLocation.json in Resources */,
+				BF96CEFE25C915D200DF885A /* bookingLocation.json in Resources */,
 				BF5AA9F025A6DBF300409FD4 /* Assets.xcassets in Resources */,
 				BF5AA9EB25A6DBF200409FD4 /* Main.storyboard in Resources */,
 			);
