@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class CustomUITextField: UITextField {
+class CustomUITextField: UITextField, UITextFieldDelegate {
     let padding = UIEdgeInsets(top: 0, left: 55, bottom: 0, right: 5)
 
     override open func textRect(forBounds bounds: CGRect) -> CGRect {
@@ -56,6 +56,11 @@ class CustomUITextField: UITextField {
 
         return newImage!
     }
+    
+//    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+//        textField.resignFirstResponder()
+//        return true
+//    }
 }
 
 extension UIImage {

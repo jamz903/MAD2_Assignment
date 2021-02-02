@@ -443,18 +443,20 @@ class BusTableViewController: UITableViewController, UISearchBarDelegate {
         var currentLocLong: Double = 0
         var nearbyBusStops: [BusStop] = [BusStop]()
         
-        currentLocLat = latestLocation!.coordinate.latitude
-        currentLocLong = latestLocation!.coordinate.longitude
-        let currentLocationCoordinate: CLLocation = CLLocation(latitude: currentLocLat, longitude: currentLocLong)
-        
-        for i in allBusStops {
-            let busStopLocationCoordinate: CLLocation = CLLocation(latitude: i.Latitude, longitude: i.Longitude)
-            let distanceInMeters = currentLocationCoordinate.distance(from: busStopLocationCoordinate)
-            if distanceInMeters <= 1000 {
-                nearbyBusStops.append(i)
+        if latestLocation?.coordinate.latitude != nil && latestLocation?.coordinate.longitude != nil {
+            currentLocLat = latestLocation!.coordinate.latitude
+            currentLocLong = latestLocation!.coordinate.longitude
+            let currentLocationCoordinate: CLLocation = CLLocation(latitude: currentLocLat, longitude: currentLocLong)
+            
+            for i in allBusStops {
+                let busStopLocationCoordinate: CLLocation = CLLocation(latitude: i.Latitude, longitude: i.Longitude)
+                let distanceInMeters = currentLocationCoordinate.distance(from: busStopLocationCoordinate)
+                if distanceInMeters <= 1000 {
+                    nearbyBusStops.append(i)
+                }
             }
         }
-        
+
         return nearbyBusStops
     }
     

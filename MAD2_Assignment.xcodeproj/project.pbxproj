@@ -16,6 +16,7 @@
 		7EE1AE3425C0FA3900348C4E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1AE3325C0FA3900348C4E /* MapViewController.swift */; };
 		7EE1AE3725C0FA7600348C4E /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1AE3625C0FA7600348C4E /* CustomAnnotation.swift */; };
 		7EE1AE6325C6C27C00348C4E /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1AE6225C6C27C00348C4E /* HomepageViewController.swift */; };
+		7EE1AEBC25C8DB0E00348C4E /* bookingLocation.json in Resources */ = {isa = PBXBuildFile; fileRef = 7EE1AEBB25C8DB0D00348C4E /* bookingLocation.json */; };
 		BF5AA9E425A6DBF200409FD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5AA9E325A6DBF200409FD4 /* AppDelegate.swift */; };
 		BF5AA9E625A6DBF200409FD4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5AA9E525A6DBF200409FD4 /* SceneDelegate.swift */; };
 		BF5AA9E825A6DBF200409FD4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5AA9E725A6DBF200409FD4 /* ViewController.swift */; };
@@ -58,7 +59,6 @@
 		E6433FDA25BDA96F0009FD73 /* CanteenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6433FD925BDA96F0009FD73 /* CanteenViewController.swift */; };
 		E6500CD025C5DC2E006ED6A4 /* CanteenViewControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6500CCF25C5DC2E006ED6A4 /* CanteenViewControllerCell.swift */; };
 		E6500CD325C5E0BD006ED6A4 /* CanteenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6500CD225C5E0BD006ED6A4 /* CanteenCell.swift */; };
-		E6500D7025C83D4A006ED6A4 /* bookingLocation.json in Resources */ = {isa = PBXBuildFile; fileRef = E6500D6F25C83D4A006ED6A4 /* bookingLocation.json */; };
 		E6500D7825C83D5B006ED6A4 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6500D7725C83D5B006ED6A4 /* WidgetKit.framework */; };
 		E6500D7A25C83D5B006ED6A4 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6500D7925C83D5B006ED6A4 /* SwiftUI.framework */; };
 		E6500D7D25C83D5B006ED6A4 /* TOMSwidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6500D7C25C83D5B006ED6A4 /* TOMSwidget.swift */; };
@@ -109,6 +109,7 @@
 		7EE1AE3325C0FA3900348C4E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		7EE1AE3625C0FA7600348C4E /* CustomAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
 		7EE1AE6225C6C27C00348C4E /* HomepageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageViewController.swift; sourceTree = "<group>"; };
+		7EE1AEBB25C8DB0D00348C4E /* bookingLocation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = bookingLocation.json; path = ../../Images/bookingLocation.json; sourceTree = "<group>"; };
 		853D1C70FFF3B0EFD60548E1 /* Pods-MAD2_Assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MAD2_Assignment.debug.xcconfig"; path = "Target Support Files/Pods-MAD2_Assignment/Pods-MAD2_Assignment.debug.xcconfig"; sourceTree = "<group>"; };
 		BF5AA9E025A6DBF200409FD4 /* MAD2_Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MAD2_Assignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF5AA9E325A6DBF200409FD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -154,7 +155,6 @@
 		E6433FD925BDA96F0009FD73 /* CanteenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanteenViewController.swift; sourceTree = "<group>"; };
 		E6500CCF25C5DC2E006ED6A4 /* CanteenViewControllerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanteenViewControllerCell.swift; sourceTree = "<group>"; };
 		E6500CD225C5E0BD006ED6A4 /* CanteenCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanteenCell.swift; sourceTree = "<group>"; };
-		E6500D6F25C83D4A006ED6A4 /* bookingLocation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = bookingLocation.json; path = ../../../Downloads/bookingLocation.json; sourceTree = "<group>"; };
 		E6500D7625C83D5B006ED6A4 /* TOMSwidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TOMSwidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6500D7725C83D5B006ED6A4 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		E6500D7925C83D5B006ED6A4 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -225,7 +225,7 @@
 				7EE1ADF725B9109D00348C4E /* BusService.swift */,
 				7EE1ADFA25B910C900348C4E /* BusStops.swift */,
 				BFD7B8C825B5CA240073B1D8 /* ToDoListViewController.swift */,
-				E6500D6F25C83D4A006ED6A4 /* bookingLocation.json */,
+				7EE1AEBB25C8DB0D00348C4E /* bookingLocation.json */,
 				BFF3900A25BDCEFB0003DCF1 /* BookingViewController.swift */,
 				BFAEE2AC25C874A0000E1971 /* BookingRepository.swift */,
 				BFF3902625C30EEE0003DCF1 /* BookingView.swift */,
@@ -397,7 +397,7 @@
 			files = (
 				BF5AA9F325A6DBF300409FD4 /* LaunchScreen.storyboard in Resources */,
 				E6FD15E425AFE9E1006A8B33 /* GoogleService-Info.plist in Resources */,
-				E6500D7025C83D4A006ED6A4 /* bookingLocation.json in Resources */,
+				7EE1AEBC25C8DB0E00348C4E /* bookingLocation.json in Resources */,
 				BF5AA9F025A6DBF300409FD4 /* Assets.xcassets in Resources */,
 				BF5AA9EB25A6DBF200409FD4 /* Main.storyboard in Resources */,
 			);

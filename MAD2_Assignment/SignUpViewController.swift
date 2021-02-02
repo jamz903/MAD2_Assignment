@@ -32,6 +32,9 @@ class SignUpViewController: UIViewController{
         
 //        LoginBtn.layer.cornerRadius = 10
         
+        let tap = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
+        view.addGestureRecognizer(tap)
+        
     }
     //back to login page
     @IBAction func backToLoginBtn(_ sender: Any) {

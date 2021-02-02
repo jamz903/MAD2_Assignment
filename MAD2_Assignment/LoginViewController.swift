@@ -8,7 +8,7 @@
 import Foundation
 import FirebaseDatabase
 
-class LoginViewController: UIViewController{
+class LoginViewController: UIViewController, UITextFieldDelegate {
     
     //set variables for storyboard
     @IBOutlet weak var Username: CustomUITextField!
@@ -45,7 +45,8 @@ class LoginViewController: UIViewController{
         
         LoginBtn.layer.cornerRadius = 10
         
-        
+        let tap = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
+        view.addGestureRecognizer(tap)
 
     }
         
@@ -140,5 +141,8 @@ class LoginViewController: UIViewController{
         present(vc, animated: true, completion: nil)
     }
     
-    
+//    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+//        Password.resignFirstResponder()
+//        return true
+//    }
 }
